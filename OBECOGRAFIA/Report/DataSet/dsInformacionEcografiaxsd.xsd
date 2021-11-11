@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsInformacionEcografiaxsd" targetNamespace="http://tempuri.org/dsInformacionEcografiaxsd.xsd" xmlns:mstns="http://tempuri.org/dsInformacionEcografiaxsd.xsd" xmlns="http://tempuri.org/dsInformacionEcografiaxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ACDATOXPSQLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ACDATOXPSQLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBECOGRAFIA.Properties.Settings.GlobalReference.Default.ACDATOXPSQLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos de la ecografiaTableAdapter" GeneratorDataComponentClassName="Datos_de_la_ecografiaTableAdapter" Name="Datos de la ecografia" UserDataComponentName="Datos de la ecografiaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DACONEXTSQL.dbo.[Datos registros de ecografias].NumEcogra, DACONEXTSQL.dbo.[Datos registros de ecografias].TipoEco, DACONEXTSQL.dbo.[Datos registros de ecografias].NumAten, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].NumFactu, DACONEXTSQL.dbo.[Datos registros de ecografias].NumHisEco, DACONEXTSQL.dbo.[Datos registros de ecografias].FecRealECO, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].TransFrec, DACONEXTSQL.dbo.[Datos registros de ecografias].FUMEco, DACONEXTSQL.dbo.[Datos registros de ecografias].EdadGesFum, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].FPPFUM, DACONEXTSQL.dbo.[Datos registros de ecografias].FecAnulEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CodRegis, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].FecRegis, DACONEXTSQL.dbo.[Datos registros de ecografias].CodModi, DACONEXTSQL.dbo.[Datos registros de ecografias].FecModi, 
+                         DACONEXTSQL.dbo.[Datos tipos de transductores ecografos].NomTraducEco, DACONEXTSQL.dbo.[Datos tipos de ecografias].NomEcogra, DACONEXTSQL.dbo.[Datos registros de ecografias].SeConoFUM, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].NumFetos, DACONEXTSQL.dbo.[Datos registros de ecografias].Utero, DACONEXTSQL.dbo.[Datos registros de ecografias].Placenta, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].GraMaPla, DACONEXTSQL.dbo.[Datos registros de ecografias].EspePlace, DACONEXTSQL.dbo.[Datos registros de ecografias].NumSemEco, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].NumDiasEco, DACONEXTSQL.dbo.[Datos registros de ecografias].FPPEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CodAuxECO, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].ConclusECO, DACONEXTSQL.dbo.[Datos registros de ecografias].CodMedECO, DACONEXTSQL.dbo.[Datos registros de ecografias].ArchivEco, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].CodArchi, DACONEXTSQL.dbo.[Datos registros de ecografias].FecArchi, DACONEXTSQL.dbo.[Datos registros de ecografias].AnulEco, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].RazAnulEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CodAnulEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CervixEsta, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].DiamLongi, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamAntePos, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamTras, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].Endometrio, DACONEXTSQL.dbo.[Datos registros de ecografias].EspesorCer, DACONEXTSQL.dbo.[Datos registros de ecografias].DesCervix, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].DesEndometrio, DACONEXTSQL.dbo.[Datos registros de ecografias].OvarioDere, DACONEXTSQL.dbo.[Datos registros de ecografias].PorOvarioDere, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].OvarioIzquie, DACONEXTSQL.dbo.[Datos registros de ecografias].PorOvarioIzqui, DACONEXTSQL.dbo.[Datos registros de ecografias].Comenta, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].HigaAbdEco, DACONEXTSQL.dbo.[Datos registros de ecografias].VesicuAbdEco, DACONEXTSQL.dbo.[Datos registros de ecografias].PancreAbdEco, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].BazoAdbEco, DACONEXTSQL.dbo.[Datos registros de ecografias].RinonAbdEco, DACONEXTSQL.dbo.[Datos registros de ecografias].FormaRiDere, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].DiamRinDer, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamAntRinDer, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamTraRinDer, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].ObserRinDere, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamEpRinDer, DACONEXTSQL.dbo.[Datos registros de ecografias].FormaRinIzq, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].DiamRinIzq, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamAntRinIzq, DACONEXTSQL.dbo.[Datos registros de ecografias].DiamTraRinIzq, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].DiamEpRinIzq, DACONEXTSQL.dbo.[Datos registros de ecografias].ObserRinIzquie, DACONEXTSQL.dbo.[Datos registros de ecografias].AspecVeji, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].VoluPromVeji, DACONEXTSQL.dbo.[Datos registros de ecografias].ResiPostVeji, DACONEXTSQL.dbo.[Datos registros de ecografias].ProstataEco, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].VesicuSemiEco, DACONEXTSQL.dbo.[Datos registros de ecografias].RegisEcoGral
+FROM            DACONEXTSQL.dbo.[Datos tipos de ecografias] INNER JOIN
+                         DACONEXTSQL.dbo.[Datos registros de ecografias] INNER JOIN
+                         DACONEXTSQL.dbo.[Datos tipos de transductores ecografos] ON DACONEXTSQL.dbo.[Datos registros de ecografias].TransFrec = DACONEXTSQL.dbo.[Datos tipos de transductores ecografos].CodTraducEco ON 
+                         DACONEXTSQL.dbo.[Datos tipos de ecografias].CodEcoIps = DACONEXTSQL.dbo.[Datos registros de ecografias].TipoEco</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NumEcogra" DataSetColumn="NumEcogra" />
+              <Mapping SourceColumn="TipoEco" DataSetColumn="TipoEco" />
+              <Mapping SourceColumn="NumAten" DataSetColumn="NumAten" />
+              <Mapping SourceColumn="NumFactu" DataSetColumn="NumFactu" />
+              <Mapping SourceColumn="NumHisEco" DataSetColumn="NumHisEco" />
+              <Mapping SourceColumn="FecRealECO" DataSetColumn="FecRealECO" />
+              <Mapping SourceColumn="TransFrec" DataSetColumn="TransFrec" />
+              <Mapping SourceColumn="FUMEco" DataSetColumn="FUMEco" />
+              <Mapping SourceColumn="EdadGesFum" DataSetColumn="EdadGesFum" />
+              <Mapping SourceColumn="FPPFUM" DataSetColumn="FPPFUM" />
+              <Mapping SourceColumn="HigaAbdEco" DataSetColumn="HigaAbdEco" />
+              <Mapping SourceColumn="VesicuAbdEco" DataSetColumn="VesicuAbdEco" />
+              <Mapping SourceColumn="PancreAbdEco" DataSetColumn="PancreAbdEco" />
+              <Mapping SourceColumn="ConclusECO" DataSetColumn="ConclusECO" />
+              <Mapping SourceColumn="CodMedECO" DataSetColumn="CodMedECO" />
+              <Mapping SourceColumn="ArchivEco" DataSetColumn="ArchivEco" />
+              <Mapping SourceColumn="CodArchi" DataSetColumn="CodArchi" />
+              <Mapping SourceColumn="FecArchi" DataSetColumn="FecArchi" />
+              <Mapping SourceColumn="AnulEco" DataSetColumn="AnulEco" />
+              <Mapping SourceColumn="RazAnulEco" DataSetColumn="RazAnulEco" />
+              <Mapping SourceColumn="CodAnulEco" DataSetColumn="CodAnulEco" />
+              <Mapping SourceColumn="FecAnulEco" DataSetColumn="FecAnulEco" />
+              <Mapping SourceColumn="CodRegis" DataSetColumn="CodRegis" />
+              <Mapping SourceColumn="FecRegis" DataSetColumn="FecRegis" />
+              <Mapping SourceColumn="CodModi" DataSetColumn="CodModi" />
+              <Mapping SourceColumn="FecModi" DataSetColumn="FecModi" />
+              <Mapping SourceColumn="NomTraducEco" DataSetColumn="NomTraducEco" />
+              <Mapping SourceColumn="NomEcogra" DataSetColumn="NomEcogra" />
+              <Mapping SourceColumn="SeConoFUM" DataSetColumn="SeConoFUM" />
+              <Mapping SourceColumn="NumFetos" DataSetColumn="NumFetos" />
+              <Mapping SourceColumn="Utero" DataSetColumn="Utero" />
+              <Mapping SourceColumn="Placenta" DataSetColumn="Placenta" />
+              <Mapping SourceColumn="GraMaPla" DataSetColumn="GraMaPla" />
+              <Mapping SourceColumn="EspePlace" DataSetColumn="EspePlace" />
+              <Mapping SourceColumn="NumSemEco" DataSetColumn="NumSemEco" />
+              <Mapping SourceColumn="NumDiasEco" DataSetColumn="NumDiasEco" />
+              <Mapping SourceColumn="FPPEco" DataSetColumn="FPPEco" />
+              <Mapping SourceColumn="CodAuxECO" DataSetColumn="CodAuxECO" />
+              <Mapping SourceColumn="CervixEsta" DataSetColumn="CervixEsta" />
+              <Mapping SourceColumn="DiamLongi" DataSetColumn="DiamLongi" />
+              <Mapping SourceColumn="DiamAntePos" DataSetColumn="DiamAntePos" />
+              <Mapping SourceColumn="DiamTras" DataSetColumn="DiamTras" />
+              <Mapping SourceColumn="Endometrio" DataSetColumn="Endometrio" />
+              <Mapping SourceColumn="EspesorCer" DataSetColumn="EspesorCer" />
+              <Mapping SourceColumn="DesCervix" DataSetColumn="DesCervix" />
+              <Mapping SourceColumn="DesEndometrio" DataSetColumn="DesEndometrio" />
+              <Mapping SourceColumn="OvarioDere" DataSetColumn="OvarioDere" />
+              <Mapping SourceColumn="PorOvarioDere" DataSetColumn="PorOvarioDere" />
+              <Mapping SourceColumn="OvarioIzquie" DataSetColumn="OvarioIzquie" />
+              <Mapping SourceColumn="PorOvarioIzqui" DataSetColumn="PorOvarioIzqui" />
+              <Mapping SourceColumn="Comenta" DataSetColumn="Comenta" />
+              <Mapping SourceColumn="BazoAdbEco" DataSetColumn="BazoAdbEco" />
+              <Mapping SourceColumn="RinonAbdEco" DataSetColumn="RinonAbdEco" />
+              <Mapping SourceColumn="FormaRiDere" DataSetColumn="FormaRiDere" />
+              <Mapping SourceColumn="DiamRinDer" DataSetColumn="DiamRinDer" />
+              <Mapping SourceColumn="DiamAntRinDer" DataSetColumn="DiamAntRinDer" />
+              <Mapping SourceColumn="DiamTraRinDer" DataSetColumn="DiamTraRinDer" />
+              <Mapping SourceColumn="ObserRinDere" DataSetColumn="ObserRinDere" />
+              <Mapping SourceColumn="DiamEpRinDer" DataSetColumn="DiamEpRinDer" />
+              <Mapping SourceColumn="FormaRinIzq" DataSetColumn="FormaRinIzq" />
+              <Mapping SourceColumn="DiamRinIzq" DataSetColumn="DiamRinIzq" />
+              <Mapping SourceColumn="DiamAntRinIzq" DataSetColumn="DiamAntRinIzq" />
+              <Mapping SourceColumn="DiamTraRinIzq" DataSetColumn="DiamTraRinIzq" />
+              <Mapping SourceColumn="DiamEpRinIzq" DataSetColumn="DiamEpRinIzq" />
+              <Mapping SourceColumn="ObserRinIzquie" DataSetColumn="ObserRinIzquie" />
+              <Mapping SourceColumn="AspecVeji" DataSetColumn="AspecVeji" />
+              <Mapping SourceColumn="VoluPromVeji" DataSetColumn="VoluPromVeji" />
+              <Mapping SourceColumn="ResiPostVeji" DataSetColumn="ResiPostVeji" />
+              <Mapping SourceColumn="ProstataEco" DataSetColumn="ProstataEco" />
+              <Mapping SourceColumn="VesicuSemiEco" DataSetColumn="VesicuSemiEco" />
+              <Mapping SourceColumn="RegisEcoGral" DataSetColumn="RegisEcoGral" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos de los medicosTableAdapter" GeneratorDataComponentClassName="Datos_de_los_medicosTableAdapter" Name="Datos de los medicos" UserDataComponentName="Datos de los medicosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        GEOGRAXPSQL.dbo.[Datos de los medicos].CodiMedico, GEOGRAXPSQL.dbo.[Datos de los medicos].CodEspecial, GEOGRAXPSQL.dbo.[Datos de los medicos].TipoDocum, 
+                         GEOGRAXPSQL.dbo.[Datos de los medicos].NumDocum, GEOGRAXPSQL.dbo.[Datos de los medicos].NomMedico, GEOGRAXPSQL.dbo.[Datos de los medicos].Nom2Medico, 
+                         GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido1Medico, GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido2Medico, GEOGRAXPSQL.dbo.[Datos de los medicos].CargoMedico, 
+                         GEOGRAXPSQL.dbo.[Datos de los medicos].RegisProfes, GEOGRAXPSQL.dbo.[Datos de las especialidades].NomEspecial, GEOGRAXPSQL.dbo.[Datos de los medicos].FirmaD
+FROM            GEOGRAXPSQL.dbo.[Datos de los medicos] INNER JOIN
+                         GEOGRAXPSQL.dbo.[Datos de las especialidades] ON GEOGRAXPSQL.dbo.[Datos de los medicos].CodEspecial = GEOGRAXPSQL.dbo.[Datos de las especialidades].CodiEspecial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodiMedico" DataSetColumn="CodiMedico" />
+              <Mapping SourceColumn="CodEspecial" DataSetColumn="CodEspecial" />
+              <Mapping SourceColumn="TipoDocum" DataSetColumn="TipoDocum" />
+              <Mapping SourceColumn="NumDocum" DataSetColumn="NumDocum" />
+              <Mapping SourceColumn="NomMedico" DataSetColumn="NomMedico" />
+              <Mapping SourceColumn="Nom2Medico" DataSetColumn="Nom2Medico" />
+              <Mapping SourceColumn="Apellido1Medico" DataSetColumn="Apellido1Medico" />
+              <Mapping SourceColumn="Apellido2Medico" DataSetColumn="Apellido2Medico" />
+              <Mapping SourceColumn="CargoMedico" DataSetColumn="CargoMedico" />
+              <Mapping SourceColumn="RegisProfes" DataSetColumn="RegisProfes" />
+              <Mapping SourceColumn="NomEspecial" DataSetColumn="NomEspecial" />
+              <Mapping SourceColumn="FirmaD" DataSetColumn="FirmaD" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos BiometriaTableAdapter" GeneratorDataComponentClassName="Datos_BiometriaTableAdapter" Name="Datos Biometria" UserDataComponentName="Datos BiometriaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectName="DACONEXTSQL.dbo.[Datos biometria de los fetos]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [DACONEXTSQL].[dbo].[Datos biometria de los fetos] WHERE (([NumEcoFeto] = @Original_NumEcoFeto) AND ([FetoNum] = @Original_FetoNum) AND ([Presentacion] = @Original_Presentacion) AND ([Situacion] = @Original_Situacion) AND ([Posicion] = @Original_Posicion) AND ((@IsNull_MovCardiacos = 1 AND [MovCardiacos] IS NULL) OR ([MovCardiacos] = @Original_MovCardiacos)) AND ((@IsNull_MovRespiratorios = 1 AND [MovRespiratorios] IS NULL) OR ([MovRespiratorios] = @Original_MovRespiratorios)) AND ((@IsNull_MovFetales = 1 AND [MovFetales] IS NULL) OR ([MovFetales] = @Original_MovFetales)) AND ((@IsNull_TonoFetal = 1 AND [TonoFetal] IS NULL) OR ([TonoFetal] = @Original_TonoFetal)) AND ((@IsNull_ILAFeto = 1 AND [ILAFeto] IS NULL) OR ([ILAFeto] = @Original_ILAFeto)) AND ((@IsNull_CordonUmbi = 1 AND [CordonUmbi] IS NULL) OR ([CordonUmbi] = @Original_CordonUmbi)) AND ((@IsNull_SexFeto = 1 AND [SexFeto] IS NULL) OR ([SexFeto] = @Original_SexFeto)) AND ([DBPFeto] = @Original_DBPFeto) AND ([HCFeto] = @Original_HCFeto) AND ([ACFeto] = @Original_ACFeto) AND ([LFFeto] = @Original_LFFeto) AND ([PesoFeto] = @Original_PesoFeto) AND ([FCFFeto] = @Original_FCFFeto) AND ([SacoGesta] = @Original_SacoGesta) AND ([VesiVitelina] = @Original_VesiVitelina) AND ([BotonEmbriona] = @Original_BotonEmbriona) AND ([LCN] = @Original_LCN) AND ((@IsNull_TotaPunt = 1 AND [TotaPunt] IS NULL) OR ([TotaPunt] = @Original_TotaPunt)) AND ([PuntajeILA] = @Original_PuntajeILA) AND ([PuntajeMovFet] = @Original_PuntajeMovFet) AND ([PuntajeMovRes] = @Original_PuntajeMovRes) AND ([PuntajeTonMusc] = @Original_PuntajeTonMusc))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NumEcoFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NumEcoFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_FetoNum" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FetoNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Presentacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Presentacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Situacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Situacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Posicion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Posicion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovCardiacos" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovCardiacos" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovRespiratorios" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovRespiratorios" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovFetales" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovFetales" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TonoFetal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TonoFetal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ILAFeto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ILAFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CordonUmbi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CordonUmbi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SexFeto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SexFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_DBPFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="DBPFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_HCFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="HCFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_ACFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ACFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_LFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LFFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_PesoFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PesoFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_FCFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FCFFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SacoGesta" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SacoGesta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_VesiVitelina" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="VesiVitelina" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_BotonEmbriona" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="BotonEmbriona" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_LCN" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LCN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TotaPunt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TotaPunt" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeILA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeILA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeMovFet" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovFet" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeMovRes" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovRes" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeTonMusc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeTonMusc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [DACONEXTSQL].[dbo].[Datos biometria de los fetos] ([NumEcoFeto], [FetoNum], [Presentacion], [Situacion], [Posicion], [MovCardiacos], [MovRespiratorios], [MovFetales], [TonoFetal], [ILAFeto], [CordonUmbi], [SexFeto], [DBPFeto], [HCFeto], [ACFeto], [LFFeto], [PesoFeto], [FCFFeto], [SacoGesta], [VesiVitelina], [BotonEmbriona], [LCN], [TotaPunt], [PuntajeILA], [PuntajeMovFet], [PuntajeMovRes], [PuntajeTonMusc]) VALUES (@NumEcoFeto, @FetoNum, @Presentacion, @Situacion, @Posicion, @MovCardiacos, @MovRespiratorios, @MovFetales, @TonoFetal, @ILAFeto, @CordonUmbi, @SexFeto, @DBPFeto, @HCFeto, @ACFeto, @LFFeto, @PesoFeto, @FCFFeto, @SacoGesta, @VesiVitelina, @BotonEmbriona, @LCN, @TotaPunt, @PuntajeILA, @PuntajeMovFet, @PuntajeMovRes, @PuntajeTonMusc);
+SELECT NumEcoFeto, FetoNum, Presentacion, Situacion, Posicion, MovCardiacos, MovRespiratorios, MovFetales, TonoFetal, ILAFeto, CordonUmbi, SexFeto, DBPFeto, HCFeto, ACFeto, LFFeto, PesoFeto, FCFFeto, SacoGesta, VesiVitelina, BotonEmbriona, LCN, TotaPunt, PuntajeILA, PuntajeMovFet, PuntajeMovRes, PuntajeTonMusc FROM DACONEXTSQL.dbo.[Datos biometria de los fetos] WHERE (FetoNum = @FetoNum) AND (NumEcoFeto = @NumEcoFeto) ORDER BY NumEcoFeto, FetoNum</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NumEcoFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NumEcoFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@FetoNum" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FetoNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Presentacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Presentacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Situacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Situacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Posicion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Posicion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovCardiacos" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovRespiratorios" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovFetales" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TonoFetal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ILAFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CordonUmbi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SexFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@DBPFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="DBPFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@HCFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="HCFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@ACFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ACFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@LFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LFFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@PesoFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PesoFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@FCFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FCFFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SacoGesta" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SacoGesta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@VesiVitelina" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="VesiVitelina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@BotonEmbriona" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="BotonEmbriona" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@LCN" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LCN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TotaPunt" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeILA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeILA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeMovFet" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovFet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeMovRes" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovRes" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeTonMusc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeTonMusc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        NumEcoFeto, FetoNum, Presentacion, Situacion, Posicion, MovCardiacos, MovRespiratorios, MovFetales, TonoFetal, ILAFeto, CordonUmbi, SexFeto, DBPFeto, HCFeto, ACFeto, LFFeto, PesoFeto, FCFFeto, SacoGesta, 
+                         VesiVitelina, BotonEmbriona, LCN, TotaPunt, PuntajeILA, PuntajeMovFet, PuntajeMovRes, PuntajeTonMusc
+FROM            DACONEXTSQL.dbo.[Datos biometria de los fetos]
+ORDER BY NumEcoFeto, FetoNum</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [DACONEXTSQL].[dbo].[Datos biometria de los fetos] SET [NumEcoFeto] = @NumEcoFeto, [FetoNum] = @FetoNum, [Presentacion] = @Presentacion, [Situacion] = @Situacion, [Posicion] = @Posicion, [MovCardiacos] = @MovCardiacos, [MovRespiratorios] = @MovRespiratorios, [MovFetales] = @MovFetales, [TonoFetal] = @TonoFetal, [ILAFeto] = @ILAFeto, [CordonUmbi] = @CordonUmbi, [SexFeto] = @SexFeto, [DBPFeto] = @DBPFeto, [HCFeto] = @HCFeto, [ACFeto] = @ACFeto, [LFFeto] = @LFFeto, [PesoFeto] = @PesoFeto, [FCFFeto] = @FCFFeto, [SacoGesta] = @SacoGesta, [VesiVitelina] = @VesiVitelina, [BotonEmbriona] = @BotonEmbriona, [LCN] = @LCN, [TotaPunt] = @TotaPunt, [PuntajeILA] = @PuntajeILA, [PuntajeMovFet] = @PuntajeMovFet, [PuntajeMovRes] = @PuntajeMovRes, [PuntajeTonMusc] = @PuntajeTonMusc WHERE (([NumEcoFeto] = @Original_NumEcoFeto) AND ([FetoNum] = @Original_FetoNum) AND ([Presentacion] = @Original_Presentacion) AND ([Situacion] = @Original_Situacion) AND ([Posicion] = @Original_Posicion) AND ((@IsNull_MovCardiacos = 1 AND [MovCardiacos] IS NULL) OR ([MovCardiacos] = @Original_MovCardiacos)) AND ((@IsNull_MovRespiratorios = 1 AND [MovRespiratorios] IS NULL) OR ([MovRespiratorios] = @Original_MovRespiratorios)) AND ((@IsNull_MovFetales = 1 AND [MovFetales] IS NULL) OR ([MovFetales] = @Original_MovFetales)) AND ((@IsNull_TonoFetal = 1 AND [TonoFetal] IS NULL) OR ([TonoFetal] = @Original_TonoFetal)) AND ((@IsNull_ILAFeto = 1 AND [ILAFeto] IS NULL) OR ([ILAFeto] = @Original_ILAFeto)) AND ((@IsNull_CordonUmbi = 1 AND [CordonUmbi] IS NULL) OR ([CordonUmbi] = @Original_CordonUmbi)) AND ((@IsNull_SexFeto = 1 AND [SexFeto] IS NULL) OR ([SexFeto] = @Original_SexFeto)) AND ([DBPFeto] = @Original_DBPFeto) AND ([HCFeto] = @Original_HCFeto) AND ([ACFeto] = @Original_ACFeto) AND ([LFFeto] = @Original_LFFeto) AND ([PesoFeto] = @Original_PesoFeto) AND ([FCFFeto] = @Original_FCFFeto) AND ([SacoGesta] = @Original_SacoGesta) AND ([VesiVitelina] = @Original_VesiVitelina) AND ([BotonEmbriona] = @Original_BotonEmbriona) AND ([LCN] = @Original_LCN) AND ((@IsNull_TotaPunt = 1 AND [TotaPunt] IS NULL) OR ([TotaPunt] = @Original_TotaPunt)) AND ([PuntajeILA] = @Original_PuntajeILA) AND ([PuntajeMovFet] = @Original_PuntajeMovFet) AND ([PuntajeMovRes] = @Original_PuntajeMovRes) AND ([PuntajeTonMusc] = @Original_PuntajeTonMusc));
+SELECT NumEcoFeto, FetoNum, Presentacion, Situacion, Posicion, MovCardiacos, MovRespiratorios, MovFetales, TonoFetal, ILAFeto, CordonUmbi, SexFeto, DBPFeto, HCFeto, ACFeto, LFFeto, PesoFeto, FCFFeto, SacoGesta, VesiVitelina, BotonEmbriona, LCN, TotaPunt, PuntajeILA, PuntajeMovFet, PuntajeMovRes, PuntajeTonMusc FROM DACONEXTSQL.dbo.[Datos biometria de los fetos] WHERE (FetoNum = @FetoNum) AND (NumEcoFeto = @NumEcoFeto) ORDER BY NumEcoFeto, FetoNum</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NumEcoFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NumEcoFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@FetoNum" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FetoNum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Presentacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Presentacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Situacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Situacion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Posicion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Posicion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovCardiacos" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovRespiratorios" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MovFetales" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TonoFetal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ILAFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CordonUmbi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SexFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@DBPFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="DBPFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@HCFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="HCFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@ACFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ACFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@LFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LFFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@PesoFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PesoFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@FCFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FCFFeto" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SacoGesta" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SacoGesta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@VesiVitelina" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="VesiVitelina" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@BotonEmbriona" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="BotonEmbriona" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@LCN" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LCN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@TotaPunt" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeILA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeILA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeMovFet" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovFet" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeMovRes" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovRes" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PuntajeTonMusc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeTonMusc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NumEcoFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NumEcoFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_FetoNum" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FetoNum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Presentacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Presentacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Situacion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Situacion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Posicion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Posicion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovCardiacos" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovCardiacos" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovCardiacos" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovRespiratorios" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovRespiratorios" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovRespiratorios" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MovFetales" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MovFetales" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MovFetales" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TonoFetal" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TonoFetal" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TonoFetal" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ILAFeto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ILAFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ILAFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CordonUmbi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CordonUmbi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CordonUmbi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SexFeto" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_SexFeto" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SexFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_DBPFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="DBPFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_HCFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="HCFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_ACFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ACFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_LFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LFFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_PesoFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="PesoFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_FCFFeto" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="FCFFeto" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SacoGesta" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SacoGesta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_VesiVitelina" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="VesiVitelina" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_BotonEmbriona" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="BotonEmbriona" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_LCN" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="LCN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TotaPunt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_TotaPunt" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="TotaPunt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeILA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeILA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeMovFet" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovFet" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeMovRes" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeMovRes" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PuntajeTonMusc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PuntajeTonMusc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NumEcoFeto" DataSetColumn="NumEcoFeto" />
+              <Mapping SourceColumn="FetoNum" DataSetColumn="FetoNum" />
+              <Mapping SourceColumn="Presentacion" DataSetColumn="Presentacion" />
+              <Mapping SourceColumn="Situacion" DataSetColumn="Situacion" />
+              <Mapping SourceColumn="Posicion" DataSetColumn="Posicion" />
+              <Mapping SourceColumn="MovCardiacos" DataSetColumn="MovCardiacos" />
+              <Mapping SourceColumn="MovRespiratorios" DataSetColumn="MovRespiratorios" />
+              <Mapping SourceColumn="MovFetales" DataSetColumn="MovFetales" />
+              <Mapping SourceColumn="TonoFetal" DataSetColumn="TonoFetal" />
+              <Mapping SourceColumn="ILAFeto" DataSetColumn="ILAFeto" />
+              <Mapping SourceColumn="CordonUmbi" DataSetColumn="CordonUmbi" />
+              <Mapping SourceColumn="SexFeto" DataSetColumn="SexFeto" />
+              <Mapping SourceColumn="DBPFeto" DataSetColumn="DBPFeto" />
+              <Mapping SourceColumn="HCFeto" DataSetColumn="HCFeto" />
+              <Mapping SourceColumn="ACFeto" DataSetColumn="ACFeto" />
+              <Mapping SourceColumn="LFFeto" DataSetColumn="LFFeto" />
+              <Mapping SourceColumn="PesoFeto" DataSetColumn="PesoFeto" />
+              <Mapping SourceColumn="FCFFeto" DataSetColumn="FCFFeto" />
+              <Mapping SourceColumn="SacoGesta" DataSetColumn="SacoGesta" />
+              <Mapping SourceColumn="VesiVitelina" DataSetColumn="VesiVitelina" />
+              <Mapping SourceColumn="BotonEmbriona" DataSetColumn="BotonEmbriona" />
+              <Mapping SourceColumn="LCN" DataSetColumn="LCN" />
+              <Mapping SourceColumn="TotaPunt" DataSetColumn="TotaPunt" />
+              <Mapping SourceColumn="PuntajeILA" DataSetColumn="PuntajeILA" />
+              <Mapping SourceColumn="PuntajeMovFet" DataSetColumn="PuntajeMovFet" />
+              <Mapping SourceColumn="PuntajeMovRes" DataSetColumn="PuntajeMovRes" />
+              <Mapping SourceColumn="PuntajeTonMusc" DataSetColumn="PuntajeTonMusc" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos de las AtencionesTableAdapter" GeneratorDataComponentClassName="Datos_de_las_AtencionesTableAdapter" Name="Datos de las Atenciones" UserDataComponentName="Datos de las AtencionesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DACONEXTSQL.dbo.[Datos registros de ecografias].NumEcogra, [Datos del Paciente].HistorPaci, [Datos del Paciente].TipoIden, [Datos del Paciente].NumIden, DACONEXTSQL.dbo.[Datos registros de ecografias].FecRealECO, 
+                         Trim([Datos del Paciente].Apellido1 + ' ' + [Datos del Paciente].Apellido2 + ' ' + [Datos del Paciente].Nombre1 + ' ' + [Datos del Paciente].Nombre2) AS NombreCompleto, 
+                         Trim(GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido1Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido2Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].NomMedico) AS MediC, 
+                         DACONEXTSQL.dbo.[Datos registros de ecografias].ArchivEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CodMedECO
+FROM            DACONEXTSQL.dbo.[Datos registros de ecografias] INNER JOIN
+                         [Datos del Paciente] ON DACONEXTSQL.dbo.[Datos registros de ecografias].NumHisEco = [Datos del Paciente].HistorPaci INNER JOIN
+                         GEOGRAXPSQL.dbo.[Datos de los medicos] ON DACONEXTSQL.dbo.[Datos registros de ecografias].CodMedECO = GEOGRAXPSQL.dbo.[Datos de los medicos].CodiMedico</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NumEcogra" DataSetColumn="NumEcogra" />
+              <Mapping SourceColumn="HistorPaci" DataSetColumn="HistorPaci" />
+              <Mapping SourceColumn="TipoIden" DataSetColumn="TipoIden" />
+              <Mapping SourceColumn="NumIden" DataSetColumn="NumIden" />
+              <Mapping SourceColumn="FecRealECO" DataSetColumn="FecRealECO" />
+              <Mapping SourceColumn="NombreCompleto" DataSetColumn="NombreCompleto" />
+              <Mapping SourceColumn="MediC" DataSetColumn="MediC" />
+              <Mapping SourceColumn="ArchivEco" DataSetColumn="ArchivEco" />
+              <Mapping SourceColumn="CodMedECO" DataSetColumn="CodMedECO" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsInformacionEcografiaxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsInformacionEcografiaxsd" msprop:Generator_UserDSName="dsInformacionEcografiaxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datos_x0020_de_x0020_la_x0020_ecografia" msprop:Generator_TableClassName="Datos_de_la_ecografiaDataTable" msprop:Generator_TableVarName="tableDatos_de_la_ecografia" msprop:Generator_TablePropName="Datos_de_la_ecografia" msprop:Generator_RowDeletingName="Datos_de_la_ecografiaRowDeleting" msprop:Generator_RowChangingName="Datos_de_la_ecografiaRowChanging" msprop:Generator_RowEvHandlerName="Datos_de_la_ecografiaRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_de_la_ecografiaRowDeleted" msprop:Generator_UserTableName="Datos de la ecografia" msprop:Generator_RowChangedName="Datos_de_la_ecografiaRowChanged" msprop:Generator_RowEvArgName="Datos_de_la_ecografiaRowChangeEvent" msprop:Generator_RowClassName="Datos_de_la_ecografiaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumEcogra" msprop:Generator_ColumnVarNameInTable="columnNumEcogra" msprop:Generator_ColumnPropNameInRow="NumEcogra" msprop:Generator_ColumnPropNameInTable="NumEcograColumn" msprop:Generator_UserColumnName="NumEcogra">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoEco" msprop:Generator_ColumnVarNameInTable="columnTipoEco" msprop:Generator_ColumnPropNameInRow="TipoEco" msprop:Generator_ColumnPropNameInTable="TipoEcoColumn" msprop:Generator_UserColumnName="TipoEco">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumAten" msprop:Generator_ColumnVarNameInTable="columnNumAten" msprop:Generator_ColumnPropNameInRow="NumAten" msprop:Generator_ColumnPropNameInTable="NumAtenColumn" msprop:Generator_UserColumnName="NumAten">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumFactu" msprop:Generator_ColumnVarNameInTable="columnNumFactu" msprop:Generator_ColumnPropNameInRow="NumFactu" msprop:Generator_ColumnPropNameInTable="NumFactuColumn" msprop:Generator_UserColumnName="NumFactu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumHisEco" msprop:Generator_ColumnVarNameInTable="columnNumHisEco" msprop:Generator_ColumnPropNameInRow="NumHisEco" msprop:Generator_ColumnPropNameInTable="NumHisEcoColumn" msprop:Generator_UserColumnName="NumHisEco">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecRealECO" msprop:Generator_ColumnVarNameInTable="columnFecRealECO" msprop:Generator_ColumnPropNameInRow="FecRealECO" msprop:Generator_ColumnPropNameInTable="FecRealECOColumn" msprop:Generator_UserColumnName="FecRealECO" type="xs:dateTime" />
+              <xs:element name="TransFrec" msprop:Generator_ColumnVarNameInTable="columnTransFrec" msprop:Generator_ColumnPropNameInRow="TransFrec" msprop:Generator_ColumnPropNameInTable="TransFrecColumn" msprop:Generator_UserColumnName="TransFrec" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FUMEco" msprop:Generator_ColumnVarNameInTable="columnFUMEco" msprop:Generator_ColumnPropNameInRow="FUMEco" msprop:Generator_ColumnPropNameInTable="FUMEcoColumn" msprop:Generator_UserColumnName="FUMEco" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EdadGesFum" msprop:Generator_ColumnVarNameInTable="columnEdadGesFum" msprop:Generator_ColumnPropNameInRow="EdadGesFum" msprop:Generator_ColumnPropNameInTable="EdadGesFumColumn" msprop:Generator_UserColumnName="EdadGesFum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FPPFUM" msprop:Generator_ColumnVarNameInTable="columnFPPFUM" msprop:Generator_ColumnPropNameInRow="FPPFUM" msprop:Generator_ColumnPropNameInTable="FPPFUMColumn" msprop:Generator_UserColumnName="FPPFUM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HigaAbdEco" msprop:Generator_ColumnVarNameInTable="columnHigaAbdEco" msprop:Generator_ColumnPropNameInRow="HigaAbdEco" msprop:Generator_ColumnPropNameInTable="HigaAbdEcoColumn" msprop:Generator_UserColumnName="HigaAbdEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VesicuAbdEco" msprop:Generator_ColumnVarNameInTable="columnVesicuAbdEco" msprop:Generator_ColumnPropNameInRow="VesicuAbdEco" msprop:Generator_ColumnPropNameInTable="VesicuAbdEcoColumn" msprop:Generator_UserColumnName="VesicuAbdEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PancreAbdEco" msprop:Generator_ColumnVarNameInTable="columnPancreAbdEco" msprop:Generator_ColumnPropNameInRow="PancreAbdEco" msprop:Generator_ColumnPropNameInTable="PancreAbdEcoColumn" msprop:Generator_UserColumnName="PancreAbdEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ConclusECO" msprop:Generator_ColumnVarNameInTable="columnConclusECO" msprop:Generator_ColumnPropNameInRow="ConclusECO" msprop:Generator_ColumnPropNameInTable="ConclusECOColumn" msprop:Generator_UserColumnName="ConclusECO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodMedECO" msprop:Generator_ColumnVarNameInTable="columnCodMedECO" msprop:Generator_ColumnPropNameInRow="CodMedECO" msprop:Generator_ColumnPropNameInTable="CodMedECOColumn" msprop:Generator_UserColumnName="CodMedECO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArchivEco" msprop:Generator_ColumnVarNameInTable="columnArchivEco" msprop:Generator_ColumnPropNameInRow="ArchivEco" msprop:Generator_ColumnPropNameInTable="ArchivEcoColumn" msprop:Generator_UserColumnName="ArchivEco" type="xs:boolean" />
+              <xs:element name="CodArchi" msprop:Generator_ColumnVarNameInTable="columnCodArchi" msprop:Generator_ColumnPropNameInRow="CodArchi" msprop:Generator_ColumnPropNameInTable="CodArchiColumn" msprop:Generator_UserColumnName="CodArchi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecArchi" msprop:Generator_ColumnVarNameInTable="columnFecArchi" msprop:Generator_ColumnPropNameInRow="FecArchi" msprop:Generator_ColumnPropNameInTable="FecArchiColumn" msprop:Generator_UserColumnName="FecArchi" type="xs:dateTime" />
+              <xs:element name="AnulEco" msprop:Generator_ColumnVarNameInTable="columnAnulEco" msprop:Generator_ColumnPropNameInRow="AnulEco" msprop:Generator_ColumnPropNameInTable="AnulEcoColumn" msprop:Generator_UserColumnName="AnulEco" type="xs:boolean" />
+              <xs:element name="RazAnulEco" msprop:Generator_ColumnVarNameInTable="columnRazAnulEco" msprop:Generator_ColumnPropNameInRow="RazAnulEco" msprop:Generator_ColumnPropNameInTable="RazAnulEcoColumn" msprop:Generator_UserColumnName="RazAnulEco">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodAnulEco" msprop:Generator_ColumnVarNameInTable="columnCodAnulEco" msprop:Generator_ColumnPropNameInRow="CodAnulEco" msprop:Generator_ColumnPropNameInTable="CodAnulEcoColumn" msprop:Generator_UserColumnName="CodAnulEco">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecAnulEco" msprop:Generator_ColumnVarNameInTable="columnFecAnulEco" msprop:Generator_ColumnPropNameInRow="FecAnulEco" msprop:Generator_ColumnPropNameInTable="FecAnulEcoColumn" msprop:Generator_UserColumnName="FecAnulEco" type="xs:dateTime" />
+              <xs:element name="CodRegis" msprop:Generator_ColumnVarNameInTable="columnCodRegis" msprop:Generator_ColumnPropNameInRow="CodRegis" msprop:Generator_ColumnPropNameInTable="CodRegisColumn" msprop:Generator_UserColumnName="CodRegis">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecRegis" msprop:Generator_ColumnVarNameInTable="columnFecRegis" msprop:Generator_ColumnPropNameInRow="FecRegis" msprop:Generator_ColumnPropNameInTable="FecRegisColumn" msprop:Generator_UserColumnName="FecRegis" type="xs:dateTime" />
+              <xs:element name="CodModi" msprop:Generator_ColumnVarNameInTable="columnCodModi" msprop:Generator_ColumnPropNameInRow="CodModi" msprop:Generator_ColumnPropNameInTable="CodModiColumn" msprop:Generator_UserColumnName="CodModi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecModi" msprop:Generator_ColumnVarNameInTable="columnFecModi" msprop:Generator_ColumnPropNameInRow="FecModi" msprop:Generator_ColumnPropNameInTable="FecModiColumn" msprop:Generator_UserColumnName="FecModi" type="xs:dateTime" />
+              <xs:element name="NomTraducEco" msprop:Generator_ColumnVarNameInTable="columnNomTraducEco" msprop:Generator_ColumnPropNameInRow="NomTraducEco" msprop:Generator_ColumnPropNameInTable="NomTraducEcoColumn" msprop:Generator_UserColumnName="NomTraducEco">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomEcogra" msprop:Generator_ColumnVarNameInTable="columnNomEcogra" msprop:Generator_ColumnPropNameInRow="NomEcogra" msprop:Generator_ColumnPropNameInTable="NomEcograColumn" msprop:Generator_UserColumnName="NomEcogra">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SeConoFUM" msprop:Generator_ColumnVarNameInTable="columnSeConoFUM" msprop:Generator_ColumnPropNameInRow="SeConoFUM" msprop:Generator_ColumnPropNameInTable="SeConoFUMColumn" msprop:Generator_UserColumnName="SeConoFUM" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NumFetos" msprop:Generator_ColumnVarNameInTable="columnNumFetos" msprop:Generator_ColumnPropNameInRow="NumFetos" msprop:Generator_ColumnPropNameInTable="NumFetosColumn" msprop:Generator_UserColumnName="NumFetos" type="xs:short" />
+              <xs:element name="Utero" msprop:Generator_ColumnVarNameInTable="columnUtero" msprop:Generator_ColumnPropNameInRow="Utero" msprop:Generator_ColumnPropNameInTable="UteroColumn" msprop:Generator_UserColumnName="Utero" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Placenta" msprop:Generator_ColumnVarNameInTable="columnPlacenta" msprop:Generator_ColumnPropNameInRow="Placenta" msprop:Generator_ColumnPropNameInTable="PlacentaColumn" msprop:Generator_UserColumnName="Placenta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GraMaPla" msprop:Generator_ColumnVarNameInTable="columnGraMaPla" msprop:Generator_ColumnPropNameInRow="GraMaPla" msprop:Generator_ColumnPropNameInTable="GraMaPlaColumn" msprop:Generator_UserColumnName="GraMaPla" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EspePlace" msprop:Generator_ColumnVarNameInTable="columnEspePlace" msprop:Generator_ColumnPropNameInRow="EspePlace" msprop:Generator_ColumnPropNameInTable="EspePlaceColumn" msprop:Generator_UserColumnName="EspePlace" type="xs:short" />
+              <xs:element name="NumSemEco" msprop:Generator_ColumnVarNameInTable="columnNumSemEco" msprop:Generator_ColumnPropNameInRow="NumSemEco" msprop:Generator_ColumnPropNameInTable="NumSemEcoColumn" msprop:Generator_UserColumnName="NumSemEco" type="xs:short" />
+              <xs:element name="NumDiasEco" msprop:Generator_ColumnVarNameInTable="columnNumDiasEco" msprop:Generator_ColumnPropNameInRow="NumDiasEco" msprop:Generator_ColumnPropNameInTable="NumDiasEcoColumn" msprop:Generator_UserColumnName="NumDiasEco" type="xs:short" />
+              <xs:element name="FPPEco" msprop:Generator_ColumnVarNameInTable="columnFPPEco" msprop:Generator_ColumnPropNameInRow="FPPEco" msprop:Generator_ColumnPropNameInTable="FPPEcoColumn" msprop:Generator_UserColumnName="FPPEco" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CodAuxECO" msprop:Generator_ColumnVarNameInTable="columnCodAuxECO" msprop:Generator_ColumnPropNameInRow="CodAuxECO" msprop:Generator_ColumnPropNameInTable="CodAuxECOColumn" msprop:Generator_UserColumnName="CodAuxECO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CervixEsta" msprop:Generator_ColumnVarNameInTable="columnCervixEsta" msprop:Generator_ColumnPropNameInRow="CervixEsta" msprop:Generator_ColumnPropNameInTable="CervixEstaColumn" msprop:Generator_UserColumnName="CervixEsta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiamLongi" msprop:Generator_ColumnVarNameInTable="columnDiamLongi" msprop:Generator_ColumnPropNameInRow="DiamLongi" msprop:Generator_ColumnPropNameInTable="DiamLongiColumn" msprop:Generator_UserColumnName="DiamLongi" type="xs:short" />
+              <xs:element name="DiamAntePos" msprop:Generator_ColumnVarNameInTable="columnDiamAntePos" msprop:Generator_ColumnPropNameInRow="DiamAntePos" msprop:Generator_ColumnPropNameInTable="DiamAntePosColumn" msprop:Generator_UserColumnName="DiamAntePos" type="xs:short" />
+              <xs:element name="DiamTras" msprop:Generator_ColumnVarNameInTable="columnDiamTras" msprop:Generator_ColumnPropNameInRow="DiamTras" msprop:Generator_ColumnPropNameInTable="DiamTrasColumn" msprop:Generator_UserColumnName="DiamTras" type="xs:short" />
+              <xs:element name="Endometrio" msprop:Generator_ColumnVarNameInTable="columnEndometrio" msprop:Generator_ColumnPropNameInRow="Endometrio" msprop:Generator_ColumnPropNameInTable="EndometrioColumn" msprop:Generator_UserColumnName="Endometrio" type="xs:short" />
+              <xs:element name="EspesorCer" msprop:Generator_ColumnVarNameInTable="columnEspesorCer" msprop:Generator_ColumnPropNameInRow="EspesorCer" msprop:Generator_ColumnPropNameInTable="EspesorCerColumn" msprop:Generator_UserColumnName="EspesorCer" type="xs:short" />
+              <xs:element name="DesCervix" msprop:Generator_ColumnVarNameInTable="columnDesCervix" msprop:Generator_ColumnPropNameInRow="DesCervix" msprop:Generator_ColumnPropNameInTable="DesCervixColumn" msprop:Generator_UserColumnName="DesCervix" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DesEndometrio" msprop:Generator_ColumnVarNameInTable="columnDesEndometrio" msprop:Generator_ColumnPropNameInRow="DesEndometrio" msprop:Generator_ColumnPropNameInTable="DesEndometrioColumn" msprop:Generator_UserColumnName="DesEndometrio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OvarioDere" msprop:Generator_ColumnVarNameInTable="columnOvarioDere" msprop:Generator_ColumnPropNameInRow="OvarioDere" msprop:Generator_ColumnPropNameInTable="OvarioDereColumn" msprop:Generator_UserColumnName="OvarioDere" type="xs:short" />
+              <xs:element name="PorOvarioDere" msprop:Generator_ColumnVarNameInTable="columnPorOvarioDere" msprop:Generator_ColumnPropNameInRow="PorOvarioDere" msprop:Generator_ColumnPropNameInTable="PorOvarioDereColumn" msprop:Generator_UserColumnName="PorOvarioDere" type="xs:short" />
+              <xs:element name="OvarioIzquie" msprop:Generator_ColumnVarNameInTable="columnOvarioIzquie" msprop:Generator_ColumnPropNameInRow="OvarioIzquie" msprop:Generator_ColumnPropNameInTable="OvarioIzquieColumn" msprop:Generator_UserColumnName="OvarioIzquie" type="xs:short" />
+              <xs:element name="PorOvarioIzqui" msprop:Generator_ColumnVarNameInTable="columnPorOvarioIzqui" msprop:Generator_ColumnPropNameInRow="PorOvarioIzqui" msprop:Generator_ColumnPropNameInTable="PorOvarioIzquiColumn" msprop:Generator_UserColumnName="PorOvarioIzqui" type="xs:short" />
+              <xs:element name="Comenta" msprop:Generator_ColumnVarNameInTable="columnComenta" msprop:Generator_ColumnPropNameInRow="Comenta" msprop:Generator_ColumnPropNameInTable="ComentaColumn" msprop:Generator_UserColumnName="Comenta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BazoAdbEco" msprop:Generator_ColumnVarNameInTable="columnBazoAdbEco" msprop:Generator_ColumnPropNameInRow="BazoAdbEco" msprop:Generator_ColumnPropNameInTable="BazoAdbEcoColumn" msprop:Generator_UserColumnName="BazoAdbEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RinonAbdEco" msprop:Generator_ColumnVarNameInTable="columnRinonAbdEco" msprop:Generator_ColumnPropNameInRow="RinonAbdEco" msprop:Generator_ColumnPropNameInTable="RinonAbdEcoColumn" msprop:Generator_UserColumnName="RinonAbdEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FormaRiDere" msprop:Generator_ColumnVarNameInTable="columnFormaRiDere" msprop:Generator_ColumnPropNameInRow="FormaRiDere" msprop:Generator_ColumnPropNameInTable="FormaRiDereColumn" msprop:Generator_UserColumnName="FormaRiDere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiamRinDer" msprop:Generator_ColumnVarNameInTable="columnDiamRinDer" msprop:Generator_ColumnPropNameInRow="DiamRinDer" msprop:Generator_ColumnPropNameInTable="DiamRinDerColumn" msprop:Generator_UserColumnName="DiamRinDer" type="xs:short" />
+              <xs:element name="DiamAntRinDer" msprop:Generator_ColumnVarNameInTable="columnDiamAntRinDer" msprop:Generator_ColumnPropNameInRow="DiamAntRinDer" msprop:Generator_ColumnPropNameInTable="DiamAntRinDerColumn" msprop:Generator_UserColumnName="DiamAntRinDer" type="xs:short" />
+              <xs:element name="DiamTraRinDer" msprop:Generator_ColumnVarNameInTable="columnDiamTraRinDer" msprop:Generator_ColumnPropNameInRow="DiamTraRinDer" msprop:Generator_ColumnPropNameInTable="DiamTraRinDerColumn" msprop:Generator_UserColumnName="DiamTraRinDer" type="xs:short" />
+              <xs:element name="ObserRinDere" msprop:Generator_ColumnVarNameInTable="columnObserRinDere" msprop:Generator_ColumnPropNameInRow="ObserRinDere" msprop:Generator_ColumnPropNameInTable="ObserRinDereColumn" msprop:Generator_UserColumnName="ObserRinDere" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiamEpRinDer" msprop:Generator_ColumnVarNameInTable="columnDiamEpRinDer" msprop:Generator_ColumnPropNameInRow="DiamEpRinDer" msprop:Generator_ColumnPropNameInTable="DiamEpRinDerColumn" msprop:Generator_UserColumnName="DiamEpRinDer" type="xs:short" />
+              <xs:element name="FormaRinIzq" msprop:Generator_ColumnVarNameInTable="columnFormaRinIzq" msprop:Generator_ColumnPropNameInRow="FormaRinIzq" msprop:Generator_ColumnPropNameInTable="FormaRinIzqColumn" msprop:Generator_UserColumnName="FormaRinIzq" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiamRinIzq" msprop:Generator_ColumnVarNameInTable="columnDiamRinIzq" msprop:Generator_ColumnPropNameInRow="DiamRinIzq" msprop:Generator_ColumnPropNameInTable="DiamRinIzqColumn" msprop:Generator_UserColumnName="DiamRinIzq" type="xs:short" />
+              <xs:element name="DiamAntRinIzq" msprop:Generator_ColumnVarNameInTable="columnDiamAntRinIzq" msprop:Generator_ColumnPropNameInRow="DiamAntRinIzq" msprop:Generator_ColumnPropNameInTable="DiamAntRinIzqColumn" msprop:Generator_UserColumnName="DiamAntRinIzq" type="xs:short" />
+              <xs:element name="DiamTraRinIzq" msprop:Generator_ColumnVarNameInTable="columnDiamTraRinIzq" msprop:Generator_ColumnPropNameInRow="DiamTraRinIzq" msprop:Generator_ColumnPropNameInTable="DiamTraRinIzqColumn" msprop:Generator_UserColumnName="DiamTraRinIzq" type="xs:short" />
+              <xs:element name="DiamEpRinIzq" msprop:Generator_ColumnVarNameInTable="columnDiamEpRinIzq" msprop:Generator_ColumnPropNameInRow="DiamEpRinIzq" msprop:Generator_ColumnPropNameInTable="DiamEpRinIzqColumn" msprop:Generator_UserColumnName="DiamEpRinIzq" type="xs:short" />
+              <xs:element name="ObserRinIzquie" msprop:Generator_ColumnVarNameInTable="columnObserRinIzquie" msprop:Generator_ColumnPropNameInRow="ObserRinIzquie" msprop:Generator_ColumnPropNameInTable="ObserRinIzquieColumn" msprop:Generator_UserColumnName="ObserRinIzquie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AspecVeji" msprop:Generator_ColumnVarNameInTable="columnAspecVeji" msprop:Generator_ColumnPropNameInRow="AspecVeji" msprop:Generator_ColumnPropNameInTable="AspecVejiColumn" msprop:Generator_UserColumnName="AspecVeji" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VoluPromVeji" msprop:Generator_ColumnVarNameInTable="columnVoluPromVeji" msprop:Generator_ColumnPropNameInRow="VoluPromVeji" msprop:Generator_ColumnPropNameInTable="VoluPromVejiColumn" msprop:Generator_UserColumnName="VoluPromVeji" type="xs:short" />
+              <xs:element name="ResiPostVeji" msprop:Generator_ColumnVarNameInTable="columnResiPostVeji" msprop:Generator_ColumnPropNameInRow="ResiPostVeji" msprop:Generator_ColumnPropNameInTable="ResiPostVejiColumn" msprop:Generator_UserColumnName="ResiPostVeji" type="xs:short" />
+              <xs:element name="ProstataEco" msprop:Generator_ColumnVarNameInTable="columnProstataEco" msprop:Generator_ColumnPropNameInRow="ProstataEco" msprop:Generator_ColumnPropNameInTable="ProstataEcoColumn" msprop:Generator_UserColumnName="ProstataEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VesicuSemiEco" msprop:Generator_ColumnVarNameInTable="columnVesicuSemiEco" msprop:Generator_ColumnPropNameInRow="VesicuSemiEco" msprop:Generator_ColumnPropNameInTable="VesicuSemiEcoColumn" msprop:Generator_UserColumnName="VesicuSemiEco" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegisEcoGral" msprop:Generator_ColumnVarNameInTable="columnRegisEcoGral" msprop:Generator_ColumnPropNameInRow="RegisEcoGral" msprop:Generator_ColumnPropNameInTable="RegisEcoGralColumn" msprop:Generator_UserColumnName="RegisEcoGral" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Datos_x0020_de_x0020_los_x0020_medicos" msprop:Generator_TableClassName="Datos_de_los_medicosDataTable" msprop:Generator_TableVarName="tableDatos_de_los_medicos" msprop:Generator_RowChangedName="Datos_de_los_medicosRowChanged" msprop:Generator_TablePropName="Datos_de_los_medicos" msprop:Generator_RowDeletingName="Datos_de_los_medicosRowDeleting" msprop:Generator_RowChangingName="Datos_de_los_medicosRowChanging" msprop:Generator_RowEvHandlerName="Datos_de_los_medicosRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_de_los_medicosRowDeleted" msprop:Generator_RowClassName="Datos_de_los_medicosRow" msprop:Generator_UserTableName="Datos de los medicos" msprop:Generator_RowEvArgName="Datos_de_los_medicosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodiMedico" msprop:Generator_ColumnVarNameInTable="columnCodiMedico" msprop:Generator_ColumnPropNameInRow="CodiMedico" msprop:Generator_ColumnPropNameInTable="CodiMedicoColumn" msprop:Generator_UserColumnName="CodiMedico">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodEspecial" msprop:Generator_ColumnVarNameInTable="columnCodEspecial" msprop:Generator_ColumnPropNameInRow="CodEspecial" msprop:Generator_ColumnPropNameInTable="CodEspecialColumn" msprop:Generator_UserColumnName="CodEspecial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoDocum" msprop:Generator_ColumnVarNameInTable="columnTipoDocum" msprop:Generator_ColumnPropNameInRow="TipoDocum" msprop:Generator_ColumnPropNameInTable="TipoDocumColumn" msprop:Generator_UserColumnName="TipoDocum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumDocum" msprop:Generator_ColumnVarNameInTable="columnNumDocum" msprop:Generator_ColumnPropNameInRow="NumDocum" msprop:Generator_ColumnPropNameInTable="NumDocumColumn" msprop:Generator_UserColumnName="NumDocum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomMedico" msprop:Generator_ColumnVarNameInTable="columnNomMedico" msprop:Generator_ColumnPropNameInRow="NomMedico" msprop:Generator_ColumnPropNameInTable="NomMedicoColumn" msprop:Generator_UserColumnName="NomMedico">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom2Medico" msprop:Generator_ColumnVarNameInTable="columnNom2Medico" msprop:Generator_ColumnPropNameInRow="Nom2Medico" msprop:Generator_ColumnPropNameInTable="Nom2MedicoColumn" msprop:Generator_UserColumnName="Nom2Medico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido1Medico" msprop:Generator_ColumnVarNameInTable="columnApellido1Medico" msprop:Generator_ColumnPropNameInRow="Apellido1Medico" msprop:Generator_ColumnPropNameInTable="Apellido1MedicoColumn" msprop:Generator_UserColumnName="Apellido1Medico">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido2Medico" msprop:Generator_ColumnVarNameInTable="columnApellido2Medico" msprop:Generator_ColumnPropNameInRow="Apellido2Medico" msprop:Generator_ColumnPropNameInTable="Apellido2MedicoColumn" msprop:Generator_UserColumnName="Apellido2Medico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CargoMedico" msprop:Generator_ColumnVarNameInTable="columnCargoMedico" msprop:Generator_ColumnPropNameInRow="CargoMedico" msprop:Generator_ColumnPropNameInTable="CargoMedicoColumn" msprop:Generator_UserColumnName="CargoMedico" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegisProfes" msprop:Generator_ColumnVarNameInTable="columnRegisProfes" msprop:Generator_ColumnPropNameInRow="RegisProfes" msprop:Generator_ColumnPropNameInTable="RegisProfesColumn" msprop:Generator_UserColumnName="RegisProfes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomEspecial" msprop:Generator_ColumnVarNameInTable="columnNomEspecial" msprop:Generator_ColumnPropNameInRow="NomEspecial" msprop:Generator_ColumnPropNameInTable="NomEspecialColumn" msprop:Generator_UserColumnName="NomEspecial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirmaD" msprop:Generator_ColumnVarNameInTable="columnFirmaD" msprop:Generator_ColumnPropNameInRow="FirmaD" msprop:Generator_ColumnPropNameInTable="FirmaDColumn" msprop:Generator_UserColumnName="FirmaD" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Datos_x0020_Biometria" msprop:Generator_TableClassName="Datos_BiometriaDataTable" msprop:Generator_TableVarName="tableDatos_Biometria" msprop:Generator_RowChangedName="Datos_BiometriaRowChanged" msprop:Generator_TablePropName="Datos_Biometria" msprop:Generator_RowDeletingName="Datos_BiometriaRowDeleting" msprop:Generator_RowChangingName="Datos_BiometriaRowChanging" msprop:Generator_RowEvHandlerName="Datos_BiometriaRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_BiometriaRowDeleted" msprop:Generator_RowClassName="Datos_BiometriaRow" msprop:Generator_UserTableName="Datos Biometria" msprop:Generator_RowEvArgName="Datos_BiometriaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumEcoFeto" msprop:Generator_ColumnVarNameInTable="columnNumEcoFeto" msprop:Generator_ColumnPropNameInRow="NumEcoFeto" msprop:Generator_ColumnPropNameInTable="NumEcoFetoColumn" msprop:Generator_UserColumnName="NumEcoFeto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FetoNum" msprop:Generator_ColumnVarNameInTable="columnFetoNum" msprop:Generator_ColumnPropNameInRow="FetoNum" msprop:Generator_ColumnPropNameInTable="FetoNumColumn" msprop:Generator_UserColumnName="FetoNum" type="xs:short" />
+              <xs:element name="Presentacion" msprop:Generator_ColumnVarNameInTable="columnPresentacion" msprop:Generator_ColumnPropNameInRow="Presentacion" msprop:Generator_ColumnPropNameInTable="PresentacionColumn" msprop:Generator_UserColumnName="Presentacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Situacion" msprop:Generator_ColumnVarNameInTable="columnSituacion" msprop:Generator_ColumnPropNameInRow="Situacion" msprop:Generator_ColumnPropNameInTable="SituacionColumn" msprop:Generator_UserColumnName="Situacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Posicion" msprop:Generator_ColumnVarNameInTable="columnPosicion" msprop:Generator_ColumnPropNameInRow="Posicion" msprop:Generator_ColumnPropNameInTable="PosicionColumn" msprop:Generator_UserColumnName="Posicion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MovCardiacos" msprop:Generator_ColumnVarNameInTable="columnMovCardiacos" msprop:Generator_ColumnPropNameInRow="MovCardiacos" msprop:Generator_ColumnPropNameInTable="MovCardiacosColumn" msprop:Generator_UserColumnName="MovCardiacos" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MovRespiratorios" msprop:Generator_ColumnVarNameInTable="columnMovRespiratorios" msprop:Generator_ColumnPropNameInRow="MovRespiratorios" msprop:Generator_ColumnPropNameInTable="MovRespiratoriosColumn" msprop:Generator_UserColumnName="MovRespiratorios" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MovFetales" msprop:Generator_ColumnVarNameInTable="columnMovFetales" msprop:Generator_ColumnPropNameInRow="MovFetales" msprop:Generator_ColumnPropNameInTable="MovFetalesColumn" msprop:Generator_UserColumnName="MovFetales" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TonoFetal" msprop:Generator_ColumnVarNameInTable="columnTonoFetal" msprop:Generator_ColumnPropNameInRow="TonoFetal" msprop:Generator_ColumnPropNameInTable="TonoFetalColumn" msprop:Generator_UserColumnName="TonoFetal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ILAFeto" msprop:Generator_ColumnVarNameInTable="columnILAFeto" msprop:Generator_ColumnPropNameInRow="ILAFeto" msprop:Generator_ColumnPropNameInTable="ILAFetoColumn" msprop:Generator_UserColumnName="ILAFeto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CordonUmbi" msprop:Generator_ColumnVarNameInTable="columnCordonUmbi" msprop:Generator_ColumnPropNameInRow="CordonUmbi" msprop:Generator_ColumnPropNameInTable="CordonUmbiColumn" msprop:Generator_UserColumnName="CordonUmbi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SexFeto" msprop:Generator_ColumnVarNameInTable="columnSexFeto" msprop:Generator_ColumnPropNameInRow="SexFeto" msprop:Generator_ColumnPropNameInTable="SexFetoColumn" msprop:Generator_UserColumnName="SexFeto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DBPFeto" msprop:Generator_ColumnVarNameInTable="columnDBPFeto" msprop:Generator_ColumnPropNameInRow="DBPFeto" msprop:Generator_ColumnPropNameInTable="DBPFetoColumn" msprop:Generator_UserColumnName="DBPFeto" type="xs:short" />
+              <xs:element name="HCFeto" msprop:Generator_ColumnVarNameInTable="columnHCFeto" msprop:Generator_ColumnPropNameInRow="HCFeto" msprop:Generator_ColumnPropNameInTable="HCFetoColumn" msprop:Generator_UserColumnName="HCFeto" type="xs:short" />
+              <xs:element name="ACFeto" msprop:Generator_ColumnVarNameInTable="columnACFeto" msprop:Generator_ColumnPropNameInRow="ACFeto" msprop:Generator_ColumnPropNameInTable="ACFetoColumn" msprop:Generator_UserColumnName="ACFeto" type="xs:short" />
+              <xs:element name="LFFeto" msprop:Generator_ColumnVarNameInTable="columnLFFeto" msprop:Generator_ColumnPropNameInRow="LFFeto" msprop:Generator_ColumnPropNameInTable="LFFetoColumn" msprop:Generator_UserColumnName="LFFeto" type="xs:short" />
+              <xs:element name="PesoFeto" msprop:Generator_ColumnVarNameInTable="columnPesoFeto" msprop:Generator_ColumnPropNameInRow="PesoFeto" msprop:Generator_ColumnPropNameInTable="PesoFetoColumn" msprop:Generator_UserColumnName="PesoFeto" type="xs:short" />
+              <xs:element name="FCFFeto" msprop:Generator_ColumnVarNameInTable="columnFCFFeto" msprop:Generator_ColumnPropNameInRow="FCFFeto" msprop:Generator_ColumnPropNameInTable="FCFFetoColumn" msprop:Generator_UserColumnName="FCFFeto" type="xs:short" />
+              <xs:element name="SacoGesta" msprop:Generator_ColumnVarNameInTable="columnSacoGesta" msprop:Generator_ColumnPropNameInRow="SacoGesta" msprop:Generator_ColumnPropNameInTable="SacoGestaColumn" msprop:Generator_UserColumnName="SacoGesta" type="xs:short" />
+              <xs:element name="VesiVitelina" msprop:Generator_ColumnVarNameInTable="columnVesiVitelina" msprop:Generator_ColumnPropNameInRow="VesiVitelina" msprop:Generator_ColumnPropNameInTable="VesiVitelinaColumn" msprop:Generator_UserColumnName="VesiVitelina" type="xs:short" />
+              <xs:element name="BotonEmbriona" msprop:Generator_ColumnVarNameInTable="columnBotonEmbriona" msprop:Generator_ColumnPropNameInRow="BotonEmbriona" msprop:Generator_ColumnPropNameInTable="BotonEmbrionaColumn" msprop:Generator_UserColumnName="BotonEmbriona" type="xs:short" />
+              <xs:element name="LCN" msprop:Generator_ColumnVarNameInTable="columnLCN" msprop:Generator_ColumnPropNameInRow="LCN" msprop:Generator_ColumnPropNameInTable="LCNColumn" msprop:Generator_UserColumnName="LCN" type="xs:short" />
+              <xs:element name="TotaPunt" msprop:Generator_ColumnVarNameInTable="columnTotaPunt" msprop:Generator_ColumnPropNameInRow="TotaPunt" msprop:Generator_ColumnPropNameInTable="TotaPuntColumn" msprop:Generator_UserColumnName="TotaPunt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PuntajeILA" msprop:Generator_ColumnVarNameInTable="columnPuntajeILA" msprop:Generator_ColumnPropNameInRow="PuntajeILA" msprop:Generator_ColumnPropNameInTable="PuntajeILAColumn" msprop:Generator_UserColumnName="PuntajeILA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PuntajeMovFet" msprop:Generator_ColumnVarNameInTable="columnPuntajeMovFet" msprop:Generator_ColumnPropNameInRow="PuntajeMovFet" msprop:Generator_ColumnPropNameInTable="PuntajeMovFetColumn" msprop:Generator_UserColumnName="PuntajeMovFet">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PuntajeMovRes" msprop:Generator_ColumnVarNameInTable="columnPuntajeMovRes" msprop:Generator_ColumnPropNameInRow="PuntajeMovRes" msprop:Generator_ColumnPropNameInTable="PuntajeMovResColumn" msprop:Generator_UserColumnName="PuntajeMovRes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PuntajeTonMusc" msprop:Generator_ColumnVarNameInTable="columnPuntajeTonMusc" msprop:Generator_ColumnPropNameInRow="PuntajeTonMusc" msprop:Generator_ColumnPropNameInTable="PuntajeTonMuscColumn" msprop:Generator_UserColumnName="PuntajeTonMusc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Datos_x0020_de_x0020_las_x0020_Atenciones" msprop:Generator_TableClassName="Datos_de_las_AtencionesDataTable" msprop:Generator_TableVarName="tableDatos_de_las_Atenciones" msprop:Generator_TablePropName="Datos_de_las_Atenciones" msprop:Generator_RowDeletingName="Datos_de_las_AtencionesRowDeleting" msprop:Generator_RowChangingName="Datos_de_las_AtencionesRowChanging" msprop:Generator_RowEvHandlerName="Datos_de_las_AtencionesRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_de_las_AtencionesRowDeleted" msprop:Generator_UserTableName="Datos de las Atenciones" msprop:Generator_RowChangedName="Datos_de_las_AtencionesRowChanged" msprop:Generator_RowEvArgName="Datos_de_las_AtencionesRowChangeEvent" msprop:Generator_RowClassName="Datos_de_las_AtencionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumEcogra" msprop:Generator_ColumnVarNameInTable="columnNumEcogra" msprop:Generator_ColumnPropNameInRow="NumEcogra" msprop:Generator_ColumnPropNameInTable="NumEcograColumn" msprop:Generator_UserColumnName="NumEcogra">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HistorPaci" msprop:Generator_ColumnVarNameInTable="columnHistorPaci" msprop:Generator_ColumnPropNameInRow="HistorPaci" msprop:Generator_ColumnPropNameInTable="HistorPaciColumn" msprop:Generator_UserColumnName="HistorPaci">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoIden" msprop:Generator_ColumnVarNameInTable="columnTipoIden" msprop:Generator_ColumnPropNameInRow="TipoIden" msprop:Generator_ColumnPropNameInTable="TipoIdenColumn" msprop:Generator_UserColumnName="TipoIden">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumIden" msprop:Generator_ColumnVarNameInTable="columnNumIden" msprop:Generator_ColumnPropNameInRow="NumIden" msprop:Generator_ColumnPropNameInTable="NumIdenColumn" msprop:Generator_UserColumnName="NumIden">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FecRealECO" msprop:Generator_ColumnVarNameInTable="columnFecRealECO" msprop:Generator_ColumnPropNameInRow="FecRealECO" msprop:Generator_ColumnPropNameInTable="FecRealECOColumn" msprop:Generator_UserColumnName="FecRealECO" type="xs:dateTime" />
+              <xs:element name="NombreCompleto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombreCompleto" msprop:Generator_ColumnPropNameInRow="NombreCompleto" msprop:Generator_ColumnPropNameInTable="NombreCompletoColumn" msprop:Generator_UserColumnName="NombreCompleto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="103" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MediC" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMediC" msprop:Generator_ColumnPropNameInRow="MediC" msprop:Generator_ColumnPropNameInTable="MediCColumn" msprop:Generator_UserColumnName="MediC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="77" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArchivEco" msprop:Generator_ColumnVarNameInTable="columnArchivEco" msprop:Generator_ColumnPropNameInRow="ArchivEco" msprop:Generator_ColumnPropNameInTable="ArchivEcoColumn" msprop:Generator_UserColumnName="ArchivEco" type="xs:boolean" />
+              <xs:element name="CodMedECO" msprop:Generator_ColumnVarNameInTable="columnCodMedECO" msprop:Generator_ColumnPropNameInRow="CodMedECO" msprop:Generator_ColumnPropNameInTable="CodMedECOColumn" msprop:Generator_UserColumnName="CodMedECO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos_x0020_de_x0020_la_x0020_ecografia" />
+      <xs:field xpath="mstns:NumEcogra" />
+    </xs:unique>
+    <xs:unique name="Datos_x0020_de_x0020_los_x0020_medicos_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos_x0020_de_x0020_los_x0020_medicos" />
+      <xs:field xpath="mstns:CodiMedico" />
+    </xs:unique>
+    <xs:unique name="Datos_x0020_Biometria_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos_x0020_Biometria" />
+      <xs:field xpath="mstns:NumEcoFeto" />
+      <xs:field xpath="mstns:FetoNum" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

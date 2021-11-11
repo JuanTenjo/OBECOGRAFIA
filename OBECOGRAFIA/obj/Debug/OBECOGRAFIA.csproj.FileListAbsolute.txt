@@ -1,0 +1,101 @@
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe.config
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.pdb
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csprojAssemblyReference.cache
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmPrincipal.resources
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Properties.Resources.resources
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.GenerateResource.cache
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CoreCompileInputs.cache
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.exe
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.pdb
+C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmAtencionEcografiasObstreticas.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe.config
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.pdb
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csprojAssemblyReference.cache
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmAtencionEcografiasObstreticas.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmPrincipal.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Properties.Resources.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.GenerateResource.cache
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CoreCompileInputs.cache
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.exe
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.pdb
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Resources\Archivar.png
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\Resources\Archivar.png
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe.config
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.pdb
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csprojAssemblyReference.cache
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmAtencionEcografiasObstreticas.resources
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmPrincipal.resources
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Properties.Resources.resources
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.GenerateResource.cache
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CoreCompileInputs.cache
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.exe
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.pdb
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.PruebaMDI.resources
+C:\OBECOGRAFIA - copia\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.PruebaJuan.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\EnvDTE.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\stdole.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Microsoft.MSXML.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Report.FrmReporteEcografias.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\RdlCompile.cache
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\RdlCompile.compiled
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CopyComplete
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmReporteEcografias.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmCopiasEcografias.resources

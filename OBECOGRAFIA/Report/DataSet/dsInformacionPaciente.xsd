@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsInformacionPaciente" targetNamespace="http://tempuri.org/dsInformacionPaciente.xsd" xmlns:mstns="http://tempuri.org/dsInformacionPaciente.xsd" xmlns="http://tempuri.org/dsInformacionPaciente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ACDATOXPSQLConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ACDATOXPSQLConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OBECOGRAFIA.Properties.Settings.GlobalReference.Default.ACDATOXPSQLConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos del PacienteTableAdapter" GeneratorDataComponentClassName="Datos_del_PacienteTableAdapter" Name="Datos del Paciente" UserDataComponentName="Datos del PacienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        [Datos del Paciente].HistorPaci, [Datos del Paciente].TipoIden, [Datos del Paciente].NumIden, [Datos del Paciente].Nombre1, [Datos del Paciente].Nombre2, [Datos del Paciente].Apellido1, [Datos del Paciente].Apellido2, 
+                         [Datos del Paciente].FechaNaci, [Datos del Paciente].EstadoCivil, [Datos del Paciente].CodDpto, [Datos del Paciente].CodMuni, [Datos del Paciente].DirecResi, [Datos del Paciente].BarrioVive, [Datos del Paciente].TelResi, 
+                         [Datos del Paciente].ZonaResiden, [Datos del Paciente].Ocupacion, [Datos del Paciente].CodiAdmin, [Datos estado civil].NomEstado
+FROM            [Datos del Paciente] INNER JOIN
+                         [Datos estado civil] ON [Datos del Paciente].EstadoCivil = [Datos estado civil].CodEstado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HistorPaci" DataSetColumn="HistorPaci" />
+              <Mapping SourceColumn="TipoIden" DataSetColumn="TipoIden" />
+              <Mapping SourceColumn="NumIden" DataSetColumn="NumIden" />
+              <Mapping SourceColumn="Nombre1" DataSetColumn="Nombre1" />
+              <Mapping SourceColumn="Nombre2" DataSetColumn="Nombre2" />
+              <Mapping SourceColumn="Apellido1" DataSetColumn="Apellido1" />
+              <Mapping SourceColumn="Apellido2" DataSetColumn="Apellido2" />
+              <Mapping SourceColumn="FechaNaci" DataSetColumn="FechaNaci" />
+              <Mapping SourceColumn="EstadoCivil" DataSetColumn="EstadoCivil" />
+              <Mapping SourceColumn="CodDpto" DataSetColumn="CodDpto" />
+              <Mapping SourceColumn="CodMuni" DataSetColumn="CodMuni" />
+              <Mapping SourceColumn="DirecResi" DataSetColumn="DirecResi" />
+              <Mapping SourceColumn="BarrioVive" DataSetColumn="BarrioVive" />
+              <Mapping SourceColumn="TelResi" DataSetColumn="TelResi" />
+              <Mapping SourceColumn="ZonaResiden" DataSetColumn="ZonaResiden" />
+              <Mapping SourceColumn="Ocupacion" DataSetColumn="Ocupacion" />
+              <Mapping SourceColumn="CodiAdmin" DataSetColumn="CodiAdmin" />
+              <Mapping SourceColumn="NomEstado" DataSetColumn="NomEstado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OcupacionTableAdapter" GeneratorDataComponentClassName="OcupacionTableAdapter" Name="Ocupacion" UserDataComponentName="OcupacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectName="GEOGRAXPSQL.dbo.[Datos CIUO cuarta categoria]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [GEOGRAXPSQL].[dbo].[Datos CIUO cuarta categoria] WHERE (([CodGru04] = @Original_CodGru04) AND ([NomGru04] = @Original_NomGru04))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CodGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CodGru04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NomGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomGru04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        CodGru04, NomGru04
+FROM            GEOGRAXPSQL.dbo.[Datos CIUO cuarta categoria]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [GEOGRAXPSQL].[dbo].[Datos CIUO cuarta categoria] SET [CodGru04] = @CodGru04, [NomGru04] = @NomGru04 WHERE (([CodGru04] = @Original_CodGru04) AND ([NomGru04] = @Original_NomGru04));
+SELECT CodGru04, NomGru04 FROM GEOGRAXPSQL.dbo.[Datos CIUO cuarta categoria] WHERE (CodGru04 = @CodGru04)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CodGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CodGru04" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NomGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomGru04" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CodGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CodGru04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NomGru04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomGru04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodGru04" DataSetColumn="CodGru04" />
+              <Mapping SourceColumn="NomGru04" DataSetColumn="NomGru04" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ResidenciaTableAdapter" GeneratorDataComponentClassName="ResidenciaTableAdapter" Name="Residencia" UserDataComponentName="ResidenciaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        GEOGRAXPSQL.dbo.[Datos localidades de las ciudades].CodBarrio, GEOGRAXPSQL.dbo.[Datos localidades de las ciudades].CodCiudad, GEOGRAXPSQL.dbo.[Datos localidades de las ciudades].NomBarrio, 
+                         GEOGRAXPSQL.dbo.[Datos ciudades del dpto].NombreCiudad, GEOGRAXPSQL.dbo.[Datos de los Dpto o Estados].NombreDpto
+FROM            GEOGRAXPSQL.dbo.[Datos ciudades del dpto] INNER JOIN
+                         GEOGRAXPSQL.dbo.[Datos de los Dpto o Estados] ON GEOGRAXPSQL.dbo.[Datos ciudades del dpto].CodigoDpto = GEOGRAXPSQL.dbo.[Datos de los Dpto o Estados].CodigoDpto INNER JOIN
+                         GEOGRAXPSQL.dbo.[Datos localidades de las ciudades] ON GEOGRAXPSQL.dbo.[Datos ciudades del dpto].CodDptoCity = GEOGRAXPSQL.dbo.[Datos localidades de las ciudades].CodCiudad</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodBarrio" DataSetColumn="CodBarrio" />
+              <Mapping SourceColumn="CodCiudad" DataSetColumn="CodCiudad" />
+              <Mapping SourceColumn="NomBarrio" DataSetColumn="NomBarrio" />
+              <Mapping SourceColumn="NombreCiudad" DataSetColumn="NombreCiudad" />
+              <Mapping SourceColumn="NombreDpto" DataSetColumn="NombreDpto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Datos empresas y tercerosTableAdapter" GeneratorDataComponentClassName="Datos_empresas_y_tercerosTableAdapter" Name="Datos empresas y terceros" UserDataComponentName="Datos empresas y tercerosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ACDATOXPSQLConnectionString (Settings)" DbObjectName="ACDATOXPSQL.dbo.[Datos empresas y terceros]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Datos empresas y terceros] WHERE (([CarAdmin] = @Original_CarAdmin) AND ([NomAdmin] = @Original_NomAdmin))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CarAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CarAdmin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NomAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomAdmin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        CarAdmin, NomAdmin
+FROM            [Datos empresas y terceros]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Datos empresas y terceros] SET [CarAdmin] = @CarAdmin, [NomAdmin] = @NomAdmin WHERE (([CarAdmin] = @Original_CarAdmin) AND ([NomAdmin] = @Original_NomAdmin));
+SELECT CarAdmin, NomAdmin FROM [Datos empresas y terceros] WHERE (CarAdmin = @CarAdmin)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CarAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CarAdmin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@NomAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomAdmin" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_CarAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CarAdmin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_NomAdmin" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="NomAdmin" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CarAdmin" DataSetColumn="CarAdmin" />
+              <Mapping SourceColumn="NomAdmin" DataSetColumn="NomAdmin" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsInformacionPaciente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsInformacionPaciente" msprop:Generator_UserDSName="dsInformacionPaciente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Datos_x0020_del_x0020_Paciente" msprop:Generator_TableClassName="Datos_del_PacienteDataTable" msprop:Generator_TableVarName="tableDatos_del_Paciente" msprop:Generator_TablePropName="Datos_del_Paciente" msprop:Generator_RowDeletingName="Datos_del_PacienteRowDeleting" msprop:Generator_RowChangingName="Datos_del_PacienteRowChanging" msprop:Generator_RowEvHandlerName="Datos_del_PacienteRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_del_PacienteRowDeleted" msprop:Generator_UserTableName="Datos del Paciente" msprop:Generator_RowChangedName="Datos_del_PacienteRowChanged" msprop:Generator_RowEvArgName="Datos_del_PacienteRowChangeEvent" msprop:Generator_RowClassName="Datos_del_PacienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HistorPaci" msprop:Generator_ColumnVarNameInTable="columnHistorPaci" msprop:Generator_ColumnPropNameInRow="HistorPaci" msprop:Generator_ColumnPropNameInTable="HistorPaciColumn" msprop:Generator_UserColumnName="HistorPaci">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoIden" msprop:Generator_ColumnVarNameInTable="columnTipoIden" msprop:Generator_ColumnPropNameInRow="TipoIden" msprop:Generator_ColumnPropNameInTable="TipoIdenColumn" msprop:Generator_UserColumnName="TipoIden">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumIden" msprop:Generator_ColumnVarNameInTable="columnNumIden" msprop:Generator_ColumnPropNameInRow="NumIden" msprop:Generator_ColumnPropNameInTable="NumIdenColumn" msprop:Generator_UserColumnName="NumIden">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre1" msprop:Generator_ColumnVarNameInTable="columnNombre1" msprop:Generator_ColumnPropNameInRow="Nombre1" msprop:Generator_ColumnPropNameInTable="Nombre1Column" msprop:Generator_UserColumnName="Nombre1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre2" msprop:Generator_ColumnVarNameInTable="columnNombre2" msprop:Generator_ColumnPropNameInRow="Nombre2" msprop:Generator_ColumnPropNameInTable="Nombre2Column" msprop:Generator_UserColumnName="Nombre2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido1" msprop:Generator_ColumnVarNameInTable="columnApellido1" msprop:Generator_ColumnPropNameInRow="Apellido1" msprop:Generator_ColumnPropNameInTable="Apellido1Column" msprop:Generator_UserColumnName="Apellido1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apellido2" msprop:Generator_ColumnVarNameInTable="columnApellido2" msprop:Generator_ColumnPropNameInRow="Apellido2" msprop:Generator_ColumnPropNameInTable="Apellido2Column" msprop:Generator_UserColumnName="Apellido2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNaci" msprop:Generator_ColumnVarNameInTable="columnFechaNaci" msprop:Generator_ColumnPropNameInRow="FechaNaci" msprop:Generator_ColumnPropNameInTable="FechaNaciColumn" msprop:Generator_UserColumnName="FechaNaci" type="xs:dateTime" />
+              <xs:element name="EstadoCivil" msprop:Generator_ColumnVarNameInTable="columnEstadoCivil" msprop:Generator_ColumnPropNameInRow="EstadoCivil" msprop:Generator_ColumnPropNameInTable="EstadoCivilColumn" msprop:Generator_UserColumnName="EstadoCivil">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodDpto" msprop:Generator_ColumnVarNameInTable="columnCodDpto" msprop:Generator_ColumnPropNameInRow="CodDpto" msprop:Generator_ColumnPropNameInTable="CodDptoColumn" msprop:Generator_UserColumnName="CodDpto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodMuni" msprop:Generator_ColumnVarNameInTable="columnCodMuni" msprop:Generator_ColumnPropNameInRow="CodMuni" msprop:Generator_ColumnPropNameInTable="CodMuniColumn" msprop:Generator_UserColumnName="CodMuni">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DirecResi" msprop:Generator_ColumnVarNameInTable="columnDirecResi" msprop:Generator_ColumnPropNameInRow="DirecResi" msprop:Generator_ColumnPropNameInTable="DirecResiColumn" msprop:Generator_UserColumnName="DirecResi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BarrioVive" msprop:Generator_ColumnVarNameInTable="columnBarrioVive" msprop:Generator_ColumnPropNameInRow="BarrioVive" msprop:Generator_ColumnPropNameInTable="BarrioViveColumn" msprop:Generator_UserColumnName="BarrioVive">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelResi" msprop:Generator_ColumnVarNameInTable="columnTelResi" msprop:Generator_ColumnPropNameInRow="TelResi" msprop:Generator_ColumnPropNameInTable="TelResiColumn" msprop:Generator_UserColumnName="TelResi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZonaResiden" msprop:Generator_ColumnVarNameInTable="columnZonaResiden" msprop:Generator_ColumnPropNameInRow="ZonaResiden" msprop:Generator_ColumnPropNameInTable="ZonaResidenColumn" msprop:Generator_UserColumnName="ZonaResiden">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ocupacion" msprop:Generator_ColumnVarNameInTable="columnOcupacion" msprop:Generator_ColumnPropNameInRow="Ocupacion" msprop:Generator_ColumnPropNameInTable="OcupacionColumn" msprop:Generator_UserColumnName="Ocupacion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiAdmin" msprop:Generator_ColumnVarNameInTable="columnCodiAdmin" msprop:Generator_ColumnPropNameInRow="CodiAdmin" msprop:Generator_ColumnPropNameInTable="CodiAdminColumn" msprop:Generator_UserColumnName="CodiAdmin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomEstado" msprop:Generator_ColumnVarNameInTable="columnNomEstado" msprop:Generator_ColumnPropNameInRow="NomEstado" msprop:Generator_ColumnPropNameInTable="NomEstadoColumn" msprop:Generator_UserColumnName="NomEstado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ocupacion" msprop:Generator_TableClassName="OcupacionDataTable" msprop:Generator_TableVarName="tableOcupacion" msprop:Generator_RowChangedName="OcupacionRowChanged" msprop:Generator_TablePropName="Ocupacion" msprop:Generator_RowDeletingName="OcupacionRowDeleting" msprop:Generator_RowChangingName="OcupacionRowChanging" msprop:Generator_RowEvHandlerName="OcupacionRowChangeEventHandler" msprop:Generator_RowDeletedName="OcupacionRowDeleted" msprop:Generator_RowClassName="OcupacionRow" msprop:Generator_UserTableName="Ocupacion" msprop:Generator_RowEvArgName="OcupacionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodGru04" msprop:Generator_ColumnVarNameInTable="columnCodGru04" msprop:Generator_ColumnPropNameInRow="CodGru04" msprop:Generator_ColumnPropNameInTable="CodGru04Column" msprop:Generator_UserColumnName="CodGru04">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomGru04" msprop:Generator_ColumnVarNameInTable="columnNomGru04" msprop:Generator_ColumnPropNameInRow="NomGru04" msprop:Generator_ColumnPropNameInTable="NomGru04Column" msprop:Generator_UserColumnName="NomGru04">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Residencia" msprop:Generator_TableClassName="ResidenciaDataTable" msprop:Generator_TableVarName="tableResidencia" msprop:Generator_TablePropName="Residencia" msprop:Generator_RowDeletingName="ResidenciaRowDeleting" msprop:Generator_RowChangingName="ResidenciaRowChanging" msprop:Generator_RowEvHandlerName="ResidenciaRowChangeEventHandler" msprop:Generator_RowDeletedName="ResidenciaRowDeleted" msprop:Generator_UserTableName="Residencia" msprop:Generator_RowChangedName="ResidenciaRowChanged" msprop:Generator_RowEvArgName="ResidenciaRowChangeEvent" msprop:Generator_RowClassName="ResidenciaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodBarrio" msprop:Generator_ColumnVarNameInTable="columnCodBarrio" msprop:Generator_ColumnPropNameInRow="CodBarrio" msprop:Generator_ColumnPropNameInTable="CodBarrioColumn" msprop:Generator_UserColumnName="CodBarrio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodCiudad" msprop:Generator_ColumnVarNameInTable="columnCodCiudad" msprop:Generator_ColumnPropNameInRow="CodCiudad" msprop:Generator_ColumnPropNameInTable="CodCiudadColumn" msprop:Generator_UserColumnName="CodCiudad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomBarrio" msprop:Generator_ColumnVarNameInTable="columnNomBarrio" msprop:Generator_ColumnPropNameInRow="NomBarrio" msprop:Generator_ColumnPropNameInTable="NomBarrioColumn" msprop:Generator_UserColumnName="NomBarrio">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreCiudad" msprop:Generator_ColumnVarNameInTable="columnNombreCiudad" msprop:Generator_ColumnPropNameInRow="NombreCiudad" msprop:Generator_ColumnPropNameInTable="NombreCiudadColumn" msprop:Generator_UserColumnName="NombreCiudad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreDpto" msprop:Generator_ColumnVarNameInTable="columnNombreDpto" msprop:Generator_ColumnPropNameInRow="NombreDpto" msprop:Generator_ColumnPropNameInTable="NombreDptoColumn" msprop:Generator_UserColumnName="NombreDpto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Datos_x0020_empresas_x0020_y_x0020_terceros" msprop:Generator_TableClassName="Datos_empresas_y_tercerosDataTable" msprop:Generator_TableVarName="tableDatos_empresas_y_terceros" msprop:Generator_TablePropName="Datos_empresas_y_terceros" msprop:Generator_RowDeletingName="Datos_empresas_y_tercerosRowDeleting" msprop:Generator_RowChangingName="Datos_empresas_y_tercerosRowChanging" msprop:Generator_RowEvHandlerName="Datos_empresas_y_tercerosRowChangeEventHandler" msprop:Generator_RowDeletedName="Datos_empresas_y_tercerosRowDeleted" msprop:Generator_UserTableName="Datos empresas y terceros" msprop:Generator_RowChangedName="Datos_empresas_y_tercerosRowChanged" msprop:Generator_RowEvArgName="Datos_empresas_y_tercerosRowChangeEvent" msprop:Generator_RowClassName="Datos_empresas_y_tercerosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarAdmin" msprop:Generator_ColumnVarNameInTable="columnCarAdmin" msprop:Generator_ColumnPropNameInRow="CarAdmin" msprop:Generator_ColumnPropNameInTable="CarAdminColumn" msprop:Generator_UserColumnName="CarAdmin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NomAdmin" msprop:Generator_ColumnVarNameInTable="columnNomAdmin" msprop:Generator_ColumnPropNameInRow="NomAdmin" msprop:Generator_ColumnPropNameInTable="NomAdminColumn" msprop:Generator_UserColumnName="NomAdmin">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos_x0020_del_x0020_Paciente" />
+      <xs:field xpath="mstns:HistorPaci" />
+    </xs:unique>
+    <xs:unique name="Ocupacion_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Ocupacion" />
+      <xs:field xpath="mstns:CodGru04" />
+    </xs:unique>
+    <xs:unique name="Residencia_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Residencia" />
+      <xs:field xpath="mstns:CodBarrio" />
+      <xs:field xpath="mstns:CodCiudad" />
+    </xs:unique>
+    <xs:unique name="Datos_x0020_empresas_x0020_y_x0020_terceros_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Datos_x0020_empresas_x0020_y_x0020_terceros" />
+      <xs:field xpath="mstns:CarAdmin" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
