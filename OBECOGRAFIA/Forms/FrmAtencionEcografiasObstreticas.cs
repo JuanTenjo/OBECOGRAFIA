@@ -6434,6 +6434,7 @@ namespace OBECOGRAFIA.Forms
                         Utils.Informa += "sistema, por favor ejecute primero el proceso" + "\r";
                         Utils.Informa += "de grabar y luego el de archivar." + "\r";
                         MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        
                         return;
                     }
                     else

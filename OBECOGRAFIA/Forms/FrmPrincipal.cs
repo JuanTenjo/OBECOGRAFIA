@@ -93,7 +93,43 @@ namespace OBECOGRAFIA.Forms
                     this.Close();
                 }
 
-                LblNombreEmpresa.Text = Utils.nomEmpresa + "\r" + Utils.CateEmpresa;
+                string cadena = Utils.nomEmpresa;
+
+                string[] parte = cadena.Split(' ');
+
+                int cantidad = parte.Length;
+
+                LblNombreEmpresa.Text = "";
+
+                if (cantidad > 4)
+                {
+
+                    int parImpar = cantidad % 2;
+
+                    int mitadSalto = parImpar == 0 ? cantidad / 2 : (cantidad + 1) / 2;
+                   
+                    for (int i = 0; i < parte.Length; i++)
+                    {
+                        if(i == mitadSalto)
+                        {
+                            LblNombreEmpresa.Text += "\r";
+                        }
+
+                        LblNombreEmpresa.Text = LblNombreEmpresa.Text + parte[i] + " ";
+
+                    }
+
+                    LblNombreEmpresa.Text += "\r" + Utils.CateEmpresa;
+
+
+                }
+                else
+                {
+                    LblNombreEmpresa.Text = Utils.nomEmpresa + "\r" + Utils.CateEmpresa;
+                }
+
+      
+
 
                 dr.Close();
             }

@@ -2710,7 +2710,7 @@
             <Width>17.973cm</Width>
             <ZIndex>16</ZIndex>
             <Visibility>
-              <Hidden>=IIf(First(Fields!ArchivEco.Value, "dsEcografia") = True, False, True)</Hidden>
+              <Hidden>=IIf(First(Fields!ArchivEco.Value, "dsEcografia") = True, True, False)</Hidden>
             </Visibility>
             <Style>
               <Border>

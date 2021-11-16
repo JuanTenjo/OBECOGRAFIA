@@ -122,6 +122,8 @@ namespace OBECOGRAFIA.Forms
             this.TxtConcluEcos13 = new System.Windows.Forms.TextBox();
             this.tabControl9 = new System.Windows.Forms.TabControl();
             this.tabPage33 = new System.Windows.Forms.TabPage();
+            this.TxtEspeCervix13 = new System.Windows.Forms.NumericUpDown();
+            this.TxtDiameLongi13 = new System.Windows.Forms.NumericUpDown();
             this.label329 = new System.Windows.Forms.Label();
             this.label328 = new System.Windows.Forms.Label();
             this.TxtDesCervixEco13 = new System.Windows.Forms.TextBox();
@@ -148,6 +150,90 @@ namespace OBECOGRAFIA.Forms
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.label343 = new System.Windows.Forms.Label();
             this.TxtConcluEcos11 = new System.Windows.Forms.TextBox();
+            this.tabControl8 = new System.Windows.Forms.TabControl();
+            this.tabPage28 = new System.Windows.Forms.TabPage();
+            this.TxtILA01 = new System.Windows.Forms.NumericUpDown();
+            this.label202 = new System.Windows.Forms.Label();
+            this.FCF01 = new System.Windows.Forms.NumericUpDown();
+            this.label201 = new System.Windows.Forms.Label();
+            this.TxtPuntaTonMusc = new System.Windows.Forms.TextBox();
+            this.TxtPuntaMovRes = new System.Windows.Forms.TextBox();
+            this.TxtPuntaMovFet = new System.Windows.Forms.TextBox();
+            this.TxtPuntaILA = new System.Windows.Forms.TextBox();
+            this.TxtTotal01 = new System.Windows.Forms.TextBox();
+            this.TxtTonoMusc01 = new System.Windows.Forms.TextBox();
+            this.TxtMovResp01 = new System.Windows.Forms.TextBox();
+            this.TxtMovFeta01 = new System.Windows.Forms.TextBox();
+            this.label342 = new System.Windows.Forms.Label();
+            this.label341 = new System.Windows.Forms.Label();
+            this.label340 = new System.Windows.Forms.Label();
+            this.label339 = new System.Windows.Forms.Label();
+            this.label338 = new System.Windows.Forms.Label();
+            this.label314 = new System.Windows.Forms.Label();
+            this.label313 = new System.Windows.Forms.Label();
+            this.label315 = new System.Windows.Forms.Label();
+            this.label316 = new System.Windows.Forms.Label();
+            this.label317 = new System.Windows.Forms.Label();
+            this.tabPage29 = new System.Windows.Forms.TabPage();
+            this.TxtILA02 = new System.Windows.Forms.NumericUpDown();
+            this.FCF02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtTotal02 = new System.Windows.Forms.TextBox();
+            this.TxtTonoMusc02 = new System.Windows.Forms.TextBox();
+            this.TxtMovResp02 = new System.Windows.Forms.TextBox();
+            this.TxtMovFeta02 = new System.Windows.Forms.TextBox();
+            this.label205 = new System.Windows.Forms.Label();
+            this.label204 = new System.Windows.Forms.Label();
+            this.label203 = new System.Windows.Forms.Label();
+            this.label318 = new System.Windows.Forms.Label();
+            this.label319 = new System.Windows.Forms.Label();
+            this.label320 = new System.Windows.Forms.Label();
+            this.label321 = new System.Windows.Forms.Label();
+            this.label322 = new System.Windows.Forms.Label();
+            this.tabPage30 = new System.Windows.Forms.TabPage();
+            this.TxtILA03 = new System.Windows.Forms.NumericUpDown();
+            this.FCF03 = new System.Windows.Forms.NumericUpDown();
+            this.TxtTotal03 = new System.Windows.Forms.TextBox();
+            this.TxtTonoMusc03 = new System.Windows.Forms.TextBox();
+            this.TxtMovResp03 = new System.Windows.Forms.TextBox();
+            this.TxtMovFeta03 = new System.Windows.Forms.TextBox();
+            this.label206 = new System.Windows.Forms.Label();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
+            this.label211 = new System.Windows.Forms.Label();
+            this.label212 = new System.Windows.Forms.Label();
+            this.label213 = new System.Windows.Forms.Label();
+            this.tabPage31 = new System.Windows.Forms.TabPage();
+            this.TxtILA04 = new System.Windows.Forms.NumericUpDown();
+            this.FCF04 = new System.Windows.Forms.NumericUpDown();
+            this.TxtTotal04 = new System.Windows.Forms.TextBox();
+            this.TxtTonoMusc04 = new System.Windows.Forms.TextBox();
+            this.TxtMovResp04 = new System.Windows.Forms.TextBox();
+            this.TxtMovFeta04 = new System.Windows.Forms.TextBox();
+            this.label214 = new System.Windows.Forms.Label();
+            this.label215 = new System.Windows.Forms.Label();
+            this.label216 = new System.Windows.Forms.Label();
+            this.label217 = new System.Windows.Forms.Label();
+            this.label218 = new System.Windows.Forms.Label();
+            this.label219 = new System.Windows.Forms.Label();
+            this.label220 = new System.Windows.Forms.Label();
+            this.label221 = new System.Windows.Forms.Label();
+            this.tabPage32 = new System.Windows.Forms.TabPage();
+            this.TxtILA05 = new System.Windows.Forms.NumericUpDown();
+            this.FCF05 = new System.Windows.Forms.NumericUpDown();
+            this.TxtTotal05 = new System.Windows.Forms.TextBox();
+            this.TxtTonoMusc05 = new System.Windows.Forms.TextBox();
+            this.TxtMovResp05 = new System.Windows.Forms.TextBox();
+            this.TxtMovFeta05 = new System.Windows.Forms.TextBox();
+            this.label222 = new System.Windows.Forms.Label();
+            this.label223 = new System.Windows.Forms.Label();
+            this.label224 = new System.Windows.Forms.Label();
+            this.label323 = new System.Windows.Forms.Label();
+            this.label324 = new System.Windows.Forms.Label();
+            this.label325 = new System.Windows.Forms.Label();
+            this.label326 = new System.Windows.Forms.Label();
+            this.label327 = new System.Windows.Forms.Label();
             this.DtFUMEco11 = new System.Windows.Forms.DateTimePicker();
             this.DtFPPFUM11 = new System.Windows.Forms.DateTimePicker();
             this.DtFecTomaEco11 = new System.Windows.Forms.DateTimePicker();
@@ -173,15 +259,25 @@ namespace OBECOGRAFIA.Forms
             this.tabPage27 = new System.Windows.Forms.TabPage();
             this.label57 = new System.Windows.Forms.Label();
             this.label200 = new System.Windows.Forms.Label();
+            this.TxtResiPostVejiga08 = new System.Windows.Forms.NumericUpDown();
             this.label199 = new System.Windows.Forms.Label();
+            this.TxtVoluPromVejiga08 = new System.Windows.Forms.NumericUpDown();
             this.label198 = new System.Windows.Forms.Label();
+            this.TxtDiamEpRinIzquie08 = new System.Windows.Forms.NumericUpDown();
             this.label197 = new System.Windows.Forms.Label();
+            this.TxtDiamTraRinIzquie08 = new System.Windows.Forms.NumericUpDown();
             this.label196 = new System.Windows.Forms.Label();
+            this.TxtDiamAntRinIzquie08 = new System.Windows.Forms.NumericUpDown();
             this.label195 = new System.Windows.Forms.Label();
+            this.TxtDiamRinIzquie08 = new System.Windows.Forms.NumericUpDown();
             this.label194 = new System.Windows.Forms.Label();
+            this.TxtDiamEpRinDerecho08 = new System.Windows.Forms.NumericUpDown();
             this.label193 = new System.Windows.Forms.Label();
+            this.TxtDiamTraRinDerecho08 = new System.Windows.Forms.NumericUpDown();
             this.label192 = new System.Windows.Forms.Label();
+            this.TxtDiamAntRinDerecho08 = new System.Windows.Forms.NumericUpDown();
             this.label191 = new System.Windows.Forms.Label();
+            this.TxtDiamRinDerecho08 = new System.Windows.Forms.NumericUpDown();
             this.label305 = new System.Windows.Forms.Label();
             this.label304 = new System.Windows.Forms.Label();
             this.TxtAspecVejiga08 = new System.Windows.Forms.TextBox();
@@ -250,11 +346,19 @@ namespace OBECOGRAFIA.Forms
             this.TxtComentario06 = new System.Windows.Forms.TextBox();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.TxtDiamEpRinIzquie06 = new System.Windows.Forms.NumericUpDown();
+            this.TxtDiamRinDerecho06 = new System.Windows.Forms.NumericUpDown();
+            this.TxtDiamTraRinIzquie06 = new System.Windows.Forms.NumericUpDown();
             this.label190 = new System.Windows.Forms.Label();
+            this.TxtDiamAntRinIzquie06 = new System.Windows.Forms.NumericUpDown();
             this.label189 = new System.Windows.Forms.Label();
+            this.TxtDiamRinIzquie06 = new System.Windows.Forms.NumericUpDown();
             this.label188 = new System.Windows.Forms.Label();
+            this.TxtDiamEpRinDerecho06 = new System.Windows.Forms.NumericUpDown();
             this.label187 = new System.Windows.Forms.Label();
+            this.TxtDiamTraRinDerecho06 = new System.Windows.Forms.NumericUpDown();
             this.label186 = new System.Windows.Forms.Label();
+            this.TxtDiamAntRinDerecho06 = new System.Windows.Forms.NumericUpDown();
             this.label185 = new System.Windows.Forms.Label();
             this.label184 = new System.Windows.Forms.Label();
             this.label183 = new System.Windows.Forms.Label();
@@ -322,7 +426,12 @@ namespace OBECOGRAFIA.Forms
             this.GroupTemAbor = new System.Windows.Forms.GroupBox();
             this.Data = new System.Windows.Forms.TabControl();
             this.tabPage19 = new System.Windows.Forms.TabPage();
+            this.TxtVesiVitelina01 = new System.Windows.Forms.NumericUpDown();
+            this.TxtLCN01 = new System.Windows.Forms.NumericUpDown();
+            this.TxtFCF01 = new System.Windows.Forms.NumericUpDown();
             this.label387 = new System.Windows.Forms.Label();
+            this.TxtBotonEmbriona01 = new System.Windows.Forms.NumericUpDown();
+            this.TxtSacoGes01 = new System.Windows.Forms.NumericUpDown();
             this.label386 = new System.Windows.Forms.Label();
             this.label385 = new System.Windows.Forms.Label();
             this.label384 = new System.Windows.Forms.Label();
@@ -333,6 +442,11 @@ namespace OBECOGRAFIA.Forms
             this.label152 = new System.Windows.Forms.Label();
             this.label153 = new System.Windows.Forms.Label();
             this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.TxtVesiVitelina02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtLCN02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtFCF02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtBotonEmbriona02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtSacoGes02 = new System.Windows.Forms.NumericUpDown();
             this.label155 = new System.Windows.Forms.Label();
             this.label156 = new System.Windows.Forms.Label();
             this.label157 = new System.Windows.Forms.Label();
@@ -344,6 +458,11 @@ namespace OBECOGRAFIA.Forms
             this.label163 = new System.Windows.Forms.Label();
             this.label164 = new System.Windows.Forms.Label();
             this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.TxtVesiVitelina03 = new System.Windows.Forms.NumericUpDown();
+            this.TxtLCN03 = new System.Windows.Forms.NumericUpDown();
+            this.TxtFCF03 = new System.Windows.Forms.NumericUpDown();
+            this.TxtBotonEmbriona03 = new System.Windows.Forms.NumericUpDown();
+            this.TxtSacoGes03 = new System.Windows.Forms.NumericUpDown();
             this.label165 = new System.Windows.Forms.Label();
             this.label166 = new System.Windows.Forms.Label();
             this.label167 = new System.Windows.Forms.Label();
@@ -355,6 +474,11 @@ namespace OBECOGRAFIA.Forms
             this.label173 = new System.Windows.Forms.Label();
             this.label174 = new System.Windows.Forms.Label();
             this.tabPage22 = new System.Windows.Forms.TabPage();
+            this.TxtVesiVitelina04 = new System.Windows.Forms.NumericUpDown();
+            this.TxtLCN04 = new System.Windows.Forms.NumericUpDown();
+            this.TxtFCF04 = new System.Windows.Forms.NumericUpDown();
+            this.TxtBotonEmbriona04 = new System.Windows.Forms.NumericUpDown();
+            this.TxtSacoGes04 = new System.Windows.Forms.NumericUpDown();
             this.label388 = new System.Windows.Forms.Label();
             this.label389 = new System.Windows.Forms.Label();
             this.label390 = new System.Windows.Forms.Label();
@@ -366,6 +490,11 @@ namespace OBECOGRAFIA.Forms
             this.label396 = new System.Windows.Forms.Label();
             this.label397 = new System.Windows.Forms.Label();
             this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.TxtVesiVitelina05 = new System.Windows.Forms.NumericUpDown();
+            this.TxtLCN05 = new System.Windows.Forms.NumericUpDown();
+            this.TxtFCF05 = new System.Windows.Forms.NumericUpDown();
+            this.TxtBotonEmbriona05 = new System.Windows.Forms.NumericUpDown();
+            this.TxtSacoGes05 = new System.Windows.Forms.NumericUpDown();
             this.label398 = new System.Windows.Forms.Label();
             this.label399 = new System.Windows.Forms.Label();
             this.label400 = new System.Windows.Forms.Label();
@@ -412,8 +541,16 @@ namespace OBECOGRAFIA.Forms
             this.TxtComentario02 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.TxtPorOvariIzqui02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtEndome02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtOvariIzquie02 = new System.Windows.Forms.NumericUpDown();
             this.label382 = new System.Windows.Forms.Label();
+            this.TxtDiameTras02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtPorOvariDere02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtDiameAntePos02 = new System.Windows.Forms.NumericUpDown();
+            this.TxtOvariDere02 = new System.Windows.Forms.NumericUpDown();
             this.label381 = new System.Windows.Forms.Label();
+            this.TxtDiameLongi02 = new System.Windows.Forms.NumericUpDown();
             this.label380 = new System.Windows.Forms.Label();
             this.label379 = new System.Windows.Forms.Label();
             this.label378 = new System.Windows.Forms.Label();
@@ -481,6 +618,7 @@ namespace OBECOGRAFIA.Forms
             this.label19 = new System.Windows.Forms.Label();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.FETO1 = new System.Windows.Forms.TabPage();
+            this.TxtFCFFeto01 = new System.Windows.Forms.NumericUpDown();
             this.TxtPeso01 = new System.Windows.Forms.NumericUpDown();
             this.TxtLF01 = new System.Windows.Forms.NumericUpDown();
             this.TxtAC01 = new System.Windows.Forms.NumericUpDown();
@@ -514,6 +652,7 @@ namespace OBECOGRAFIA.Forms
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.FETO2 = new System.Windows.Forms.TabPage();
+            this.TxtFCFFeto02 = new System.Windows.Forms.NumericUpDown();
             this.TxtPeso02 = new System.Windows.Forms.NumericUpDown();
             this.TxtLF02 = new System.Windows.Forms.NumericUpDown();
             this.TxtAC02 = new System.Windows.Forms.NumericUpDown();
@@ -547,6 +686,7 @@ namespace OBECOGRAFIA.Forms
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.FETO3 = new System.Windows.Forms.TabPage();
+            this.TxtFCFFeto03 = new System.Windows.Forms.NumericUpDown();
             this.TxtPeso03 = new System.Windows.Forms.NumericUpDown();
             this.TxtLF03 = new System.Windows.Forms.NumericUpDown();
             this.TxtAC03 = new System.Windows.Forms.NumericUpDown();
@@ -580,6 +720,7 @@ namespace OBECOGRAFIA.Forms
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.FETO4 = new System.Windows.Forms.TabPage();
+            this.TxtFCFFeto04 = new System.Windows.Forms.NumericUpDown();
             this.TxtPeso04 = new System.Windows.Forms.NumericUpDown();
             this.TxtLF04 = new System.Windows.Forms.NumericUpDown();
             this.TxtAC04 = new System.Windows.Forms.NumericUpDown();
@@ -613,6 +754,7 @@ namespace OBECOGRAFIA.Forms
             this.label116 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
             this.FETO5 = new System.Windows.Forms.TabPage();
+            this.TxtFCFFeto05 = new System.Windows.Forms.NumericUpDown();
             this.TxtPeso05 = new System.Windows.Forms.NumericUpDown();
             this.TxtLF05 = new System.Windows.Forms.NumericUpDown();
             this.TxtAC05 = new System.Windows.Forms.NumericUpDown();
@@ -676,148 +818,6 @@ namespace OBECOGRAFIA.Forms
             this.BtnArchivar = new System.Windows.Forms.Button();
             this.label331 = new System.Windows.Forms.Label();
             this.label332 = new System.Windows.Forms.Label();
-            this.TxtFCFFeto01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCFFeto02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCFFeto03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCFFeto04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCFFeto05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtOvariDere02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtPorOvariDere02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtPorOvariIzqui02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiameTras02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiameLongi02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiameAntePos02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtOvariIzquie02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtEndome02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtSacoGes01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtLCN01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtBotonEmbriona01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCF01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVesiVitelina01 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVesiVitelina02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtLCN02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCF02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtBotonEmbriona02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtSacoGes02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVesiVitelina03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtLCN03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCF03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtBotonEmbriona03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtSacoGes03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVesiVitelina04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtLCN04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCF04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtBotonEmbriona04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtSacoGes04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVesiVitelina05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtLCN05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtFCF05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtBotonEmbriona05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtSacoGes05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamRinDerecho06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamAntRinDerecho06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamTraRinDerecho06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamEpRinDerecho06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamRinIzquie06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamAntRinIzquie06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamTraRinIzquie06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamEpRinIzquie06 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamRinDerecho08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamAntRinDerecho08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamTraRinDerecho08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamEpRinDerecho08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamRinIzquie08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamAntRinIzquie08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamTraRinIzquie08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiamEpRinIzquie08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtVoluPromVejiga08 = new System.Windows.Forms.NumericUpDown();
-            this.TxtResiPostVejiga08 = new System.Windows.Forms.NumericUpDown();
-            this.tabPage32 = new System.Windows.Forms.TabPage();
-            this.label327 = new System.Windows.Forms.Label();
-            this.label326 = new System.Windows.Forms.Label();
-            this.TxtMovFeta05 = new System.Windows.Forms.TextBox();
-            this.label325 = new System.Windows.Forms.Label();
-            this.TxtMovResp05 = new System.Windows.Forms.TextBox();
-            this.label324 = new System.Windows.Forms.Label();
-            this.TxtTonoMusc05 = new System.Windows.Forms.TextBox();
-            this.label323 = new System.Windows.Forms.Label();
-            this.label224 = new System.Windows.Forms.Label();
-            this.label223 = new System.Windows.Forms.Label();
-            this.label222 = new System.Windows.Forms.Label();
-            this.TxtTotal05 = new System.Windows.Forms.TextBox();
-            this.tabPage31 = new System.Windows.Forms.TabPage();
-            this.label221 = new System.Windows.Forms.Label();
-            this.label220 = new System.Windows.Forms.Label();
-            this.TxtMovFeta04 = new System.Windows.Forms.TextBox();
-            this.label219 = new System.Windows.Forms.Label();
-            this.TxtMovResp04 = new System.Windows.Forms.TextBox();
-            this.label218 = new System.Windows.Forms.Label();
-            this.TxtTonoMusc04 = new System.Windows.Forms.TextBox();
-            this.label217 = new System.Windows.Forms.Label();
-            this.label216 = new System.Windows.Forms.Label();
-            this.label215 = new System.Windows.Forms.Label();
-            this.label214 = new System.Windows.Forms.Label();
-            this.TxtTotal04 = new System.Windows.Forms.TextBox();
-            this.tabPage30 = new System.Windows.Forms.TabPage();
-            this.label213 = new System.Windows.Forms.Label();
-            this.label212 = new System.Windows.Forms.Label();
-            this.TxtMovFeta03 = new System.Windows.Forms.TextBox();
-            this.label211 = new System.Windows.Forms.Label();
-            this.TxtMovResp03 = new System.Windows.Forms.TextBox();
-            this.label210 = new System.Windows.Forms.Label();
-            this.TxtTonoMusc03 = new System.Windows.Forms.TextBox();
-            this.label209 = new System.Windows.Forms.Label();
-            this.label208 = new System.Windows.Forms.Label();
-            this.label207 = new System.Windows.Forms.Label();
-            this.label206 = new System.Windows.Forms.Label();
-            this.TxtTotal03 = new System.Windows.Forms.TextBox();
-            this.tabPage29 = new System.Windows.Forms.TabPage();
-            this.label322 = new System.Windows.Forms.Label();
-            this.label321 = new System.Windows.Forms.Label();
-            this.TxtMovFeta02 = new System.Windows.Forms.TextBox();
-            this.label320 = new System.Windows.Forms.Label();
-            this.TxtMovResp02 = new System.Windows.Forms.TextBox();
-            this.label319 = new System.Windows.Forms.Label();
-            this.TxtTonoMusc02 = new System.Windows.Forms.TextBox();
-            this.label318 = new System.Windows.Forms.Label();
-            this.label203 = new System.Windows.Forms.Label();
-            this.label204 = new System.Windows.Forms.Label();
-            this.label205 = new System.Windows.Forms.Label();
-            this.TxtTotal02 = new System.Windows.Forms.TextBox();
-            this.FCF02 = new System.Windows.Forms.NumericUpDown();
-            this.TxtILA02 = new System.Windows.Forms.NumericUpDown();
-            this.tabPage28 = new System.Windows.Forms.TabPage();
-            this.label317 = new System.Windows.Forms.Label();
-            this.label316 = new System.Windows.Forms.Label();
-            this.TxtMovFeta01 = new System.Windows.Forms.TextBox();
-            this.label315 = new System.Windows.Forms.Label();
-            this.TxtMovResp01 = new System.Windows.Forms.TextBox();
-            this.label313 = new System.Windows.Forms.Label();
-            this.label314 = new System.Windows.Forms.Label();
-            this.TxtTonoMusc01 = new System.Windows.Forms.TextBox();
-            this.TxtTotal01 = new System.Windows.Forms.TextBox();
-            this.label338 = new System.Windows.Forms.Label();
-            this.label339 = new System.Windows.Forms.Label();
-            this.TxtPuntaILA = new System.Windows.Forms.TextBox();
-            this.label340 = new System.Windows.Forms.Label();
-            this.TxtPuntaMovFet = new System.Windows.Forms.TextBox();
-            this.label341 = new System.Windows.Forms.Label();
-            this.TxtPuntaMovRes = new System.Windows.Forms.TextBox();
-            this.label342 = new System.Windows.Forms.Label();
-            this.TxtPuntaTonMusc = new System.Windows.Forms.TextBox();
-            this.label201 = new System.Windows.Forms.Label();
-            this.FCF01 = new System.Windows.Forms.NumericUpDown();
-            this.label202 = new System.Windows.Forms.Label();
-            this.TxtILA01 = new System.Windows.Forms.NumericUpDown();
-            this.tabControl8 = new System.Windows.Forms.TabControl();
-            this.TxtILA03 = new System.Windows.Forms.NumericUpDown();
-            this.FCF03 = new System.Windows.Forms.NumericUpDown();
-            this.TxtILA04 = new System.Windows.Forms.NumericUpDown();
-            this.FCF04 = new System.Windows.Forms.NumericUpDown();
-            this.TxtILA05 = new System.Windows.Forms.NumericUpDown();
-            this.FCF05 = new System.Windows.Forms.NumericUpDown();
-            this.TxtDiameLongi13 = new System.Windows.Forms.NumericUpDown();
-            this.TxtEspeCervix13 = new System.Windows.Forms.NumericUpDown();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridCitasProgramadas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridLisEcosSinArchivar)).BeginInit();
@@ -832,12 +832,40 @@ namespace OBECOGRAFIA.Forms
             this.groupBox18.SuspendLayout();
             this.tabControl9.SuspendLayout();
             this.tabPage33.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEspeCervix13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi13)).BeginInit();
             this.tabPage9.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            this.tabControl8.SuspendLayout();
+            this.tabPage28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF01)).BeginInit();
+            this.tabPage29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF02)).BeginInit();
+            this.tabPage30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF03)).BeginInit();
+            this.tabPage31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF04)).BeginInit();
+            this.tabPage32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF05)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.tabControl7.SuspendLayout();
             this.tabPage27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtResiPostVejiga08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVoluPromVejiga08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho08)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho08)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.GroupHepaAbor.SuspendLayout();
             this.tabControl6.SuspendLayout();
@@ -846,6 +874,14 @@ namespace OBECOGRAFIA.Forms
             this.groupBox11.SuspendLayout();
             this.tabControl5.SuspendLayout();
             this.tabPage25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho06)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho06)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupAbdoHepa.SuspendLayout();
             this.tabControl4.SuspendLayout();
@@ -854,14 +890,47 @@ namespace OBECOGRAFIA.Forms
             this.GroupTemAbor.SuspendLayout();
             this.Data.SuspendLayout();
             this.tabPage19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona01)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes01)).BeginInit();
             this.tabPage20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes02)).BeginInit();
             this.tabPage21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona03)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes03)).BeginInit();
             this.tabPage22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes04)).BeginInit();
             this.tabPage23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona05)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes05)).BeginInit();
             this.Transvaginal.SuspendLayout();
             this.groupEcoCombina01.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariIzqui02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEndome02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariIzquie02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameTras02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariDere02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameAntePos02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariDere02)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi02)).BeginInit();
             this.Obstetrica.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtNumSemECO)).BeginInit();
@@ -869,30 +938,35 @@ namespace OBECOGRAFIA.Forms
             ((System.ComponentModel.ISupportInitialize)(this.TxtEspePlace)).BeginInit();
             this.TabControl.SuspendLayout();
             this.FETO1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHC01)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP01)).BeginInit();
             this.FETO2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHC02)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP02)).BeginInit();
             this.FETO3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHC03)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP03)).BeginInit();
             this.FETO4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtHC04)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP04)).BeginInit();
             this.FETO5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF05)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC05)).BeginInit();
@@ -904,80 +978,6 @@ namespace OBECOGRAFIA.Forms
             this.tabControl2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariDere02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariDere02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariIzqui02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameTras02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameAntePos02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariIzquie02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEndome02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie06)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVoluPromVejiga08)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtResiPostVejiga08)).BeginInit();
-            this.tabPage32.SuspendLayout();
-            this.tabPage31.SuspendLayout();
-            this.tabPage30.SuspendLayout();
-            this.tabPage29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF02)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA02)).BeginInit();
-            this.tabPage28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF01)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA01)).BeginInit();
-            this.tabControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF03)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF04)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF05)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEspeCervix13)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -2015,6 +2015,32 @@ namespace OBECOGRAFIA.Forms
             this.tabPage33.Text = "Datos";
             this.tabPage33.UseVisualStyleBackColor = true;
             // 
+            // TxtEspeCervix13
+            // 
+            this.TxtEspeCervix13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEspeCervix13.Location = new System.Drawing.Point(440, 57);
+            this.TxtEspeCervix13.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtEspeCervix13.Name = "TxtEspeCervix13";
+            this.TxtEspeCervix13.Size = new System.Drawing.Size(95, 22);
+            this.TxtEspeCervix13.TabIndex = 386;
+            // 
+            // TxtDiameLongi13
+            // 
+            this.TxtDiameLongi13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiameLongi13.Location = new System.Drawing.Point(150, 57);
+            this.TxtDiameLongi13.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiameLongi13.Name = "TxtDiameLongi13";
+            this.TxtDiameLongi13.Size = new System.Drawing.Size(95, 22);
+            this.TxtDiameLongi13.TabIndex = 385;
+            // 
             // label329
             // 
             this.label329.BackColor = System.Drawing.Color.White;
@@ -2336,6 +2362,1028 @@ namespace OBECOGRAFIA.Forms
             this.TxtConcluEcos11.Name = "TxtConcluEcos11";
             this.TxtConcluEcos11.Size = new System.Drawing.Size(748, 47);
             this.TxtConcluEcos11.TabIndex = 335;
+            // 
+            // tabControl8
+            // 
+            this.tabControl8.Controls.Add(this.tabPage28);
+            this.tabControl8.Controls.Add(this.tabPage29);
+            this.tabControl8.Controls.Add(this.tabPage30);
+            this.tabControl8.Controls.Add(this.tabPage31);
+            this.tabControl8.Controls.Add(this.tabPage32);
+            this.tabControl8.Location = new System.Drawing.Point(12, 68);
+            this.tabControl8.Name = "tabControl8";
+            this.tabControl8.SelectedIndex = 0;
+            this.tabControl8.Size = new System.Drawing.Size(749, 148);
+            this.tabControl8.TabIndex = 325;
+            this.tabControl8.SelectedIndexChanged += new System.EventHandler(this.tabControl8_SelectedIndexChanged);
+            // 
+            // tabPage28
+            // 
+            this.tabPage28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage28.Controls.Add(this.TxtILA01);
+            this.tabPage28.Controls.Add(this.label202);
+            this.tabPage28.Controls.Add(this.FCF01);
+            this.tabPage28.Controls.Add(this.label201);
+            this.tabPage28.Controls.Add(this.TxtPuntaTonMusc);
+            this.tabPage28.Controls.Add(this.TxtPuntaMovRes);
+            this.tabPage28.Controls.Add(this.TxtPuntaMovFet);
+            this.tabPage28.Controls.Add(this.TxtPuntaILA);
+            this.tabPage28.Controls.Add(this.TxtTotal01);
+            this.tabPage28.Controls.Add(this.TxtTonoMusc01);
+            this.tabPage28.Controls.Add(this.TxtMovResp01);
+            this.tabPage28.Controls.Add(this.TxtMovFeta01);
+            this.tabPage28.Controls.Add(this.label342);
+            this.tabPage28.Controls.Add(this.label341);
+            this.tabPage28.Controls.Add(this.label340);
+            this.tabPage28.Controls.Add(this.label339);
+            this.tabPage28.Controls.Add(this.label338);
+            this.tabPage28.Controls.Add(this.label314);
+            this.tabPage28.Controls.Add(this.label313);
+            this.tabPage28.Controls.Add(this.label315);
+            this.tabPage28.Controls.Add(this.label316);
+            this.tabPage28.Controls.Add(this.label317);
+            this.tabPage28.Location = new System.Drawing.Point(4, 22);
+            this.tabPage28.Name = "tabPage28";
+            this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage28.Size = new System.Drawing.Size(741, 122);
+            this.tabPage28.TabIndex = 0;
+            this.tabPage28.Text = "FETO 1";
+            this.tabPage28.UseVisualStyleBackColor = true;
+            // 
+            // TxtILA01
+            // 
+            this.TxtILA01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtILA01.Location = new System.Drawing.Point(415, 8);
+            this.TxtILA01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtILA01.Name = "TxtILA01";
+            this.TxtILA01.Size = new System.Drawing.Size(44, 22);
+            this.TxtILA01.TabIndex = 283;
+            // 
+            // label202
+            // 
+            this.label202.BackColor = System.Drawing.Color.White;
+            this.label202.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label202.ForeColor = System.Drawing.Color.Black;
+            this.label202.Location = new System.Drawing.Point(462, 7);
+            this.label202.Name = "label202";
+            this.label202.Size = new System.Drawing.Size(39, 22);
+            this.label202.TabIndex = 366;
+            this.label202.Text = "m.m";
+            this.label202.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // FCF01
+            // 
+            this.FCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCF01.Location = new System.Drawing.Point(164, 8);
+            this.FCF01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FCF01.Name = "FCF01";
+            this.FCF01.Size = new System.Drawing.Size(44, 22);
+            this.FCF01.TabIndex = 282;
+            // 
+            // label201
+            // 
+            this.label201.BackColor = System.Drawing.Color.White;
+            this.label201.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label201.ForeColor = System.Drawing.Color.Black;
+            this.label201.Location = new System.Drawing.Point(211, 7);
+            this.label201.Name = "label201";
+            this.label201.Size = new System.Drawing.Size(39, 22);
+            this.label201.TabIndex = 365;
+            this.label201.Text = "l.p.m";
+            this.label201.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtPuntaTonMusc
+            // 
+            this.TxtPuntaTonMusc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPuntaTonMusc.Location = new System.Drawing.Point(589, 71);
+            this.TxtPuntaTonMusc.MaxLength = 8;
+            this.TxtPuntaTonMusc.Name = "TxtPuntaTonMusc";
+            this.TxtPuntaTonMusc.ShortcutsEnabled = false;
+            this.TxtPuntaTonMusc.Size = new System.Drawing.Size(46, 22);
+            this.TxtPuntaTonMusc.TabIndex = 317;
+            // 
+            // TxtPuntaMovRes
+            // 
+            this.TxtPuntaMovRes.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPuntaMovRes.Location = new System.Drawing.Point(589, 50);
+            this.TxtPuntaMovRes.MaxLength = 8;
+            this.TxtPuntaMovRes.Name = "TxtPuntaMovRes";
+            this.TxtPuntaMovRes.ShortcutsEnabled = false;
+            this.TxtPuntaMovRes.Size = new System.Drawing.Size(46, 22);
+            this.TxtPuntaMovRes.TabIndex = 315;
+            // 
+            // TxtPuntaMovFet
+            // 
+            this.TxtPuntaMovFet.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPuntaMovFet.Location = new System.Drawing.Point(589, 29);
+            this.TxtPuntaMovFet.MaxLength = 8;
+            this.TxtPuntaMovFet.Name = "TxtPuntaMovFet";
+            this.TxtPuntaMovFet.ShortcutsEnabled = false;
+            this.TxtPuntaMovFet.Size = new System.Drawing.Size(46, 22);
+            this.TxtPuntaMovFet.TabIndex = 313;
+            // 
+            // TxtPuntaILA
+            // 
+            this.TxtPuntaILA.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPuntaILA.Location = new System.Drawing.Point(589, 9);
+            this.TxtPuntaILA.MaxLength = 8;
+            this.TxtPuntaILA.Name = "TxtPuntaILA";
+            this.TxtPuntaILA.ShortcutsEnabled = false;
+            this.TxtPuntaILA.Size = new System.Drawing.Size(46, 22);
+            this.TxtPuntaILA.TabIndex = 311;
+            // 
+            // TxtTotal01
+            // 
+            this.TxtTotal01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal01.Location = new System.Drawing.Point(164, 92);
+            this.TxtTotal01.Name = "TxtTotal01";
+            this.TxtTotal01.ShortcutsEnabled = false;
+            this.TxtTotal01.Size = new System.Drawing.Size(87, 22);
+            this.TxtTotal01.TabIndex = 306;
+            // 
+            // TxtTonoMusc01
+            // 
+            this.TxtTonoMusc01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTonoMusc01.Location = new System.Drawing.Point(164, 71);
+            this.TxtTonoMusc01.Name = "TxtTonoMusc01";
+            this.TxtTonoMusc01.ShortcutsEnabled = false;
+            this.TxtTonoMusc01.Size = new System.Drawing.Size(340, 22);
+            this.TxtTonoMusc01.TabIndex = 305;
+            // 
+            // TxtMovResp01
+            // 
+            this.TxtMovResp01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovResp01.Location = new System.Drawing.Point(164, 50);
+            this.TxtMovResp01.Name = "TxtMovResp01";
+            this.TxtMovResp01.ShortcutsEnabled = false;
+            this.TxtMovResp01.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovResp01.TabIndex = 300;
+            // 
+            // TxtMovFeta01
+            // 
+            this.TxtMovFeta01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovFeta01.Location = new System.Drawing.Point(164, 29);
+            this.TxtMovFeta01.Name = "TxtMovFeta01";
+            this.TxtMovFeta01.ShortcutsEnabled = false;
+            this.TxtMovFeta01.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovFeta01.TabIndex = 297;
+            // 
+            // label342
+            // 
+            this.label342.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label342.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label342.ForeColor = System.Drawing.Color.White;
+            this.label342.Location = new System.Drawing.Point(504, 70);
+            this.label342.Name = "label342";
+            this.label342.Size = new System.Drawing.Size(85, 22);
+            this.label342.TabIndex = 316;
+            this.label342.Text = "Puntaje TM:";
+            this.label342.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label341
+            // 
+            this.label341.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label341.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label341.ForeColor = System.Drawing.Color.White;
+            this.label341.Location = new System.Drawing.Point(504, 49);
+            this.label341.Name = "label341";
+            this.label341.Size = new System.Drawing.Size(85, 22);
+            this.label341.TabIndex = 314;
+            this.label341.Text = "Puntaje MR:";
+            this.label341.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label340
+            // 
+            this.label340.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label340.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label340.ForeColor = System.Drawing.Color.White;
+            this.label340.Location = new System.Drawing.Point(504, 28);
+            this.label340.Name = "label340";
+            this.label340.Size = new System.Drawing.Size(85, 22);
+            this.label340.TabIndex = 312;
+            this.label340.Text = "Puntaje MF:";
+            this.label340.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label339
+            // 
+            this.label339.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label339.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label339.ForeColor = System.Drawing.Color.White;
+            this.label339.Location = new System.Drawing.Point(504, 8);
+            this.label339.Name = "label339";
+            this.label339.Size = new System.Drawing.Size(85, 22);
+            this.label339.TabIndex = 310;
+            this.label339.Text = "Puntaje ILA:";
+            this.label339.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label338
+            // 
+            this.label338.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label338.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label338.ForeColor = System.Drawing.Color.White;
+            this.label338.Location = new System.Drawing.Point(251, 8);
+            this.label338.Name = "label338";
+            this.label338.Size = new System.Drawing.Size(164, 22);
+            this.label338.TabIndex = 307;
+            this.label338.Text = "Frecuencia cardiaca fetal:";
+            this.label338.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label314
+            // 
+            this.label314.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label314.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label314.ForeColor = System.Drawing.Color.White;
+            this.label314.Location = new System.Drawing.Point(0, 93);
+            this.label314.Name = "label314";
+            this.label314.Size = new System.Drawing.Size(164, 21);
+            this.label314.TabIndex = 304;
+            this.label314.Text = "Total:";
+            this.label314.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label313
+            // 
+            this.label313.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label313.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label313.ForeColor = System.Drawing.Color.White;
+            this.label313.Location = new System.Drawing.Point(0, 72);
+            this.label313.Name = "label313";
+            this.label313.Size = new System.Drawing.Size(164, 21);
+            this.label313.TabIndex = 303;
+            this.label313.Text = "Tono muscular:";
+            this.label313.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label315
+            // 
+            this.label315.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label315.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label315.ForeColor = System.Drawing.Color.White;
+            this.label315.Location = new System.Drawing.Point(0, 51);
+            this.label315.Name = "label315";
+            this.label315.Size = new System.Drawing.Size(164, 21);
+            this.label315.TabIndex = 301;
+            this.label315.Text = "Movimientos respiratorios:";
+            this.label315.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label316
+            // 
+            this.label316.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label316.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label316.ForeColor = System.Drawing.Color.White;
+            this.label316.Location = new System.Drawing.Point(0, 30);
+            this.label316.Name = "label316";
+            this.label316.Size = new System.Drawing.Size(164, 21);
+            this.label316.TabIndex = 298;
+            this.label316.Text = "Movimientos fetales:";
+            this.label316.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label317
+            // 
+            this.label317.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label317.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label317.ForeColor = System.Drawing.Color.White;
+            this.label317.Location = new System.Drawing.Point(0, 8);
+            this.label317.Name = "label317";
+            this.label317.Size = new System.Drawing.Size(164, 22);
+            this.label317.TabIndex = 295;
+            this.label317.Text = "Frecuencia cardiaca fetal:";
+            this.label317.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage29
+            // 
+            this.tabPage29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage29.Controls.Add(this.TxtILA02);
+            this.tabPage29.Controls.Add(this.FCF02);
+            this.tabPage29.Controls.Add(this.TxtTotal02);
+            this.tabPage29.Controls.Add(this.TxtTonoMusc02);
+            this.tabPage29.Controls.Add(this.TxtMovResp02);
+            this.tabPage29.Controls.Add(this.TxtMovFeta02);
+            this.tabPage29.Controls.Add(this.label205);
+            this.tabPage29.Controls.Add(this.label204);
+            this.tabPage29.Controls.Add(this.label203);
+            this.tabPage29.Controls.Add(this.label318);
+            this.tabPage29.Controls.Add(this.label319);
+            this.tabPage29.Controls.Add(this.label320);
+            this.tabPage29.Controls.Add(this.label321);
+            this.tabPage29.Controls.Add(this.label322);
+            this.tabPage29.Location = new System.Drawing.Point(4, 22);
+            this.tabPage29.Name = "tabPage29";
+            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage29.Size = new System.Drawing.Size(741, 122);
+            this.tabPage29.TabIndex = 1;
+            this.tabPage29.Text = "FETO 2";
+            this.tabPage29.UseVisualStyleBackColor = true;
+            // 
+            // TxtILA02
+            // 
+            this.TxtILA02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtILA02.Location = new System.Drawing.Point(288, 9);
+            this.TxtILA02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtILA02.Name = "TxtILA02";
+            this.TxtILA02.Size = new System.Drawing.Size(44, 22);
+            this.TxtILA02.TabIndex = 371;
+            // 
+            // FCF02
+            // 
+            this.FCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCF02.Location = new System.Drawing.Point(165, 8);
+            this.FCF02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FCF02.Name = "FCF02";
+            this.FCF02.Size = new System.Drawing.Size(44, 22);
+            this.FCF02.TabIndex = 370;
+            // 
+            // TxtTotal02
+            // 
+            this.TxtTotal02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal02.Location = new System.Drawing.Point(413, 8);
+            this.TxtTotal02.Name = "TxtTotal02";
+            this.TxtTotal02.ShortcutsEnabled = false;
+            this.TxtTotal02.Size = new System.Drawing.Size(93, 22);
+            this.TxtTotal02.TabIndex = 369;
+            // 
+            // TxtTonoMusc02
+            // 
+            this.TxtTonoMusc02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTonoMusc02.Location = new System.Drawing.Point(166, 72);
+            this.TxtTonoMusc02.Name = "TxtTonoMusc02";
+            this.TxtTonoMusc02.ShortcutsEnabled = false;
+            this.TxtTonoMusc02.Size = new System.Drawing.Size(340, 22);
+            this.TxtTonoMusc02.TabIndex = 318;
+            // 
+            // TxtMovResp02
+            // 
+            this.TxtMovResp02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovResp02.Location = new System.Drawing.Point(166, 51);
+            this.TxtMovResp02.Name = "TxtMovResp02";
+            this.TxtMovResp02.ShortcutsEnabled = false;
+            this.TxtMovResp02.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovResp02.TabIndex = 315;
+            // 
+            // TxtMovFeta02
+            // 
+            this.TxtMovFeta02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovFeta02.Location = new System.Drawing.Point(166, 30);
+            this.TxtMovFeta02.Name = "TxtMovFeta02";
+            this.TxtMovFeta02.ShortcutsEnabled = false;
+            this.TxtMovFeta02.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovFeta02.TabIndex = 313;
+            // 
+            // label205
+            // 
+            this.label205.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label205.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label205.ForeColor = System.Drawing.Color.White;
+            this.label205.Location = new System.Drawing.Point(376, 9);
+            this.label205.Name = "label205";
+            this.label205.Size = new System.Drawing.Size(37, 22);
+            this.label205.TabIndex = 368;
+            this.label205.Text = "Total:";
+            this.label205.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label204
+            // 
+            this.label204.BackColor = System.Drawing.Color.White;
+            this.label204.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label204.ForeColor = System.Drawing.Color.Black;
+            this.label204.Location = new System.Drawing.Point(338, 8);
+            this.label204.Name = "label204";
+            this.label204.Size = new System.Drawing.Size(35, 22);
+            this.label204.TabIndex = 367;
+            this.label204.Text = "m.m";
+            this.label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label203
+            // 
+            this.label203.BackColor = System.Drawing.Color.White;
+            this.label203.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label203.ForeColor = System.Drawing.Color.Black;
+            this.label203.Location = new System.Drawing.Point(212, 8);
+            this.label203.Name = "label203";
+            this.label203.Size = new System.Drawing.Size(39, 22);
+            this.label203.TabIndex = 366;
+            this.label203.Text = "l.p.m";
+            this.label203.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label318
+            // 
+            this.label318.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label318.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label318.ForeColor = System.Drawing.Color.White;
+            this.label318.Location = new System.Drawing.Point(253, 9);
+            this.label318.Name = "label318";
+            this.label318.Size = new System.Drawing.Size(37, 22);
+            this.label318.TabIndex = 319;
+            this.label318.Text = "ILA:";
+            this.label318.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label319
+            // 
+            this.label319.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label319.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label319.ForeColor = System.Drawing.Color.White;
+            this.label319.Location = new System.Drawing.Point(2, 73);
+            this.label319.Name = "label319";
+            this.label319.Size = new System.Drawing.Size(164, 21);
+            this.label319.TabIndex = 317;
+            this.label319.Text = "Tono muscular:";
+            this.label319.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label320
+            // 
+            this.label320.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label320.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label320.ForeColor = System.Drawing.Color.White;
+            this.label320.Location = new System.Drawing.Point(2, 52);
+            this.label320.Name = "label320";
+            this.label320.Size = new System.Drawing.Size(164, 21);
+            this.label320.TabIndex = 316;
+            this.label320.Text = "Movimientos respiratorios:";
+            this.label320.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label321
+            // 
+            this.label321.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label321.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label321.ForeColor = System.Drawing.Color.White;
+            this.label321.Location = new System.Drawing.Point(2, 31);
+            this.label321.Name = "label321";
+            this.label321.Size = new System.Drawing.Size(164, 21);
+            this.label321.TabIndex = 314;
+            this.label321.Text = "Movimientos fetales:";
+            this.label321.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label322
+            // 
+            this.label322.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label322.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label322.ForeColor = System.Drawing.Color.White;
+            this.label322.Location = new System.Drawing.Point(2, 9);
+            this.label322.Name = "label322";
+            this.label322.Size = new System.Drawing.Size(164, 22);
+            this.label322.TabIndex = 311;
+            this.label322.Text = "Frecuencia cardiaca fetal:";
+            this.label322.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage30
+            // 
+            this.tabPage30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage30.Controls.Add(this.TxtILA03);
+            this.tabPage30.Controls.Add(this.FCF03);
+            this.tabPage30.Controls.Add(this.TxtTotal03);
+            this.tabPage30.Controls.Add(this.TxtTonoMusc03);
+            this.tabPage30.Controls.Add(this.TxtMovResp03);
+            this.tabPage30.Controls.Add(this.TxtMovFeta03);
+            this.tabPage30.Controls.Add(this.label206);
+            this.tabPage30.Controls.Add(this.label207);
+            this.tabPage30.Controls.Add(this.label208);
+            this.tabPage30.Controls.Add(this.label209);
+            this.tabPage30.Controls.Add(this.label210);
+            this.tabPage30.Controls.Add(this.label211);
+            this.tabPage30.Controls.Add(this.label212);
+            this.tabPage30.Controls.Add(this.label213);
+            this.tabPage30.Location = new System.Drawing.Point(4, 22);
+            this.tabPage30.Name = "tabPage30";
+            this.tabPage30.Size = new System.Drawing.Size(741, 122);
+            this.tabPage30.TabIndex = 2;
+            this.tabPage30.Text = "FETO 3";
+            this.tabPage30.UseVisualStyleBackColor = true;
+            // 
+            // TxtILA03
+            // 
+            this.TxtILA03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtILA03.Location = new System.Drawing.Point(289, 8);
+            this.TxtILA03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtILA03.Name = "TxtILA03";
+            this.TxtILA03.Size = new System.Drawing.Size(44, 22);
+            this.TxtILA03.TabIndex = 385;
+            // 
+            // FCF03
+            // 
+            this.FCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCF03.Location = new System.Drawing.Point(167, 9);
+            this.FCF03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FCF03.Name = "FCF03";
+            this.FCF03.Size = new System.Drawing.Size(44, 22);
+            this.FCF03.TabIndex = 384;
+            // 
+            // TxtTotal03
+            // 
+            this.TxtTotal03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal03.Location = new System.Drawing.Point(414, 8);
+            this.TxtTotal03.Name = "TxtTotal03";
+            this.TxtTotal03.ShortcutsEnabled = false;
+            this.TxtTotal03.Size = new System.Drawing.Size(93, 22);
+            this.TxtTotal03.TabIndex = 383;
+            // 
+            // TxtTonoMusc03
+            // 
+            this.TxtTonoMusc03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTonoMusc03.Location = new System.Drawing.Point(167, 72);
+            this.TxtTonoMusc03.Name = "TxtTonoMusc03";
+            this.TxtTonoMusc03.ShortcutsEnabled = false;
+            this.TxtTonoMusc03.Size = new System.Drawing.Size(340, 22);
+            this.TxtTonoMusc03.TabIndex = 377;
+            // 
+            // TxtMovResp03
+            // 
+            this.TxtMovResp03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovResp03.Location = new System.Drawing.Point(167, 51);
+            this.TxtMovResp03.Name = "TxtMovResp03";
+            this.TxtMovResp03.ShortcutsEnabled = false;
+            this.TxtMovResp03.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovResp03.TabIndex = 374;
+            // 
+            // TxtMovFeta03
+            // 
+            this.TxtMovFeta03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovFeta03.Location = new System.Drawing.Point(167, 30);
+            this.TxtMovFeta03.Name = "TxtMovFeta03";
+            this.TxtMovFeta03.ShortcutsEnabled = false;
+            this.TxtMovFeta03.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovFeta03.TabIndex = 372;
+            // 
+            // label206
+            // 
+            this.label206.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label206.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label206.ForeColor = System.Drawing.Color.White;
+            this.label206.Location = new System.Drawing.Point(377, 9);
+            this.label206.Name = "label206";
+            this.label206.Size = new System.Drawing.Size(37, 22);
+            this.label206.TabIndex = 382;
+            this.label206.Text = "Total:";
+            this.label206.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label207
+            // 
+            this.label207.BackColor = System.Drawing.Color.White;
+            this.label207.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label207.ForeColor = System.Drawing.Color.Black;
+            this.label207.Location = new System.Drawing.Point(339, 8);
+            this.label207.Name = "label207";
+            this.label207.Size = new System.Drawing.Size(35, 22);
+            this.label207.TabIndex = 381;
+            this.label207.Text = "m.m";
+            this.label207.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label208
+            // 
+            this.label208.BackColor = System.Drawing.Color.White;
+            this.label208.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label208.ForeColor = System.Drawing.Color.Black;
+            this.label208.Location = new System.Drawing.Point(213, 8);
+            this.label208.Name = "label208";
+            this.label208.Size = new System.Drawing.Size(39, 22);
+            this.label208.TabIndex = 380;
+            this.label208.Text = "l.p.m";
+            this.label208.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label209
+            // 
+            this.label209.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label209.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label209.ForeColor = System.Drawing.Color.White;
+            this.label209.Location = new System.Drawing.Point(254, 9);
+            this.label209.Name = "label209";
+            this.label209.Size = new System.Drawing.Size(37, 22);
+            this.label209.TabIndex = 378;
+            this.label209.Text = "ILA:";
+            this.label209.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label210
+            // 
+            this.label210.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label210.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label210.ForeColor = System.Drawing.Color.White;
+            this.label210.Location = new System.Drawing.Point(3, 73);
+            this.label210.Name = "label210";
+            this.label210.Size = new System.Drawing.Size(164, 21);
+            this.label210.TabIndex = 376;
+            this.label210.Text = "Tono muscular:";
+            this.label210.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label211
+            // 
+            this.label211.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label211.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label211.ForeColor = System.Drawing.Color.White;
+            this.label211.Location = new System.Drawing.Point(3, 52);
+            this.label211.Name = "label211";
+            this.label211.Size = new System.Drawing.Size(164, 21);
+            this.label211.TabIndex = 375;
+            this.label211.Text = "Movimientos respiratorios:";
+            this.label211.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label212
+            // 
+            this.label212.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label212.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label212.ForeColor = System.Drawing.Color.White;
+            this.label212.Location = new System.Drawing.Point(3, 31);
+            this.label212.Name = "label212";
+            this.label212.Size = new System.Drawing.Size(164, 21);
+            this.label212.TabIndex = 373;
+            this.label212.Text = "Movimientos fetales:";
+            this.label212.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label213
+            // 
+            this.label213.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label213.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label213.ForeColor = System.Drawing.Color.White;
+            this.label213.Location = new System.Drawing.Point(3, 9);
+            this.label213.Name = "label213";
+            this.label213.Size = new System.Drawing.Size(164, 22);
+            this.label213.TabIndex = 371;
+            this.label213.Text = "Frecuencia cardiaca fetal:";
+            this.label213.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage31
+            // 
+            this.tabPage31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage31.Controls.Add(this.TxtILA04);
+            this.tabPage31.Controls.Add(this.FCF04);
+            this.tabPage31.Controls.Add(this.TxtTotal04);
+            this.tabPage31.Controls.Add(this.TxtTonoMusc04);
+            this.tabPage31.Controls.Add(this.TxtMovResp04);
+            this.tabPage31.Controls.Add(this.TxtMovFeta04);
+            this.tabPage31.Controls.Add(this.label214);
+            this.tabPage31.Controls.Add(this.label215);
+            this.tabPage31.Controls.Add(this.label216);
+            this.tabPage31.Controls.Add(this.label217);
+            this.tabPage31.Controls.Add(this.label218);
+            this.tabPage31.Controls.Add(this.label219);
+            this.tabPage31.Controls.Add(this.label220);
+            this.tabPage31.Controls.Add(this.label221);
+            this.tabPage31.Location = new System.Drawing.Point(4, 22);
+            this.tabPage31.Name = "tabPage31";
+            this.tabPage31.Size = new System.Drawing.Size(741, 122);
+            this.tabPage31.TabIndex = 3;
+            this.tabPage31.Text = "FETO 4";
+            this.tabPage31.UseVisualStyleBackColor = true;
+            // 
+            // TxtILA04
+            // 
+            this.TxtILA04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtILA04.Location = new System.Drawing.Point(289, 9);
+            this.TxtILA04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtILA04.Name = "TxtILA04";
+            this.TxtILA04.Size = new System.Drawing.Size(44, 22);
+            this.TxtILA04.TabIndex = 385;
+            // 
+            // FCF04
+            // 
+            this.FCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCF04.Location = new System.Drawing.Point(167, 10);
+            this.FCF04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FCF04.Name = "FCF04";
+            this.FCF04.Size = new System.Drawing.Size(44, 22);
+            this.FCF04.TabIndex = 384;
+            // 
+            // TxtTotal04
+            // 
+            this.TxtTotal04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal04.Location = new System.Drawing.Point(414, 9);
+            this.TxtTotal04.Name = "TxtTotal04";
+            this.TxtTotal04.ShortcutsEnabled = false;
+            this.TxtTotal04.Size = new System.Drawing.Size(93, 22);
+            this.TxtTotal04.TabIndex = 383;
+            // 
+            // TxtTonoMusc04
+            // 
+            this.TxtTonoMusc04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTonoMusc04.Location = new System.Drawing.Point(167, 73);
+            this.TxtTonoMusc04.Name = "TxtTonoMusc04";
+            this.TxtTonoMusc04.ShortcutsEnabled = false;
+            this.TxtTonoMusc04.Size = new System.Drawing.Size(340, 22);
+            this.TxtTonoMusc04.TabIndex = 377;
+            // 
+            // TxtMovResp04
+            // 
+            this.TxtMovResp04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovResp04.Location = new System.Drawing.Point(167, 52);
+            this.TxtMovResp04.Name = "TxtMovResp04";
+            this.TxtMovResp04.ShortcutsEnabled = false;
+            this.TxtMovResp04.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovResp04.TabIndex = 374;
+            // 
+            // TxtMovFeta04
+            // 
+            this.TxtMovFeta04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovFeta04.Location = new System.Drawing.Point(167, 31);
+            this.TxtMovFeta04.Name = "TxtMovFeta04";
+            this.TxtMovFeta04.ShortcutsEnabled = false;
+            this.TxtMovFeta04.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovFeta04.TabIndex = 372;
+            // 
+            // label214
+            // 
+            this.label214.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label214.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label214.ForeColor = System.Drawing.Color.White;
+            this.label214.Location = new System.Drawing.Point(377, 10);
+            this.label214.Name = "label214";
+            this.label214.Size = new System.Drawing.Size(37, 22);
+            this.label214.TabIndex = 382;
+            this.label214.Text = "Total:";
+            this.label214.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label215
+            // 
+            this.label215.BackColor = System.Drawing.Color.White;
+            this.label215.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label215.ForeColor = System.Drawing.Color.Black;
+            this.label215.Location = new System.Drawing.Point(339, 9);
+            this.label215.Name = "label215";
+            this.label215.Size = new System.Drawing.Size(35, 22);
+            this.label215.TabIndex = 381;
+            this.label215.Text = "m.m";
+            this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label216
+            // 
+            this.label216.BackColor = System.Drawing.Color.White;
+            this.label216.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label216.ForeColor = System.Drawing.Color.Black;
+            this.label216.Location = new System.Drawing.Point(213, 9);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(39, 22);
+            this.label216.TabIndex = 380;
+            this.label216.Text = "l.p.m";
+            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label217
+            // 
+            this.label217.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label217.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label217.ForeColor = System.Drawing.Color.White;
+            this.label217.Location = new System.Drawing.Point(254, 10);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(37, 22);
+            this.label217.TabIndex = 378;
+            this.label217.Text = "ILA:";
+            this.label217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label218
+            // 
+            this.label218.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label218.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label218.ForeColor = System.Drawing.Color.White;
+            this.label218.Location = new System.Drawing.Point(3, 74);
+            this.label218.Name = "label218";
+            this.label218.Size = new System.Drawing.Size(164, 21);
+            this.label218.TabIndex = 376;
+            this.label218.Text = "Tono muscular:";
+            this.label218.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label219
+            // 
+            this.label219.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label219.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label219.ForeColor = System.Drawing.Color.White;
+            this.label219.Location = new System.Drawing.Point(3, 53);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(164, 21);
+            this.label219.TabIndex = 375;
+            this.label219.Text = "Movimientos respiratorios:";
+            this.label219.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label220
+            // 
+            this.label220.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label220.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label220.ForeColor = System.Drawing.Color.White;
+            this.label220.Location = new System.Drawing.Point(3, 32);
+            this.label220.Name = "label220";
+            this.label220.Size = new System.Drawing.Size(164, 21);
+            this.label220.TabIndex = 373;
+            this.label220.Text = "Movimientos fetales:";
+            this.label220.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label221
+            // 
+            this.label221.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label221.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label221.ForeColor = System.Drawing.Color.White;
+            this.label221.Location = new System.Drawing.Point(3, 10);
+            this.label221.Name = "label221";
+            this.label221.Size = new System.Drawing.Size(164, 22);
+            this.label221.TabIndex = 371;
+            this.label221.Text = "Frecuencia cardiaca fetal:";
+            this.label221.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tabPage32
+            // 
+            this.tabPage32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage32.Controls.Add(this.TxtILA05);
+            this.tabPage32.Controls.Add(this.FCF05);
+            this.tabPage32.Controls.Add(this.TxtTotal05);
+            this.tabPage32.Controls.Add(this.TxtTonoMusc05);
+            this.tabPage32.Controls.Add(this.TxtMovResp05);
+            this.tabPage32.Controls.Add(this.TxtMovFeta05);
+            this.tabPage32.Controls.Add(this.label222);
+            this.tabPage32.Controls.Add(this.label223);
+            this.tabPage32.Controls.Add(this.label224);
+            this.tabPage32.Controls.Add(this.label323);
+            this.tabPage32.Controls.Add(this.label324);
+            this.tabPage32.Controls.Add(this.label325);
+            this.tabPage32.Controls.Add(this.label326);
+            this.tabPage32.Controls.Add(this.label327);
+            this.tabPage32.Location = new System.Drawing.Point(4, 22);
+            this.tabPage32.Name = "tabPage32";
+            this.tabPage32.Size = new System.Drawing.Size(741, 122);
+            this.tabPage32.TabIndex = 4;
+            this.tabPage32.Text = "FETO 5";
+            this.tabPage32.UseVisualStyleBackColor = true;
+            // 
+            // TxtILA05
+            // 
+            this.TxtILA05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtILA05.Location = new System.Drawing.Point(289, 9);
+            this.TxtILA05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtILA05.Name = "TxtILA05";
+            this.TxtILA05.Size = new System.Drawing.Size(44, 22);
+            this.TxtILA05.TabIndex = 385;
+            // 
+            // FCF05
+            // 
+            this.FCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCF05.Location = new System.Drawing.Point(167, 9);
+            this.FCF05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.FCF05.Name = "FCF05";
+            this.FCF05.Size = new System.Drawing.Size(44, 22);
+            this.FCF05.TabIndex = 384;
+            // 
+            // TxtTotal05
+            // 
+            this.TxtTotal05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotal05.Location = new System.Drawing.Point(414, 9);
+            this.TxtTotal05.Name = "TxtTotal05";
+            this.TxtTotal05.ShortcutsEnabled = false;
+            this.TxtTotal05.Size = new System.Drawing.Size(93, 22);
+            this.TxtTotal05.TabIndex = 383;
+            // 
+            // TxtTonoMusc05
+            // 
+            this.TxtTonoMusc05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTonoMusc05.Location = new System.Drawing.Point(167, 73);
+            this.TxtTonoMusc05.Name = "TxtTonoMusc05";
+            this.TxtTonoMusc05.ShortcutsEnabled = false;
+            this.TxtTonoMusc05.Size = new System.Drawing.Size(340, 22);
+            this.TxtTonoMusc05.TabIndex = 377;
+            // 
+            // TxtMovResp05
+            // 
+            this.TxtMovResp05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovResp05.Location = new System.Drawing.Point(167, 52);
+            this.TxtMovResp05.Name = "TxtMovResp05";
+            this.TxtMovResp05.ShortcutsEnabled = false;
+            this.TxtMovResp05.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovResp05.TabIndex = 374;
+            // 
+            // TxtMovFeta05
+            // 
+            this.TxtMovFeta05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtMovFeta05.Location = new System.Drawing.Point(167, 31);
+            this.TxtMovFeta05.Name = "TxtMovFeta05";
+            this.TxtMovFeta05.ShortcutsEnabled = false;
+            this.TxtMovFeta05.Size = new System.Drawing.Size(340, 22);
+            this.TxtMovFeta05.TabIndex = 372;
+            // 
+            // label222
+            // 
+            this.label222.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label222.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label222.ForeColor = System.Drawing.Color.White;
+            this.label222.Location = new System.Drawing.Point(377, 10);
+            this.label222.Name = "label222";
+            this.label222.Size = new System.Drawing.Size(37, 22);
+            this.label222.TabIndex = 382;
+            this.label222.Text = "Total:";
+            this.label222.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label223
+            // 
+            this.label223.BackColor = System.Drawing.Color.White;
+            this.label223.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label223.ForeColor = System.Drawing.Color.Black;
+            this.label223.Location = new System.Drawing.Point(339, 9);
+            this.label223.Name = "label223";
+            this.label223.Size = new System.Drawing.Size(35, 22);
+            this.label223.TabIndex = 381;
+            this.label223.Text = "m.m";
+            this.label223.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label224
+            // 
+            this.label224.BackColor = System.Drawing.Color.White;
+            this.label224.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label224.ForeColor = System.Drawing.Color.Black;
+            this.label224.Location = new System.Drawing.Point(213, 9);
+            this.label224.Name = "label224";
+            this.label224.Size = new System.Drawing.Size(39, 22);
+            this.label224.TabIndex = 380;
+            this.label224.Text = "l.p.m";
+            this.label224.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label323
+            // 
+            this.label323.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label323.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label323.ForeColor = System.Drawing.Color.White;
+            this.label323.Location = new System.Drawing.Point(254, 9);
+            this.label323.Name = "label323";
+            this.label323.Size = new System.Drawing.Size(37, 23);
+            this.label323.TabIndex = 378;
+            this.label323.Text = "ILA:";
+            this.label323.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label324
+            // 
+            this.label324.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label324.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label324.ForeColor = System.Drawing.Color.White;
+            this.label324.Location = new System.Drawing.Point(3, 74);
+            this.label324.Name = "label324";
+            this.label324.Size = new System.Drawing.Size(164, 21);
+            this.label324.TabIndex = 376;
+            this.label324.Text = "Tono muscular:";
+            this.label324.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label325
+            // 
+            this.label325.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label325.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label325.ForeColor = System.Drawing.Color.White;
+            this.label325.Location = new System.Drawing.Point(3, 53);
+            this.label325.Name = "label325";
+            this.label325.Size = new System.Drawing.Size(164, 21);
+            this.label325.TabIndex = 375;
+            this.label325.Text = "Movimientos respiratorios:";
+            this.label325.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label326
+            // 
+            this.label326.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label326.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label326.ForeColor = System.Drawing.Color.White;
+            this.label326.Location = new System.Drawing.Point(3, 32);
+            this.label326.Name = "label326";
+            this.label326.Size = new System.Drawing.Size(164, 21);
+            this.label326.TabIndex = 373;
+            this.label326.Text = "Movimientos fetales:";
+            this.label326.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label327
+            // 
+            this.label327.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.label327.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label327.ForeColor = System.Drawing.Color.White;
+            this.label327.Location = new System.Drawing.Point(3, 9);
+            this.label327.Name = "label327";
+            this.label327.Size = new System.Drawing.Size(164, 23);
+            this.label327.TabIndex = 371;
+            this.label327.Text = "Frecuencia cardiaca fetal:";
+            this.label327.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DtFUMEco11
             // 
@@ -2681,6 +3729,19 @@ namespace OBECOGRAFIA.Forms
             this.label200.Text = "CC";
             this.label200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtResiPostVejiga08
+            // 
+            this.TxtResiPostVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtResiPostVejiga08.Location = new System.Drawing.Point(374, 255);
+            this.TxtResiPostVejiga08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtResiPostVejiga08.Name = "TxtResiPostVejiga08";
+            this.TxtResiPostVejiga08.Size = new System.Drawing.Size(50, 22);
+            this.TxtResiPostVejiga08.TabIndex = 281;
+            // 
             // label199
             // 
             this.label199.BackColor = System.Drawing.Color.White;
@@ -2692,6 +3753,19 @@ namespace OBECOGRAFIA.Forms
             this.label199.TabIndex = 372;
             this.label199.Text = "CC";
             this.label199.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtVoluPromVejiga08
+            // 
+            this.TxtVoluPromVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVoluPromVejiga08.Location = new System.Drawing.Point(141, 254);
+            this.TxtVoluPromVejiga08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVoluPromVejiga08.Name = "TxtVoluPromVejiga08";
+            this.TxtVoluPromVejiga08.Size = new System.Drawing.Size(44, 22);
+            this.TxtVoluPromVejiga08.TabIndex = 280;
             // 
             // label198
             // 
@@ -2705,6 +3779,19 @@ namespace OBECOGRAFIA.Forms
             this.label198.Text = "m.m";
             this.label198.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamEpRinIzquie08
+            // 
+            this.TxtDiamEpRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamEpRinIzquie08.Location = new System.Drawing.Point(686, 149);
+            this.TxtDiamEpRinIzquie08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamEpRinIzquie08.Name = "TxtDiamEpRinIzquie08";
+            this.TxtDiamEpRinIzquie08.Size = new System.Drawing.Size(32, 22);
+            this.TxtDiamEpRinIzquie08.TabIndex = 279;
+            // 
             // label197
             // 
             this.label197.BackColor = System.Drawing.Color.White;
@@ -2716,6 +3803,19 @@ namespace OBECOGRAFIA.Forms
             this.label197.TabIndex = 370;
             this.label197.Text = "m.m";
             this.label197.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamTraRinIzquie08
+            // 
+            this.TxtDiamTraRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamTraRinIzquie08.Location = new System.Drawing.Point(573, 149);
+            this.TxtDiamTraRinIzquie08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamTraRinIzquie08.Name = "TxtDiamTraRinIzquie08";
+            this.TxtDiamTraRinIzquie08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamTraRinIzquie08.TabIndex = 278;
             // 
             // label196
             // 
@@ -2729,6 +3829,19 @@ namespace OBECOGRAFIA.Forms
             this.label196.Text = "m.m";
             this.label196.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamAntRinIzquie08
+            // 
+            this.TxtDiamAntRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamAntRinIzquie08.Location = new System.Drawing.Point(366, 149);
+            this.TxtDiamAntRinIzquie08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamAntRinIzquie08.Name = "TxtDiamAntRinIzquie08";
+            this.TxtDiamAntRinIzquie08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamAntRinIzquie08.TabIndex = 277;
+            // 
             // label195
             // 
             this.label195.BackColor = System.Drawing.Color.White;
@@ -2740,6 +3853,19 @@ namespace OBECOGRAFIA.Forms
             this.label195.TabIndex = 368;
             this.label195.Text = "m.m";
             this.label195.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamRinIzquie08
+            // 
+            this.TxtDiamRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamRinIzquie08.Location = new System.Drawing.Point(116, 149);
+            this.TxtDiamRinIzquie08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamRinIzquie08.Name = "TxtDiamRinIzquie08";
+            this.TxtDiamRinIzquie08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamRinIzquie08.TabIndex = 276;
             // 
             // label194
             // 
@@ -2753,6 +3879,19 @@ namespace OBECOGRAFIA.Forms
             this.label194.Text = "m.m";
             this.label194.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamEpRinDerecho08
+            // 
+            this.TxtDiamEpRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamEpRinDerecho08.Location = new System.Drawing.Point(686, 52);
+            this.TxtDiamEpRinDerecho08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamEpRinDerecho08.Name = "TxtDiamEpRinDerecho08";
+            this.TxtDiamEpRinDerecho08.Size = new System.Drawing.Size(32, 22);
+            this.TxtDiamEpRinDerecho08.TabIndex = 275;
+            // 
             // label193
             // 
             this.label193.BackColor = System.Drawing.Color.White;
@@ -2764,6 +3903,19 @@ namespace OBECOGRAFIA.Forms
             this.label193.TabIndex = 366;
             this.label193.Text = "m.m";
             this.label193.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamTraRinDerecho08
+            // 
+            this.TxtDiamTraRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamTraRinDerecho08.Location = new System.Drawing.Point(573, 52);
+            this.TxtDiamTraRinDerecho08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamTraRinDerecho08.Name = "TxtDiamTraRinDerecho08";
+            this.TxtDiamTraRinDerecho08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamTraRinDerecho08.TabIndex = 274;
             // 
             // label192
             // 
@@ -2777,6 +3929,19 @@ namespace OBECOGRAFIA.Forms
             this.label192.Text = "m.m";
             this.label192.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamAntRinDerecho08
+            // 
+            this.TxtDiamAntRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamAntRinDerecho08.Location = new System.Drawing.Point(366, 52);
+            this.TxtDiamAntRinDerecho08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamAntRinDerecho08.Name = "TxtDiamAntRinDerecho08";
+            this.TxtDiamAntRinDerecho08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamAntRinDerecho08.TabIndex = 273;
+            // 
             // label191
             // 
             this.label191.BackColor = System.Drawing.Color.White;
@@ -2788,6 +3953,19 @@ namespace OBECOGRAFIA.Forms
             this.label191.TabIndex = 364;
             this.label191.Text = "m.m";
             this.label191.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamRinDerecho08
+            // 
+            this.TxtDiamRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamRinDerecho08.Location = new System.Drawing.Point(116, 52);
+            this.TxtDiamRinDerecho08.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamRinDerecho08.Name = "TxtDiamRinDerecho08";
+            this.TxtDiamRinDerecho08.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamRinDerecho08.TabIndex = 272;
             // 
             // label305
             // 
@@ -3640,6 +4818,45 @@ namespace OBECOGRAFIA.Forms
             this.tabPage25.Text = "Datos";
             this.tabPage25.UseVisualStyleBackColor = true;
             // 
+            // TxtDiamEpRinIzquie06
+            // 
+            this.TxtDiamEpRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamEpRinIzquie06.Location = new System.Drawing.Point(686, 138);
+            this.TxtDiamEpRinIzquie06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamEpRinIzquie06.Name = "TxtDiamEpRinIzquie06";
+            this.TxtDiamEpRinIzquie06.Size = new System.Drawing.Size(33, 22);
+            this.TxtDiamEpRinIzquie06.TabIndex = 357;
+            // 
+            // TxtDiamRinDerecho06
+            // 
+            this.TxtDiamRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamRinDerecho06.Location = new System.Drawing.Point(115, 42);
+            this.TxtDiamRinDerecho06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamRinDerecho06.Name = "TxtDiamRinDerecho06";
+            this.TxtDiamRinDerecho06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamRinDerecho06.TabIndex = 271;
+            // 
+            // TxtDiamTraRinIzquie06
+            // 
+            this.TxtDiamTraRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamTraRinIzquie06.Location = new System.Drawing.Point(573, 138);
+            this.TxtDiamTraRinIzquie06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamTraRinIzquie06.Name = "TxtDiamTraRinIzquie06";
+            this.TxtDiamTraRinIzquie06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamTraRinIzquie06.TabIndex = 356;
+            // 
             // label190
             // 
             this.label190.BackColor = System.Drawing.Color.White;
@@ -3651,6 +4868,19 @@ namespace OBECOGRAFIA.Forms
             this.label190.TabIndex = 350;
             this.label190.Text = "m.m";
             this.label190.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamAntRinIzquie06
+            // 
+            this.TxtDiamAntRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamAntRinIzquie06.Location = new System.Drawing.Point(366, 139);
+            this.TxtDiamAntRinIzquie06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamAntRinIzquie06.Name = "TxtDiamAntRinIzquie06";
+            this.TxtDiamAntRinIzquie06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamAntRinIzquie06.TabIndex = 355;
             // 
             // label189
             // 
@@ -3664,6 +4894,19 @@ namespace OBECOGRAFIA.Forms
             this.label189.Text = "m.m";
             this.label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamRinIzquie06
+            // 
+            this.TxtDiamRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamRinIzquie06.Location = new System.Drawing.Point(116, 138);
+            this.TxtDiamRinIzquie06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamRinIzquie06.Name = "TxtDiamRinIzquie06";
+            this.TxtDiamRinIzquie06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamRinIzquie06.TabIndex = 354;
+            // 
             // label188
             // 
             this.label188.BackColor = System.Drawing.Color.White;
@@ -3675,6 +4918,19 @@ namespace OBECOGRAFIA.Forms
             this.label188.TabIndex = 348;
             this.label188.Text = "m.m";
             this.label188.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamEpRinDerecho06
+            // 
+            this.TxtDiamEpRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamEpRinDerecho06.Location = new System.Drawing.Point(686, 41);
+            this.TxtDiamEpRinDerecho06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamEpRinDerecho06.Name = "TxtDiamEpRinDerecho06";
+            this.TxtDiamEpRinDerecho06.Size = new System.Drawing.Size(33, 22);
+            this.TxtDiamEpRinDerecho06.TabIndex = 353;
             // 
             // label187
             // 
@@ -3688,6 +4944,19 @@ namespace OBECOGRAFIA.Forms
             this.label187.Text = "m.m";
             this.label187.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiamTraRinDerecho06
+            // 
+            this.TxtDiamTraRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamTraRinDerecho06.Location = new System.Drawing.Point(573, 41);
+            this.TxtDiamTraRinDerecho06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamTraRinDerecho06.Name = "TxtDiamTraRinDerecho06";
+            this.TxtDiamTraRinDerecho06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamTraRinDerecho06.TabIndex = 352;
+            // 
             // label186
             // 
             this.label186.BackColor = System.Drawing.Color.White;
@@ -3699,6 +4968,19 @@ namespace OBECOGRAFIA.Forms
             this.label186.TabIndex = 346;
             this.label186.Text = "m.m";
             this.label186.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiamAntRinDerecho06
+            // 
+            this.TxtDiamAntRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiamAntRinDerecho06.Location = new System.Drawing.Point(366, 42);
+            this.TxtDiamAntRinDerecho06.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiamAntRinDerecho06.Name = "TxtDiamAntRinDerecho06";
+            this.TxtDiamAntRinDerecho06.Size = new System.Drawing.Size(44, 22);
+            this.TxtDiamAntRinDerecho06.TabIndex = 351;
             // 
             // label185
             // 
@@ -4546,6 +5828,45 @@ namespace OBECOGRAFIA.Forms
             this.tabPage19.Text = "FETO 1";
             this.tabPage19.UseVisualStyleBackColor = true;
             // 
+            // TxtVesiVitelina01
+            // 
+            this.TxtVesiVitelina01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVesiVitelina01.Location = new System.Drawing.Point(416, 31);
+            this.TxtVesiVitelina01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVesiVitelina01.Name = "TxtVesiVitelina01";
+            this.TxtVesiVitelina01.Size = new System.Drawing.Size(44, 22);
+            this.TxtVesiVitelina01.TabIndex = 316;
+            // 
+            // TxtLCN01
+            // 
+            this.TxtLCN01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLCN01.Location = new System.Drawing.Point(171, 29);
+            this.TxtLCN01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtLCN01.Name = "TxtLCN01";
+            this.TxtLCN01.Size = new System.Drawing.Size(44, 22);
+            this.TxtLCN01.TabIndex = 313;
+            // 
+            // TxtFCF01
+            // 
+            this.TxtFCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCF01.Location = new System.Drawing.Point(416, 9);
+            this.TxtFCF01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCF01.Name = "TxtFCF01";
+            this.TxtFCF01.Size = new System.Drawing.Size(44, 22);
+            this.TxtFCF01.TabIndex = 315;
+            // 
             // label387
             // 
             this.label387.BackColor = System.Drawing.Color.White;
@@ -4557,6 +5878,32 @@ namespace OBECOGRAFIA.Forms
             this.label387.TabIndex = 312;
             this.label387.Text = "m.m";
             this.label387.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtBotonEmbriona01
+            // 
+            this.TxtBotonEmbriona01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBotonEmbriona01.Location = new System.Drawing.Point(171, 51);
+            this.TxtBotonEmbriona01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtBotonEmbriona01.Name = "TxtBotonEmbriona01";
+            this.TxtBotonEmbriona01.Size = new System.Drawing.Size(44, 22);
+            this.TxtBotonEmbriona01.TabIndex = 314;
+            // 
+            // TxtSacoGes01
+            // 
+            this.TxtSacoGes01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSacoGes01.Location = new System.Drawing.Point(171, 8);
+            this.TxtSacoGes01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtSacoGes01.Name = "TxtSacoGes01";
+            this.TxtSacoGes01.Size = new System.Drawing.Size(44, 22);
+            this.TxtSacoGes01.TabIndex = 270;
             // 
             // label386
             // 
@@ -4691,6 +6038,71 @@ namespace OBECOGRAFIA.Forms
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "FETO 2";
             this.tabPage20.UseVisualStyleBackColor = true;
+            // 
+            // TxtVesiVitelina02
+            // 
+            this.TxtVesiVitelina02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVesiVitelina02.Location = new System.Drawing.Point(417, 31);
+            this.TxtVesiVitelina02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVesiVitelina02.Name = "TxtVesiVitelina02";
+            this.TxtVesiVitelina02.Size = new System.Drawing.Size(44, 22);
+            this.TxtVesiVitelina02.TabIndex = 332;
+            // 
+            // TxtLCN02
+            // 
+            this.TxtLCN02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLCN02.Location = new System.Drawing.Point(172, 29);
+            this.TxtLCN02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtLCN02.Name = "TxtLCN02";
+            this.TxtLCN02.Size = new System.Drawing.Size(44, 22);
+            this.TxtLCN02.TabIndex = 329;
+            // 
+            // TxtFCF02
+            // 
+            this.TxtFCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCF02.Location = new System.Drawing.Point(417, 9);
+            this.TxtFCF02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCF02.Name = "TxtFCF02";
+            this.TxtFCF02.Size = new System.Drawing.Size(44, 22);
+            this.TxtFCF02.TabIndex = 331;
+            // 
+            // TxtBotonEmbriona02
+            // 
+            this.TxtBotonEmbriona02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBotonEmbriona02.Location = new System.Drawing.Point(172, 51);
+            this.TxtBotonEmbriona02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtBotonEmbriona02.Name = "TxtBotonEmbriona02";
+            this.TxtBotonEmbriona02.Size = new System.Drawing.Size(44, 22);
+            this.TxtBotonEmbriona02.TabIndex = 330;
+            // 
+            // TxtSacoGes02
+            // 
+            this.TxtSacoGes02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSacoGes02.Location = new System.Drawing.Point(172, 8);
+            this.TxtSacoGes02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtSacoGes02.Name = "TxtSacoGes02";
+            this.TxtSacoGes02.Size = new System.Drawing.Size(44, 22);
+            this.TxtSacoGes02.TabIndex = 328;
             // 
             // label155
             // 
@@ -4837,6 +6249,71 @@ namespace OBECOGRAFIA.Forms
             this.tabPage21.Text = "FETO 3";
             this.tabPage21.UseVisualStyleBackColor = true;
             // 
+            // TxtVesiVitelina03
+            // 
+            this.TxtVesiVitelina03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVesiVitelina03.Location = new System.Drawing.Point(417, 31);
+            this.TxtVesiVitelina03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVesiVitelina03.Name = "TxtVesiVitelina03";
+            this.TxtVesiVitelina03.Size = new System.Drawing.Size(44, 22);
+            this.TxtVesiVitelina03.TabIndex = 332;
+            // 
+            // TxtLCN03
+            // 
+            this.TxtLCN03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLCN03.Location = new System.Drawing.Point(172, 29);
+            this.TxtLCN03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtLCN03.Name = "TxtLCN03";
+            this.TxtLCN03.Size = new System.Drawing.Size(44, 22);
+            this.TxtLCN03.TabIndex = 329;
+            // 
+            // TxtFCF03
+            // 
+            this.TxtFCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCF03.Location = new System.Drawing.Point(417, 9);
+            this.TxtFCF03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCF03.Name = "TxtFCF03";
+            this.TxtFCF03.Size = new System.Drawing.Size(44, 22);
+            this.TxtFCF03.TabIndex = 331;
+            // 
+            // TxtBotonEmbriona03
+            // 
+            this.TxtBotonEmbriona03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBotonEmbriona03.Location = new System.Drawing.Point(172, 51);
+            this.TxtBotonEmbriona03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtBotonEmbriona03.Name = "TxtBotonEmbriona03";
+            this.TxtBotonEmbriona03.Size = new System.Drawing.Size(44, 22);
+            this.TxtBotonEmbriona03.TabIndex = 330;
+            // 
+            // TxtSacoGes03
+            // 
+            this.TxtSacoGes03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSacoGes03.Location = new System.Drawing.Point(172, 8);
+            this.TxtSacoGes03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtSacoGes03.Name = "TxtSacoGes03";
+            this.TxtSacoGes03.Size = new System.Drawing.Size(44, 22);
+            this.TxtSacoGes03.TabIndex = 328;
+            // 
             // label165
             // 
             this.label165.BackColor = System.Drawing.Color.White;
@@ -4982,6 +6459,71 @@ namespace OBECOGRAFIA.Forms
             this.tabPage22.Text = "FETO 4";
             this.tabPage22.UseVisualStyleBackColor = true;
             // 
+            // TxtVesiVitelina04
+            // 
+            this.TxtVesiVitelina04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVesiVitelina04.Location = new System.Drawing.Point(417, 31);
+            this.TxtVesiVitelina04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVesiVitelina04.Name = "TxtVesiVitelina04";
+            this.TxtVesiVitelina04.Size = new System.Drawing.Size(44, 22);
+            this.TxtVesiVitelina04.TabIndex = 332;
+            // 
+            // TxtLCN04
+            // 
+            this.TxtLCN04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLCN04.Location = new System.Drawing.Point(172, 29);
+            this.TxtLCN04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtLCN04.Name = "TxtLCN04";
+            this.TxtLCN04.Size = new System.Drawing.Size(44, 22);
+            this.TxtLCN04.TabIndex = 329;
+            // 
+            // TxtFCF04
+            // 
+            this.TxtFCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCF04.Location = new System.Drawing.Point(417, 9);
+            this.TxtFCF04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCF04.Name = "TxtFCF04";
+            this.TxtFCF04.Size = new System.Drawing.Size(44, 22);
+            this.TxtFCF04.TabIndex = 331;
+            // 
+            // TxtBotonEmbriona04
+            // 
+            this.TxtBotonEmbriona04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBotonEmbriona04.Location = new System.Drawing.Point(172, 51);
+            this.TxtBotonEmbriona04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtBotonEmbriona04.Name = "TxtBotonEmbriona04";
+            this.TxtBotonEmbriona04.Size = new System.Drawing.Size(44, 22);
+            this.TxtBotonEmbriona04.TabIndex = 330;
+            // 
+            // TxtSacoGes04
+            // 
+            this.TxtSacoGes04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSacoGes04.Location = new System.Drawing.Point(172, 8);
+            this.TxtSacoGes04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtSacoGes04.Name = "TxtSacoGes04";
+            this.TxtSacoGes04.Size = new System.Drawing.Size(44, 22);
+            this.TxtSacoGes04.TabIndex = 328;
+            // 
             // label388
             // 
             this.label388.BackColor = System.Drawing.Color.White;
@@ -5126,6 +6668,71 @@ namespace OBECOGRAFIA.Forms
             this.tabPage23.TabIndex = 4;
             this.tabPage23.Text = "FETO 5";
             this.tabPage23.UseVisualStyleBackColor = true;
+            // 
+            // TxtVesiVitelina05
+            // 
+            this.TxtVesiVitelina05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVesiVitelina05.Location = new System.Drawing.Point(416, 31);
+            this.TxtVesiVitelina05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtVesiVitelina05.Name = "TxtVesiVitelina05";
+            this.TxtVesiVitelina05.Size = new System.Drawing.Size(44, 22);
+            this.TxtVesiVitelina05.TabIndex = 332;
+            // 
+            // TxtLCN05
+            // 
+            this.TxtLCN05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLCN05.Location = new System.Drawing.Point(171, 29);
+            this.TxtLCN05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtLCN05.Name = "TxtLCN05";
+            this.TxtLCN05.Size = new System.Drawing.Size(44, 22);
+            this.TxtLCN05.TabIndex = 329;
+            // 
+            // TxtFCF05
+            // 
+            this.TxtFCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCF05.Location = new System.Drawing.Point(416, 9);
+            this.TxtFCF05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCF05.Name = "TxtFCF05";
+            this.TxtFCF05.Size = new System.Drawing.Size(44, 22);
+            this.TxtFCF05.TabIndex = 331;
+            // 
+            // TxtBotonEmbriona05
+            // 
+            this.TxtBotonEmbriona05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBotonEmbriona05.Location = new System.Drawing.Point(171, 51);
+            this.TxtBotonEmbriona05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtBotonEmbriona05.Name = "TxtBotonEmbriona05";
+            this.TxtBotonEmbriona05.Size = new System.Drawing.Size(44, 22);
+            this.TxtBotonEmbriona05.TabIndex = 330;
+            // 
+            // TxtSacoGes05
+            // 
+            this.TxtSacoGes05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSacoGes05.Location = new System.Drawing.Point(171, 8);
+            this.TxtSacoGes05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtSacoGes05.Name = "TxtSacoGes05";
+            this.TxtSacoGes05.Size = new System.Drawing.Size(44, 22);
+            this.TxtSacoGes05.TabIndex = 328;
             // 
             // label398
             // 
@@ -5694,6 +7301,45 @@ namespace OBECOGRAFIA.Forms
             this.tabPage13.Text = "Datos";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
+            // TxtPorOvariIzqui02
+            // 
+            this.TxtPorOvariIzqui02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPorOvariIzqui02.Location = new System.Drawing.Point(649, 92);
+            this.TxtPorOvariIzqui02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtPorOvariIzqui02.Name = "TxtPorOvariIzqui02";
+            this.TxtPorOvariIzqui02.Size = new System.Drawing.Size(57, 22);
+            this.TxtPorOvariIzqui02.TabIndex = 267;
+            // 
+            // TxtEndome02
+            // 
+            this.TxtEndome02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEndome02.Location = new System.Drawing.Point(649, 70);
+            this.TxtEndome02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtEndome02.Name = "TxtEndome02";
+            this.TxtEndome02.Size = new System.Drawing.Size(57, 22);
+            this.TxtEndome02.TabIndex = 268;
+            // 
+            // TxtOvariIzquie02
+            // 
+            this.TxtOvariIzquie02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOvariIzquie02.Location = new System.Drawing.Point(514, 92);
+            this.TxtOvariIzquie02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtOvariIzquie02.Name = "TxtOvariIzquie02";
+            this.TxtOvariIzquie02.Size = new System.Drawing.Size(57, 22);
+            this.TxtOvariIzquie02.TabIndex = 271;
+            // 
             // label382
             // 
             this.label382.BackColor = System.Drawing.Color.White;
@@ -5706,6 +7352,58 @@ namespace OBECOGRAFIA.Forms
             this.label382.Text = "m.m";
             this.label382.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // TxtDiameTras02
+            // 
+            this.TxtDiameTras02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiameTras02.Location = new System.Drawing.Point(649, 34);
+            this.TxtDiameTras02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiameTras02.Name = "TxtDiameTras02";
+            this.TxtDiameTras02.Size = new System.Drawing.Size(57, 22);
+            this.TxtDiameTras02.TabIndex = 268;
+            // 
+            // TxtPorOvariDere02
+            // 
+            this.TxtPorOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPorOvariDere02.Location = new System.Drawing.Point(282, 92);
+            this.TxtPorOvariDere02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtPorOvariDere02.Name = "TxtPorOvariDere02";
+            this.TxtPorOvariDere02.Size = new System.Drawing.Size(62, 22);
+            this.TxtPorOvariDere02.TabIndex = 266;
+            // 
+            // TxtDiameAntePos02
+            // 
+            this.TxtDiameAntePos02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiameAntePos02.Location = new System.Drawing.Point(408, 34);
+            this.TxtDiameAntePos02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiameAntePos02.Name = "TxtDiameAntePos02";
+            this.TxtDiameAntePos02.Size = new System.Drawing.Size(57, 22);
+            this.TxtDiameAntePos02.TabIndex = 270;
+            // 
+            // TxtOvariDere02
+            // 
+            this.TxtOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOvariDere02.Location = new System.Drawing.Point(150, 92);
+            this.TxtOvariDere02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtOvariDere02.Name = "TxtOvariDere02";
+            this.TxtOvariDere02.Size = new System.Drawing.Size(57, 22);
+            this.TxtOvariDere02.TabIndex = 265;
+            // 
             // label381
             // 
             this.label381.BackColor = System.Drawing.Color.White;
@@ -5717,6 +7415,19 @@ namespace OBECOGRAFIA.Forms
             this.label381.TabIndex = 297;
             this.label381.Text = "m.m";
             this.label381.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TxtDiameLongi02
+            // 
+            this.TxtDiameLongi02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDiameLongi02.Location = new System.Drawing.Point(150, 34);
+            this.TxtDiameLongi02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtDiameLongi02.Name = "TxtDiameLongi02";
+            this.TxtDiameLongi02.Size = new System.Drawing.Size(57, 22);
+            this.TxtDiameLongi02.TabIndex = 269;
             // 
             // label380
             // 
@@ -6585,6 +8296,19 @@ namespace OBECOGRAFIA.Forms
             this.FETO1.Text = "FETO 1";
             this.FETO1.UseVisualStyleBackColor = true;
             // 
+            // TxtFCFFeto01
+            // 
+            this.TxtFCFFeto01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCFFeto01.Location = new System.Drawing.Point(555, 119);
+            this.TxtFCFFeto01.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCFFeto01.Name = "TxtFCFFeto01";
+            this.TxtFCFFeto01.Size = new System.Drawing.Size(64, 22);
+            this.TxtFCFFeto01.TabIndex = 257;
+            // 
             // TxtPeso01
             // 
             this.TxtPeso01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -7004,6 +8728,19 @@ namespace OBECOGRAFIA.Forms
             this.FETO2.TabIndex = 1;
             this.FETO2.Text = "FETO 2";
             // 
+            // TxtFCFFeto02
+            // 
+            this.TxtFCFFeto02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCFFeto02.Location = new System.Drawing.Point(557, 119);
+            this.TxtFCFFeto02.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCFFeto02.Name = "TxtFCFFeto02";
+            this.TxtFCFFeto02.Size = new System.Drawing.Size(62, 22);
+            this.TxtFCFFeto02.TabIndex = 267;
+            // 
             // TxtPeso02
             // 
             this.TxtPeso02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -7419,6 +9156,19 @@ namespace OBECOGRAFIA.Forms
             this.FETO3.TabIndex = 2;
             this.FETO3.Text = "FETO 3";
             this.FETO3.UseVisualStyleBackColor = true;
+            // 
+            // TxtFCFFeto03
+            // 
+            this.TxtFCFFeto03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCFFeto03.Location = new System.Drawing.Point(555, 119);
+            this.TxtFCFFeto03.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCFFeto03.Name = "TxtFCFFeto03";
+            this.TxtFCFFeto03.Size = new System.Drawing.Size(64, 22);
+            this.TxtFCFFeto03.TabIndex = 267;
             // 
             // TxtPeso03
             // 
@@ -7836,6 +9586,19 @@ namespace OBECOGRAFIA.Forms
             this.FETO4.Text = "FETO 4";
             this.FETO4.UseVisualStyleBackColor = true;
             // 
+            // TxtFCFFeto04
+            // 
+            this.TxtFCFFeto04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCFFeto04.Location = new System.Drawing.Point(555, 119);
+            this.TxtFCFFeto04.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCFFeto04.Name = "TxtFCFFeto04";
+            this.TxtFCFFeto04.Size = new System.Drawing.Size(64, 22);
+            this.TxtFCFFeto04.TabIndex = 267;
+            // 
             // TxtPeso04
             // 
             this.TxtPeso04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -8251,6 +10014,19 @@ namespace OBECOGRAFIA.Forms
             this.FETO5.TabIndex = 4;
             this.FETO5.Text = "FETO 5";
             this.FETO5.UseVisualStyleBackColor = true;
+            // 
+            // TxtFCFFeto05
+            // 
+            this.TxtFCFFeto05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFCFFeto05.Location = new System.Drawing.Point(559, 118);
+            this.TxtFCFFeto05.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.TxtFCFFeto05.Name = "TxtFCFFeto05";
+            this.TxtFCFFeto05.Size = new System.Drawing.Size(60, 22);
+            this.TxtFCFFeto05.TabIndex = 267;
             // 
             // TxtPeso05
             // 
@@ -9015,1782 +10791,6 @@ namespace OBECOGRAFIA.Forms
             this.label332.Text = "Copias";
             this.label332.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TxtFCFFeto01
-            // 
-            this.TxtFCFFeto01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCFFeto01.Location = new System.Drawing.Point(555, 119);
-            this.TxtFCFFeto01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCFFeto01.Name = "TxtFCFFeto01";
-            this.TxtFCFFeto01.Size = new System.Drawing.Size(64, 22);
-            this.TxtFCFFeto01.TabIndex = 257;
-            // 
-            // TxtFCFFeto02
-            // 
-            this.TxtFCFFeto02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCFFeto02.Location = new System.Drawing.Point(557, 119);
-            this.TxtFCFFeto02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCFFeto02.Name = "TxtFCFFeto02";
-            this.TxtFCFFeto02.Size = new System.Drawing.Size(62, 22);
-            this.TxtFCFFeto02.TabIndex = 267;
-            // 
-            // TxtFCFFeto03
-            // 
-            this.TxtFCFFeto03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCFFeto03.Location = new System.Drawing.Point(555, 119);
-            this.TxtFCFFeto03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCFFeto03.Name = "TxtFCFFeto03";
-            this.TxtFCFFeto03.Size = new System.Drawing.Size(64, 22);
-            this.TxtFCFFeto03.TabIndex = 267;
-            // 
-            // TxtFCFFeto04
-            // 
-            this.TxtFCFFeto04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCFFeto04.Location = new System.Drawing.Point(555, 119);
-            this.TxtFCFFeto04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCFFeto04.Name = "TxtFCFFeto04";
-            this.TxtFCFFeto04.Size = new System.Drawing.Size(64, 22);
-            this.TxtFCFFeto04.TabIndex = 267;
-            // 
-            // TxtFCFFeto05
-            // 
-            this.TxtFCFFeto05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCFFeto05.Location = new System.Drawing.Point(559, 118);
-            this.TxtFCFFeto05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCFFeto05.Name = "TxtFCFFeto05";
-            this.TxtFCFFeto05.Size = new System.Drawing.Size(60, 22);
-            this.TxtFCFFeto05.TabIndex = 267;
-            // 
-            // TxtOvariDere02
-            // 
-            this.TxtOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtOvariDere02.Location = new System.Drawing.Point(150, 92);
-            this.TxtOvariDere02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtOvariDere02.Name = "TxtOvariDere02";
-            this.TxtOvariDere02.Size = new System.Drawing.Size(57, 22);
-            this.TxtOvariDere02.TabIndex = 265;
-            // 
-            // TxtPorOvariDere02
-            // 
-            this.TxtPorOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPorOvariDere02.Location = new System.Drawing.Point(282, 92);
-            this.TxtPorOvariDere02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtPorOvariDere02.Name = "TxtPorOvariDere02";
-            this.TxtPorOvariDere02.Size = new System.Drawing.Size(62, 22);
-            this.TxtPorOvariDere02.TabIndex = 266;
-            // 
-            // TxtPorOvariIzqui02
-            // 
-            this.TxtPorOvariIzqui02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPorOvariIzqui02.Location = new System.Drawing.Point(649, 92);
-            this.TxtPorOvariIzqui02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtPorOvariIzqui02.Name = "TxtPorOvariIzqui02";
-            this.TxtPorOvariIzqui02.Size = new System.Drawing.Size(57, 22);
-            this.TxtPorOvariIzqui02.TabIndex = 267;
-            // 
-            // TxtDiameTras02
-            // 
-            this.TxtDiameTras02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiameTras02.Location = new System.Drawing.Point(649, 34);
-            this.TxtDiameTras02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiameTras02.Name = "TxtDiameTras02";
-            this.TxtDiameTras02.Size = new System.Drawing.Size(57, 22);
-            this.TxtDiameTras02.TabIndex = 268;
-            // 
-            // TxtDiameLongi02
-            // 
-            this.TxtDiameLongi02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiameLongi02.Location = new System.Drawing.Point(150, 34);
-            this.TxtDiameLongi02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiameLongi02.Name = "TxtDiameLongi02";
-            this.TxtDiameLongi02.Size = new System.Drawing.Size(57, 22);
-            this.TxtDiameLongi02.TabIndex = 269;
-            // 
-            // TxtDiameAntePos02
-            // 
-            this.TxtDiameAntePos02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiameAntePos02.Location = new System.Drawing.Point(408, 34);
-            this.TxtDiameAntePos02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiameAntePos02.Name = "TxtDiameAntePos02";
-            this.TxtDiameAntePos02.Size = new System.Drawing.Size(57, 22);
-            this.TxtDiameAntePos02.TabIndex = 270;
-            // 
-            // TxtOvariIzquie02
-            // 
-            this.TxtOvariIzquie02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtOvariIzquie02.Location = new System.Drawing.Point(514, 92);
-            this.TxtOvariIzquie02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtOvariIzquie02.Name = "TxtOvariIzquie02";
-            this.TxtOvariIzquie02.Size = new System.Drawing.Size(57, 22);
-            this.TxtOvariIzquie02.TabIndex = 271;
-            // 
-            // TxtEndome02
-            // 
-            this.TxtEndome02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEndome02.Location = new System.Drawing.Point(649, 70);
-            this.TxtEndome02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtEndome02.Name = "TxtEndome02";
-            this.TxtEndome02.Size = new System.Drawing.Size(57, 22);
-            this.TxtEndome02.TabIndex = 268;
-            // 
-            // TxtSacoGes01
-            // 
-            this.TxtSacoGes01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSacoGes01.Location = new System.Drawing.Point(171, 8);
-            this.TxtSacoGes01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtSacoGes01.Name = "TxtSacoGes01";
-            this.TxtSacoGes01.Size = new System.Drawing.Size(44, 22);
-            this.TxtSacoGes01.TabIndex = 270;
-            // 
-            // TxtLCN01
-            // 
-            this.TxtLCN01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLCN01.Location = new System.Drawing.Point(171, 29);
-            this.TxtLCN01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtLCN01.Name = "TxtLCN01";
-            this.TxtLCN01.Size = new System.Drawing.Size(44, 22);
-            this.TxtLCN01.TabIndex = 313;
-            // 
-            // TxtBotonEmbriona01
-            // 
-            this.TxtBotonEmbriona01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBotonEmbriona01.Location = new System.Drawing.Point(171, 51);
-            this.TxtBotonEmbriona01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtBotonEmbriona01.Name = "TxtBotonEmbriona01";
-            this.TxtBotonEmbriona01.Size = new System.Drawing.Size(44, 22);
-            this.TxtBotonEmbriona01.TabIndex = 314;
-            // 
-            // TxtFCF01
-            // 
-            this.TxtFCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCF01.Location = new System.Drawing.Point(416, 9);
-            this.TxtFCF01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCF01.Name = "TxtFCF01";
-            this.TxtFCF01.Size = new System.Drawing.Size(44, 22);
-            this.TxtFCF01.TabIndex = 315;
-            // 
-            // TxtVesiVitelina01
-            // 
-            this.TxtVesiVitelina01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVesiVitelina01.Location = new System.Drawing.Point(416, 31);
-            this.TxtVesiVitelina01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVesiVitelina01.Name = "TxtVesiVitelina01";
-            this.TxtVesiVitelina01.Size = new System.Drawing.Size(44, 22);
-            this.TxtVesiVitelina01.TabIndex = 316;
-            // 
-            // TxtVesiVitelina02
-            // 
-            this.TxtVesiVitelina02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVesiVitelina02.Location = new System.Drawing.Point(417, 31);
-            this.TxtVesiVitelina02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVesiVitelina02.Name = "TxtVesiVitelina02";
-            this.TxtVesiVitelina02.Size = new System.Drawing.Size(44, 22);
-            this.TxtVesiVitelina02.TabIndex = 332;
-            // 
-            // TxtLCN02
-            // 
-            this.TxtLCN02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLCN02.Location = new System.Drawing.Point(172, 29);
-            this.TxtLCN02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtLCN02.Name = "TxtLCN02";
-            this.TxtLCN02.Size = new System.Drawing.Size(44, 22);
-            this.TxtLCN02.TabIndex = 329;
-            // 
-            // TxtFCF02
-            // 
-            this.TxtFCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCF02.Location = new System.Drawing.Point(417, 9);
-            this.TxtFCF02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCF02.Name = "TxtFCF02";
-            this.TxtFCF02.Size = new System.Drawing.Size(44, 22);
-            this.TxtFCF02.TabIndex = 331;
-            // 
-            // TxtBotonEmbriona02
-            // 
-            this.TxtBotonEmbriona02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBotonEmbriona02.Location = new System.Drawing.Point(172, 51);
-            this.TxtBotonEmbriona02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtBotonEmbriona02.Name = "TxtBotonEmbriona02";
-            this.TxtBotonEmbriona02.Size = new System.Drawing.Size(44, 22);
-            this.TxtBotonEmbriona02.TabIndex = 330;
-            // 
-            // TxtSacoGes02
-            // 
-            this.TxtSacoGes02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSacoGes02.Location = new System.Drawing.Point(172, 8);
-            this.TxtSacoGes02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtSacoGes02.Name = "TxtSacoGes02";
-            this.TxtSacoGes02.Size = new System.Drawing.Size(44, 22);
-            this.TxtSacoGes02.TabIndex = 328;
-            // 
-            // TxtVesiVitelina03
-            // 
-            this.TxtVesiVitelina03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVesiVitelina03.Location = new System.Drawing.Point(417, 31);
-            this.TxtVesiVitelina03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVesiVitelina03.Name = "TxtVesiVitelina03";
-            this.TxtVesiVitelina03.Size = new System.Drawing.Size(44, 22);
-            this.TxtVesiVitelina03.TabIndex = 332;
-            // 
-            // TxtLCN03
-            // 
-            this.TxtLCN03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLCN03.Location = new System.Drawing.Point(172, 29);
-            this.TxtLCN03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtLCN03.Name = "TxtLCN03";
-            this.TxtLCN03.Size = new System.Drawing.Size(44, 22);
-            this.TxtLCN03.TabIndex = 329;
-            // 
-            // TxtFCF03
-            // 
-            this.TxtFCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCF03.Location = new System.Drawing.Point(417, 9);
-            this.TxtFCF03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCF03.Name = "TxtFCF03";
-            this.TxtFCF03.Size = new System.Drawing.Size(44, 22);
-            this.TxtFCF03.TabIndex = 331;
-            // 
-            // TxtBotonEmbriona03
-            // 
-            this.TxtBotonEmbriona03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBotonEmbriona03.Location = new System.Drawing.Point(172, 51);
-            this.TxtBotonEmbriona03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtBotonEmbriona03.Name = "TxtBotonEmbriona03";
-            this.TxtBotonEmbriona03.Size = new System.Drawing.Size(44, 22);
-            this.TxtBotonEmbriona03.TabIndex = 330;
-            // 
-            // TxtSacoGes03
-            // 
-            this.TxtSacoGes03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSacoGes03.Location = new System.Drawing.Point(172, 8);
-            this.TxtSacoGes03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtSacoGes03.Name = "TxtSacoGes03";
-            this.TxtSacoGes03.Size = new System.Drawing.Size(44, 22);
-            this.TxtSacoGes03.TabIndex = 328;
-            // 
-            // TxtVesiVitelina04
-            // 
-            this.TxtVesiVitelina04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVesiVitelina04.Location = new System.Drawing.Point(417, 31);
-            this.TxtVesiVitelina04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVesiVitelina04.Name = "TxtVesiVitelina04";
-            this.TxtVesiVitelina04.Size = new System.Drawing.Size(44, 22);
-            this.TxtVesiVitelina04.TabIndex = 332;
-            // 
-            // TxtLCN04
-            // 
-            this.TxtLCN04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLCN04.Location = new System.Drawing.Point(172, 29);
-            this.TxtLCN04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtLCN04.Name = "TxtLCN04";
-            this.TxtLCN04.Size = new System.Drawing.Size(44, 22);
-            this.TxtLCN04.TabIndex = 329;
-            // 
-            // TxtFCF04
-            // 
-            this.TxtFCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCF04.Location = new System.Drawing.Point(417, 9);
-            this.TxtFCF04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCF04.Name = "TxtFCF04";
-            this.TxtFCF04.Size = new System.Drawing.Size(44, 22);
-            this.TxtFCF04.TabIndex = 331;
-            // 
-            // TxtBotonEmbriona04
-            // 
-            this.TxtBotonEmbriona04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBotonEmbriona04.Location = new System.Drawing.Point(172, 51);
-            this.TxtBotonEmbriona04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtBotonEmbriona04.Name = "TxtBotonEmbriona04";
-            this.TxtBotonEmbriona04.Size = new System.Drawing.Size(44, 22);
-            this.TxtBotonEmbriona04.TabIndex = 330;
-            // 
-            // TxtSacoGes04
-            // 
-            this.TxtSacoGes04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSacoGes04.Location = new System.Drawing.Point(172, 8);
-            this.TxtSacoGes04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtSacoGes04.Name = "TxtSacoGes04";
-            this.TxtSacoGes04.Size = new System.Drawing.Size(44, 22);
-            this.TxtSacoGes04.TabIndex = 328;
-            // 
-            // TxtVesiVitelina05
-            // 
-            this.TxtVesiVitelina05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVesiVitelina05.Location = new System.Drawing.Point(416, 31);
-            this.TxtVesiVitelina05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVesiVitelina05.Name = "TxtVesiVitelina05";
-            this.TxtVesiVitelina05.Size = new System.Drawing.Size(44, 22);
-            this.TxtVesiVitelina05.TabIndex = 332;
-            // 
-            // TxtLCN05
-            // 
-            this.TxtLCN05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtLCN05.Location = new System.Drawing.Point(171, 29);
-            this.TxtLCN05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtLCN05.Name = "TxtLCN05";
-            this.TxtLCN05.Size = new System.Drawing.Size(44, 22);
-            this.TxtLCN05.TabIndex = 329;
-            // 
-            // TxtFCF05
-            // 
-            this.TxtFCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFCF05.Location = new System.Drawing.Point(416, 9);
-            this.TxtFCF05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtFCF05.Name = "TxtFCF05";
-            this.TxtFCF05.Size = new System.Drawing.Size(44, 22);
-            this.TxtFCF05.TabIndex = 331;
-            // 
-            // TxtBotonEmbriona05
-            // 
-            this.TxtBotonEmbriona05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBotonEmbriona05.Location = new System.Drawing.Point(171, 51);
-            this.TxtBotonEmbriona05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtBotonEmbriona05.Name = "TxtBotonEmbriona05";
-            this.TxtBotonEmbriona05.Size = new System.Drawing.Size(44, 22);
-            this.TxtBotonEmbriona05.TabIndex = 330;
-            // 
-            // TxtSacoGes05
-            // 
-            this.TxtSacoGes05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSacoGes05.Location = new System.Drawing.Point(171, 8);
-            this.TxtSacoGes05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtSacoGes05.Name = "TxtSacoGes05";
-            this.TxtSacoGes05.Size = new System.Drawing.Size(44, 22);
-            this.TxtSacoGes05.TabIndex = 328;
-            // 
-            // TxtDiamRinDerecho06
-            // 
-            this.TxtDiamRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamRinDerecho06.Location = new System.Drawing.Point(115, 42);
-            this.TxtDiamRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamRinDerecho06.Name = "TxtDiamRinDerecho06";
-            this.TxtDiamRinDerecho06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamRinDerecho06.TabIndex = 271;
-            // 
-            // TxtDiamAntRinDerecho06
-            // 
-            this.TxtDiamAntRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamAntRinDerecho06.Location = new System.Drawing.Point(366, 42);
-            this.TxtDiamAntRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamAntRinDerecho06.Name = "TxtDiamAntRinDerecho06";
-            this.TxtDiamAntRinDerecho06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamAntRinDerecho06.TabIndex = 351;
-            // 
-            // TxtDiamTraRinDerecho06
-            // 
-            this.TxtDiamTraRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamTraRinDerecho06.Location = new System.Drawing.Point(573, 41);
-            this.TxtDiamTraRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamTraRinDerecho06.Name = "TxtDiamTraRinDerecho06";
-            this.TxtDiamTraRinDerecho06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamTraRinDerecho06.TabIndex = 352;
-            // 
-            // TxtDiamEpRinDerecho06
-            // 
-            this.TxtDiamEpRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamEpRinDerecho06.Location = new System.Drawing.Point(686, 41);
-            this.TxtDiamEpRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamEpRinDerecho06.Name = "TxtDiamEpRinDerecho06";
-            this.TxtDiamEpRinDerecho06.Size = new System.Drawing.Size(33, 22);
-            this.TxtDiamEpRinDerecho06.TabIndex = 353;
-            // 
-            // TxtDiamRinIzquie06
-            // 
-            this.TxtDiamRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamRinIzquie06.Location = new System.Drawing.Point(116, 138);
-            this.TxtDiamRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamRinIzquie06.Name = "TxtDiamRinIzquie06";
-            this.TxtDiamRinIzquie06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamRinIzquie06.TabIndex = 354;
-            // 
-            // TxtDiamAntRinIzquie06
-            // 
-            this.TxtDiamAntRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamAntRinIzquie06.Location = new System.Drawing.Point(366, 139);
-            this.TxtDiamAntRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamAntRinIzquie06.Name = "TxtDiamAntRinIzquie06";
-            this.TxtDiamAntRinIzquie06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamAntRinIzquie06.TabIndex = 355;
-            // 
-            // TxtDiamTraRinIzquie06
-            // 
-            this.TxtDiamTraRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamTraRinIzquie06.Location = new System.Drawing.Point(573, 138);
-            this.TxtDiamTraRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamTraRinIzquie06.Name = "TxtDiamTraRinIzquie06";
-            this.TxtDiamTraRinIzquie06.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamTraRinIzquie06.TabIndex = 356;
-            // 
-            // TxtDiamEpRinIzquie06
-            // 
-            this.TxtDiamEpRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamEpRinIzquie06.Location = new System.Drawing.Point(686, 138);
-            this.TxtDiamEpRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamEpRinIzquie06.Name = "TxtDiamEpRinIzquie06";
-            this.TxtDiamEpRinIzquie06.Size = new System.Drawing.Size(33, 22);
-            this.TxtDiamEpRinIzquie06.TabIndex = 357;
-            // 
-            // TxtDiamRinDerecho08
-            // 
-            this.TxtDiamRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamRinDerecho08.Location = new System.Drawing.Point(116, 52);
-            this.TxtDiamRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamRinDerecho08.Name = "TxtDiamRinDerecho08";
-            this.TxtDiamRinDerecho08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamRinDerecho08.TabIndex = 272;
-            // 
-            // TxtDiamAntRinDerecho08
-            // 
-            this.TxtDiamAntRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamAntRinDerecho08.Location = new System.Drawing.Point(366, 52);
-            this.TxtDiamAntRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamAntRinDerecho08.Name = "TxtDiamAntRinDerecho08";
-            this.TxtDiamAntRinDerecho08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamAntRinDerecho08.TabIndex = 273;
-            // 
-            // TxtDiamTraRinDerecho08
-            // 
-            this.TxtDiamTraRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamTraRinDerecho08.Location = new System.Drawing.Point(573, 52);
-            this.TxtDiamTraRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamTraRinDerecho08.Name = "TxtDiamTraRinDerecho08";
-            this.TxtDiamTraRinDerecho08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamTraRinDerecho08.TabIndex = 274;
-            // 
-            // TxtDiamEpRinDerecho08
-            // 
-            this.TxtDiamEpRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamEpRinDerecho08.Location = new System.Drawing.Point(686, 52);
-            this.TxtDiamEpRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamEpRinDerecho08.Name = "TxtDiamEpRinDerecho08";
-            this.TxtDiamEpRinDerecho08.Size = new System.Drawing.Size(32, 22);
-            this.TxtDiamEpRinDerecho08.TabIndex = 275;
-            // 
-            // TxtDiamRinIzquie08
-            // 
-            this.TxtDiamRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamRinIzquie08.Location = new System.Drawing.Point(116, 149);
-            this.TxtDiamRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamRinIzquie08.Name = "TxtDiamRinIzquie08";
-            this.TxtDiamRinIzquie08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamRinIzquie08.TabIndex = 276;
-            // 
-            // TxtDiamAntRinIzquie08
-            // 
-            this.TxtDiamAntRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamAntRinIzquie08.Location = new System.Drawing.Point(366, 149);
-            this.TxtDiamAntRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamAntRinIzquie08.Name = "TxtDiamAntRinIzquie08";
-            this.TxtDiamAntRinIzquie08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamAntRinIzquie08.TabIndex = 277;
-            // 
-            // TxtDiamTraRinIzquie08
-            // 
-            this.TxtDiamTraRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamTraRinIzquie08.Location = new System.Drawing.Point(573, 149);
-            this.TxtDiamTraRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamTraRinIzquie08.Name = "TxtDiamTraRinIzquie08";
-            this.TxtDiamTraRinIzquie08.Size = new System.Drawing.Size(44, 22);
-            this.TxtDiamTraRinIzquie08.TabIndex = 278;
-            // 
-            // TxtDiamEpRinIzquie08
-            // 
-            this.TxtDiamEpRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiamEpRinIzquie08.Location = new System.Drawing.Point(686, 149);
-            this.TxtDiamEpRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiamEpRinIzquie08.Name = "TxtDiamEpRinIzquie08";
-            this.TxtDiamEpRinIzquie08.Size = new System.Drawing.Size(32, 22);
-            this.TxtDiamEpRinIzquie08.TabIndex = 279;
-            // 
-            // TxtVoluPromVejiga08
-            // 
-            this.TxtVoluPromVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVoluPromVejiga08.Location = new System.Drawing.Point(141, 254);
-            this.TxtVoluPromVejiga08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtVoluPromVejiga08.Name = "TxtVoluPromVejiga08";
-            this.TxtVoluPromVejiga08.Size = new System.Drawing.Size(44, 22);
-            this.TxtVoluPromVejiga08.TabIndex = 280;
-            // 
-            // TxtResiPostVejiga08
-            // 
-            this.TxtResiPostVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResiPostVejiga08.Location = new System.Drawing.Point(374, 255);
-            this.TxtResiPostVejiga08.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtResiPostVejiga08.Name = "TxtResiPostVejiga08";
-            this.TxtResiPostVejiga08.Size = new System.Drawing.Size(50, 22);
-            this.TxtResiPostVejiga08.TabIndex = 281;
-            // 
-            // tabPage32
-            // 
-            this.tabPage32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage32.Controls.Add(this.TxtILA05);
-            this.tabPage32.Controls.Add(this.FCF05);
-            this.tabPage32.Controls.Add(this.TxtTotal05);
-            this.tabPage32.Controls.Add(this.TxtTonoMusc05);
-            this.tabPage32.Controls.Add(this.TxtMovResp05);
-            this.tabPage32.Controls.Add(this.TxtMovFeta05);
-            this.tabPage32.Controls.Add(this.label222);
-            this.tabPage32.Controls.Add(this.label223);
-            this.tabPage32.Controls.Add(this.label224);
-            this.tabPage32.Controls.Add(this.label323);
-            this.tabPage32.Controls.Add(this.label324);
-            this.tabPage32.Controls.Add(this.label325);
-            this.tabPage32.Controls.Add(this.label326);
-            this.tabPage32.Controls.Add(this.label327);
-            this.tabPage32.Location = new System.Drawing.Point(4, 22);
-            this.tabPage32.Name = "tabPage32";
-            this.tabPage32.Size = new System.Drawing.Size(741, 122);
-            this.tabPage32.TabIndex = 4;
-            this.tabPage32.Text = "FETO 5";
-            this.tabPage32.UseVisualStyleBackColor = true;
-            // 
-            // label327
-            // 
-            this.label327.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label327.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label327.ForeColor = System.Drawing.Color.White;
-            this.label327.Location = new System.Drawing.Point(3, 9);
-            this.label327.Name = "label327";
-            this.label327.Size = new System.Drawing.Size(164, 23);
-            this.label327.TabIndex = 371;
-            this.label327.Text = "Frecuencia cardiaca fetal:";
-            this.label327.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label326
-            // 
-            this.label326.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label326.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label326.ForeColor = System.Drawing.Color.White;
-            this.label326.Location = new System.Drawing.Point(3, 32);
-            this.label326.Name = "label326";
-            this.label326.Size = new System.Drawing.Size(164, 21);
-            this.label326.TabIndex = 373;
-            this.label326.Text = "Movimientos fetales:";
-            this.label326.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovFeta05
-            // 
-            this.TxtMovFeta05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovFeta05.Location = new System.Drawing.Point(167, 31);
-            this.TxtMovFeta05.Name = "TxtMovFeta05";
-            this.TxtMovFeta05.ShortcutsEnabled = false;
-            this.TxtMovFeta05.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovFeta05.TabIndex = 372;
-            // 
-            // label325
-            // 
-            this.label325.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label325.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label325.ForeColor = System.Drawing.Color.White;
-            this.label325.Location = new System.Drawing.Point(3, 53);
-            this.label325.Name = "label325";
-            this.label325.Size = new System.Drawing.Size(164, 21);
-            this.label325.TabIndex = 375;
-            this.label325.Text = "Movimientos respiratorios:";
-            this.label325.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovResp05
-            // 
-            this.TxtMovResp05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovResp05.Location = new System.Drawing.Point(167, 52);
-            this.TxtMovResp05.Name = "TxtMovResp05";
-            this.TxtMovResp05.ShortcutsEnabled = false;
-            this.TxtMovResp05.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovResp05.TabIndex = 374;
-            // 
-            // label324
-            // 
-            this.label324.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label324.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label324.ForeColor = System.Drawing.Color.White;
-            this.label324.Location = new System.Drawing.Point(3, 74);
-            this.label324.Name = "label324";
-            this.label324.Size = new System.Drawing.Size(164, 21);
-            this.label324.TabIndex = 376;
-            this.label324.Text = "Tono muscular:";
-            this.label324.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtTonoMusc05
-            // 
-            this.TxtTonoMusc05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTonoMusc05.Location = new System.Drawing.Point(167, 73);
-            this.TxtTonoMusc05.Name = "TxtTonoMusc05";
-            this.TxtTonoMusc05.ShortcutsEnabled = false;
-            this.TxtTonoMusc05.Size = new System.Drawing.Size(340, 22);
-            this.TxtTonoMusc05.TabIndex = 377;
-            // 
-            // label323
-            // 
-            this.label323.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label323.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label323.ForeColor = System.Drawing.Color.White;
-            this.label323.Location = new System.Drawing.Point(254, 9);
-            this.label323.Name = "label323";
-            this.label323.Size = new System.Drawing.Size(37, 23);
-            this.label323.TabIndex = 378;
-            this.label323.Text = "ILA:";
-            this.label323.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label224
-            // 
-            this.label224.BackColor = System.Drawing.Color.White;
-            this.label224.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label224.ForeColor = System.Drawing.Color.Black;
-            this.label224.Location = new System.Drawing.Point(213, 9);
-            this.label224.Name = "label224";
-            this.label224.Size = new System.Drawing.Size(39, 22);
-            this.label224.TabIndex = 380;
-            this.label224.Text = "l.p.m";
-            this.label224.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label223
-            // 
-            this.label223.BackColor = System.Drawing.Color.White;
-            this.label223.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label223.ForeColor = System.Drawing.Color.Black;
-            this.label223.Location = new System.Drawing.Point(339, 9);
-            this.label223.Name = "label223";
-            this.label223.Size = new System.Drawing.Size(35, 22);
-            this.label223.TabIndex = 381;
-            this.label223.Text = "m.m";
-            this.label223.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label222
-            // 
-            this.label222.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label222.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label222.ForeColor = System.Drawing.Color.White;
-            this.label222.Location = new System.Drawing.Point(377, 10);
-            this.label222.Name = "label222";
-            this.label222.Size = new System.Drawing.Size(37, 22);
-            this.label222.TabIndex = 382;
-            this.label222.Text = "Total:";
-            this.label222.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtTotal05
-            // 
-            this.TxtTotal05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal05.Location = new System.Drawing.Point(414, 9);
-            this.TxtTotal05.Name = "TxtTotal05";
-            this.TxtTotal05.ShortcutsEnabled = false;
-            this.TxtTotal05.Size = new System.Drawing.Size(93, 22);
-            this.TxtTotal05.TabIndex = 383;
-            // 
-            // tabPage31
-            // 
-            this.tabPage31.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage31.Controls.Add(this.TxtILA04);
-            this.tabPage31.Controls.Add(this.FCF04);
-            this.tabPage31.Controls.Add(this.TxtTotal04);
-            this.tabPage31.Controls.Add(this.TxtTonoMusc04);
-            this.tabPage31.Controls.Add(this.TxtMovResp04);
-            this.tabPage31.Controls.Add(this.TxtMovFeta04);
-            this.tabPage31.Controls.Add(this.label214);
-            this.tabPage31.Controls.Add(this.label215);
-            this.tabPage31.Controls.Add(this.label216);
-            this.tabPage31.Controls.Add(this.label217);
-            this.tabPage31.Controls.Add(this.label218);
-            this.tabPage31.Controls.Add(this.label219);
-            this.tabPage31.Controls.Add(this.label220);
-            this.tabPage31.Controls.Add(this.label221);
-            this.tabPage31.Location = new System.Drawing.Point(4, 22);
-            this.tabPage31.Name = "tabPage31";
-            this.tabPage31.Size = new System.Drawing.Size(741, 122);
-            this.tabPage31.TabIndex = 3;
-            this.tabPage31.Text = "FETO 4";
-            this.tabPage31.UseVisualStyleBackColor = true;
-            // 
-            // label221
-            // 
-            this.label221.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label221.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label221.ForeColor = System.Drawing.Color.White;
-            this.label221.Location = new System.Drawing.Point(3, 10);
-            this.label221.Name = "label221";
-            this.label221.Size = new System.Drawing.Size(164, 22);
-            this.label221.TabIndex = 371;
-            this.label221.Text = "Frecuencia cardiaca fetal:";
-            this.label221.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label220
-            // 
-            this.label220.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label220.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label220.ForeColor = System.Drawing.Color.White;
-            this.label220.Location = new System.Drawing.Point(3, 32);
-            this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(164, 21);
-            this.label220.TabIndex = 373;
-            this.label220.Text = "Movimientos fetales:";
-            this.label220.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovFeta04
-            // 
-            this.TxtMovFeta04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovFeta04.Location = new System.Drawing.Point(167, 31);
-            this.TxtMovFeta04.Name = "TxtMovFeta04";
-            this.TxtMovFeta04.ShortcutsEnabled = false;
-            this.TxtMovFeta04.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovFeta04.TabIndex = 372;
-            // 
-            // label219
-            // 
-            this.label219.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label219.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label219.ForeColor = System.Drawing.Color.White;
-            this.label219.Location = new System.Drawing.Point(3, 53);
-            this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(164, 21);
-            this.label219.TabIndex = 375;
-            this.label219.Text = "Movimientos respiratorios:";
-            this.label219.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovResp04
-            // 
-            this.TxtMovResp04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovResp04.Location = new System.Drawing.Point(167, 52);
-            this.TxtMovResp04.Name = "TxtMovResp04";
-            this.TxtMovResp04.ShortcutsEnabled = false;
-            this.TxtMovResp04.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovResp04.TabIndex = 374;
-            // 
-            // label218
-            // 
-            this.label218.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label218.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label218.ForeColor = System.Drawing.Color.White;
-            this.label218.Location = new System.Drawing.Point(3, 74);
-            this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(164, 21);
-            this.label218.TabIndex = 376;
-            this.label218.Text = "Tono muscular:";
-            this.label218.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtTonoMusc04
-            // 
-            this.TxtTonoMusc04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTonoMusc04.Location = new System.Drawing.Point(167, 73);
-            this.TxtTonoMusc04.Name = "TxtTonoMusc04";
-            this.TxtTonoMusc04.ShortcutsEnabled = false;
-            this.TxtTonoMusc04.Size = new System.Drawing.Size(340, 22);
-            this.TxtTonoMusc04.TabIndex = 377;
-            // 
-            // label217
-            // 
-            this.label217.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label217.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label217.ForeColor = System.Drawing.Color.White;
-            this.label217.Location = new System.Drawing.Point(254, 10);
-            this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(37, 22);
-            this.label217.TabIndex = 378;
-            this.label217.Text = "ILA:";
-            this.label217.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label216
-            // 
-            this.label216.BackColor = System.Drawing.Color.White;
-            this.label216.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label216.ForeColor = System.Drawing.Color.Black;
-            this.label216.Location = new System.Drawing.Point(213, 9);
-            this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(39, 22);
-            this.label216.TabIndex = 380;
-            this.label216.Text = "l.p.m";
-            this.label216.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label215
-            // 
-            this.label215.BackColor = System.Drawing.Color.White;
-            this.label215.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label215.ForeColor = System.Drawing.Color.Black;
-            this.label215.Location = new System.Drawing.Point(339, 9);
-            this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(35, 22);
-            this.label215.TabIndex = 381;
-            this.label215.Text = "m.m";
-            this.label215.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label214
-            // 
-            this.label214.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label214.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label214.ForeColor = System.Drawing.Color.White;
-            this.label214.Location = new System.Drawing.Point(377, 10);
-            this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(37, 22);
-            this.label214.TabIndex = 382;
-            this.label214.Text = "Total:";
-            this.label214.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtTotal04
-            // 
-            this.TxtTotal04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal04.Location = new System.Drawing.Point(414, 9);
-            this.TxtTotal04.Name = "TxtTotal04";
-            this.TxtTotal04.ShortcutsEnabled = false;
-            this.TxtTotal04.Size = new System.Drawing.Size(93, 22);
-            this.TxtTotal04.TabIndex = 383;
-            // 
-            // tabPage30
-            // 
-            this.tabPage30.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage30.Controls.Add(this.TxtILA03);
-            this.tabPage30.Controls.Add(this.FCF03);
-            this.tabPage30.Controls.Add(this.TxtTotal03);
-            this.tabPage30.Controls.Add(this.TxtTonoMusc03);
-            this.tabPage30.Controls.Add(this.TxtMovResp03);
-            this.tabPage30.Controls.Add(this.TxtMovFeta03);
-            this.tabPage30.Controls.Add(this.label206);
-            this.tabPage30.Controls.Add(this.label207);
-            this.tabPage30.Controls.Add(this.label208);
-            this.tabPage30.Controls.Add(this.label209);
-            this.tabPage30.Controls.Add(this.label210);
-            this.tabPage30.Controls.Add(this.label211);
-            this.tabPage30.Controls.Add(this.label212);
-            this.tabPage30.Controls.Add(this.label213);
-            this.tabPage30.Location = new System.Drawing.Point(4, 22);
-            this.tabPage30.Name = "tabPage30";
-            this.tabPage30.Size = new System.Drawing.Size(741, 122);
-            this.tabPage30.TabIndex = 2;
-            this.tabPage30.Text = "FETO 3";
-            this.tabPage30.UseVisualStyleBackColor = true;
-            // 
-            // label213
-            // 
-            this.label213.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label213.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label213.ForeColor = System.Drawing.Color.White;
-            this.label213.Location = new System.Drawing.Point(3, 9);
-            this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(164, 22);
-            this.label213.TabIndex = 371;
-            this.label213.Text = "Frecuencia cardiaca fetal:";
-            this.label213.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label212
-            // 
-            this.label212.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label212.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label212.ForeColor = System.Drawing.Color.White;
-            this.label212.Location = new System.Drawing.Point(3, 31);
-            this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(164, 21);
-            this.label212.TabIndex = 373;
-            this.label212.Text = "Movimientos fetales:";
-            this.label212.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovFeta03
-            // 
-            this.TxtMovFeta03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovFeta03.Location = new System.Drawing.Point(167, 30);
-            this.TxtMovFeta03.Name = "TxtMovFeta03";
-            this.TxtMovFeta03.ShortcutsEnabled = false;
-            this.TxtMovFeta03.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovFeta03.TabIndex = 372;
-            // 
-            // label211
-            // 
-            this.label211.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label211.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label211.ForeColor = System.Drawing.Color.White;
-            this.label211.Location = new System.Drawing.Point(3, 52);
-            this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(164, 21);
-            this.label211.TabIndex = 375;
-            this.label211.Text = "Movimientos respiratorios:";
-            this.label211.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovResp03
-            // 
-            this.TxtMovResp03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovResp03.Location = new System.Drawing.Point(167, 51);
-            this.TxtMovResp03.Name = "TxtMovResp03";
-            this.TxtMovResp03.ShortcutsEnabled = false;
-            this.TxtMovResp03.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovResp03.TabIndex = 374;
-            // 
-            // label210
-            // 
-            this.label210.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label210.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label210.ForeColor = System.Drawing.Color.White;
-            this.label210.Location = new System.Drawing.Point(3, 73);
-            this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(164, 21);
-            this.label210.TabIndex = 376;
-            this.label210.Text = "Tono muscular:";
-            this.label210.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtTonoMusc03
-            // 
-            this.TxtTonoMusc03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTonoMusc03.Location = new System.Drawing.Point(167, 72);
-            this.TxtTonoMusc03.Name = "TxtTonoMusc03";
-            this.TxtTonoMusc03.ShortcutsEnabled = false;
-            this.TxtTonoMusc03.Size = new System.Drawing.Size(340, 22);
-            this.TxtTonoMusc03.TabIndex = 377;
-            // 
-            // label209
-            // 
-            this.label209.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label209.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label209.ForeColor = System.Drawing.Color.White;
-            this.label209.Location = new System.Drawing.Point(254, 9);
-            this.label209.Name = "label209";
-            this.label209.Size = new System.Drawing.Size(37, 22);
-            this.label209.TabIndex = 378;
-            this.label209.Text = "ILA:";
-            this.label209.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label208
-            // 
-            this.label208.BackColor = System.Drawing.Color.White;
-            this.label208.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label208.ForeColor = System.Drawing.Color.Black;
-            this.label208.Location = new System.Drawing.Point(213, 8);
-            this.label208.Name = "label208";
-            this.label208.Size = new System.Drawing.Size(39, 22);
-            this.label208.TabIndex = 380;
-            this.label208.Text = "l.p.m";
-            this.label208.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label207
-            // 
-            this.label207.BackColor = System.Drawing.Color.White;
-            this.label207.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label207.ForeColor = System.Drawing.Color.Black;
-            this.label207.Location = new System.Drawing.Point(339, 8);
-            this.label207.Name = "label207";
-            this.label207.Size = new System.Drawing.Size(35, 22);
-            this.label207.TabIndex = 381;
-            this.label207.Text = "m.m";
-            this.label207.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label206
-            // 
-            this.label206.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label206.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label206.ForeColor = System.Drawing.Color.White;
-            this.label206.Location = new System.Drawing.Point(377, 9);
-            this.label206.Name = "label206";
-            this.label206.Size = new System.Drawing.Size(37, 22);
-            this.label206.TabIndex = 382;
-            this.label206.Text = "Total:";
-            this.label206.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtTotal03
-            // 
-            this.TxtTotal03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal03.Location = new System.Drawing.Point(414, 8);
-            this.TxtTotal03.Name = "TxtTotal03";
-            this.TxtTotal03.ShortcutsEnabled = false;
-            this.TxtTotal03.Size = new System.Drawing.Size(93, 22);
-            this.TxtTotal03.TabIndex = 383;
-            // 
-            // tabPage29
-            // 
-            this.tabPage29.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage29.Controls.Add(this.TxtILA02);
-            this.tabPage29.Controls.Add(this.FCF02);
-            this.tabPage29.Controls.Add(this.TxtTotal02);
-            this.tabPage29.Controls.Add(this.TxtTonoMusc02);
-            this.tabPage29.Controls.Add(this.TxtMovResp02);
-            this.tabPage29.Controls.Add(this.TxtMovFeta02);
-            this.tabPage29.Controls.Add(this.label205);
-            this.tabPage29.Controls.Add(this.label204);
-            this.tabPage29.Controls.Add(this.label203);
-            this.tabPage29.Controls.Add(this.label318);
-            this.tabPage29.Controls.Add(this.label319);
-            this.tabPage29.Controls.Add(this.label320);
-            this.tabPage29.Controls.Add(this.label321);
-            this.tabPage29.Controls.Add(this.label322);
-            this.tabPage29.Location = new System.Drawing.Point(4, 22);
-            this.tabPage29.Name = "tabPage29";
-            this.tabPage29.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage29.Size = new System.Drawing.Size(741, 122);
-            this.tabPage29.TabIndex = 1;
-            this.tabPage29.Text = "FETO 2";
-            this.tabPage29.UseVisualStyleBackColor = true;
-            // 
-            // label322
-            // 
-            this.label322.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label322.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label322.ForeColor = System.Drawing.Color.White;
-            this.label322.Location = new System.Drawing.Point(2, 9);
-            this.label322.Name = "label322";
-            this.label322.Size = new System.Drawing.Size(164, 22);
-            this.label322.TabIndex = 311;
-            this.label322.Text = "Frecuencia cardiaca fetal:";
-            this.label322.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label321
-            // 
-            this.label321.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label321.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label321.ForeColor = System.Drawing.Color.White;
-            this.label321.Location = new System.Drawing.Point(2, 31);
-            this.label321.Name = "label321";
-            this.label321.Size = new System.Drawing.Size(164, 21);
-            this.label321.TabIndex = 314;
-            this.label321.Text = "Movimientos fetales:";
-            this.label321.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovFeta02
-            // 
-            this.TxtMovFeta02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovFeta02.Location = new System.Drawing.Point(166, 30);
-            this.TxtMovFeta02.Name = "TxtMovFeta02";
-            this.TxtMovFeta02.ShortcutsEnabled = false;
-            this.TxtMovFeta02.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovFeta02.TabIndex = 313;
-            // 
-            // label320
-            // 
-            this.label320.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label320.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label320.ForeColor = System.Drawing.Color.White;
-            this.label320.Location = new System.Drawing.Point(2, 52);
-            this.label320.Name = "label320";
-            this.label320.Size = new System.Drawing.Size(164, 21);
-            this.label320.TabIndex = 316;
-            this.label320.Text = "Movimientos respiratorios:";
-            this.label320.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovResp02
-            // 
-            this.TxtMovResp02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovResp02.Location = new System.Drawing.Point(166, 51);
-            this.TxtMovResp02.Name = "TxtMovResp02";
-            this.TxtMovResp02.ShortcutsEnabled = false;
-            this.TxtMovResp02.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovResp02.TabIndex = 315;
-            // 
-            // label319
-            // 
-            this.label319.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label319.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label319.ForeColor = System.Drawing.Color.White;
-            this.label319.Location = new System.Drawing.Point(2, 73);
-            this.label319.Name = "label319";
-            this.label319.Size = new System.Drawing.Size(164, 21);
-            this.label319.TabIndex = 317;
-            this.label319.Text = "Tono muscular:";
-            this.label319.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtTonoMusc02
-            // 
-            this.TxtTonoMusc02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTonoMusc02.Location = new System.Drawing.Point(166, 72);
-            this.TxtTonoMusc02.Name = "TxtTonoMusc02";
-            this.TxtTonoMusc02.ShortcutsEnabled = false;
-            this.TxtTonoMusc02.Size = new System.Drawing.Size(340, 22);
-            this.TxtTonoMusc02.TabIndex = 318;
-            // 
-            // label318
-            // 
-            this.label318.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label318.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label318.ForeColor = System.Drawing.Color.White;
-            this.label318.Location = new System.Drawing.Point(253, 9);
-            this.label318.Name = "label318";
-            this.label318.Size = new System.Drawing.Size(37, 22);
-            this.label318.TabIndex = 319;
-            this.label318.Text = "ILA:";
-            this.label318.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label203
-            // 
-            this.label203.BackColor = System.Drawing.Color.White;
-            this.label203.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label203.ForeColor = System.Drawing.Color.Black;
-            this.label203.Location = new System.Drawing.Point(212, 8);
-            this.label203.Name = "label203";
-            this.label203.Size = new System.Drawing.Size(39, 22);
-            this.label203.TabIndex = 366;
-            this.label203.Text = "l.p.m";
-            this.label203.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label204
-            // 
-            this.label204.BackColor = System.Drawing.Color.White;
-            this.label204.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label204.ForeColor = System.Drawing.Color.Black;
-            this.label204.Location = new System.Drawing.Point(338, 8);
-            this.label204.Name = "label204";
-            this.label204.Size = new System.Drawing.Size(35, 22);
-            this.label204.TabIndex = 367;
-            this.label204.Text = "m.m";
-            this.label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label205
-            // 
-            this.label205.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label205.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label205.ForeColor = System.Drawing.Color.White;
-            this.label205.Location = new System.Drawing.Point(376, 9);
-            this.label205.Name = "label205";
-            this.label205.Size = new System.Drawing.Size(37, 22);
-            this.label205.TabIndex = 368;
-            this.label205.Text = "Total:";
-            this.label205.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtTotal02
-            // 
-            this.TxtTotal02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal02.Location = new System.Drawing.Point(413, 8);
-            this.TxtTotal02.Name = "TxtTotal02";
-            this.TxtTotal02.ShortcutsEnabled = false;
-            this.TxtTotal02.Size = new System.Drawing.Size(93, 22);
-            this.TxtTotal02.TabIndex = 369;
-            // 
-            // FCF02
-            // 
-            this.FCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCF02.Location = new System.Drawing.Point(165, 8);
-            this.FCF02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.FCF02.Name = "FCF02";
-            this.FCF02.Size = new System.Drawing.Size(44, 22);
-            this.FCF02.TabIndex = 370;
-            // 
-            // TxtILA02
-            // 
-            this.TxtILA02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtILA02.Location = new System.Drawing.Point(288, 9);
-            this.TxtILA02.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtILA02.Name = "TxtILA02";
-            this.TxtILA02.Size = new System.Drawing.Size(44, 22);
-            this.TxtILA02.TabIndex = 371;
-            // 
-            // tabPage28
-            // 
-            this.tabPage28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage28.Controls.Add(this.TxtILA01);
-            this.tabPage28.Controls.Add(this.label202);
-            this.tabPage28.Controls.Add(this.FCF01);
-            this.tabPage28.Controls.Add(this.label201);
-            this.tabPage28.Controls.Add(this.TxtPuntaTonMusc);
-            this.tabPage28.Controls.Add(this.TxtPuntaMovRes);
-            this.tabPage28.Controls.Add(this.TxtPuntaMovFet);
-            this.tabPage28.Controls.Add(this.TxtPuntaILA);
-            this.tabPage28.Controls.Add(this.TxtTotal01);
-            this.tabPage28.Controls.Add(this.TxtTonoMusc01);
-            this.tabPage28.Controls.Add(this.TxtMovResp01);
-            this.tabPage28.Controls.Add(this.TxtMovFeta01);
-            this.tabPage28.Controls.Add(this.label342);
-            this.tabPage28.Controls.Add(this.label341);
-            this.tabPage28.Controls.Add(this.label340);
-            this.tabPage28.Controls.Add(this.label339);
-            this.tabPage28.Controls.Add(this.label338);
-            this.tabPage28.Controls.Add(this.label314);
-            this.tabPage28.Controls.Add(this.label313);
-            this.tabPage28.Controls.Add(this.label315);
-            this.tabPage28.Controls.Add(this.label316);
-            this.tabPage28.Controls.Add(this.label317);
-            this.tabPage28.Location = new System.Drawing.Point(4, 22);
-            this.tabPage28.Name = "tabPage28";
-            this.tabPage28.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage28.Size = new System.Drawing.Size(741, 122);
-            this.tabPage28.TabIndex = 0;
-            this.tabPage28.Text = "FETO 1";
-            this.tabPage28.UseVisualStyleBackColor = true;
-            // 
-            // label317
-            // 
-            this.label317.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label317.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label317.ForeColor = System.Drawing.Color.White;
-            this.label317.Location = new System.Drawing.Point(0, 8);
-            this.label317.Name = "label317";
-            this.label317.Size = new System.Drawing.Size(164, 22);
-            this.label317.TabIndex = 295;
-            this.label317.Text = "Frecuencia cardiaca fetal:";
-            this.label317.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label316
-            // 
-            this.label316.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label316.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label316.ForeColor = System.Drawing.Color.White;
-            this.label316.Location = new System.Drawing.Point(0, 30);
-            this.label316.Name = "label316";
-            this.label316.Size = new System.Drawing.Size(164, 21);
-            this.label316.TabIndex = 298;
-            this.label316.Text = "Movimientos fetales:";
-            this.label316.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovFeta01
-            // 
-            this.TxtMovFeta01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovFeta01.Location = new System.Drawing.Point(164, 29);
-            this.TxtMovFeta01.Name = "TxtMovFeta01";
-            this.TxtMovFeta01.ShortcutsEnabled = false;
-            this.TxtMovFeta01.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovFeta01.TabIndex = 297;
-            // 
-            // label315
-            // 
-            this.label315.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label315.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label315.ForeColor = System.Drawing.Color.White;
-            this.label315.Location = new System.Drawing.Point(0, 51);
-            this.label315.Name = "label315";
-            this.label315.Size = new System.Drawing.Size(164, 21);
-            this.label315.TabIndex = 301;
-            this.label315.Text = "Movimientos respiratorios:";
-            this.label315.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtMovResp01
-            // 
-            this.TxtMovResp01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtMovResp01.Location = new System.Drawing.Point(164, 50);
-            this.TxtMovResp01.Name = "TxtMovResp01";
-            this.TxtMovResp01.ShortcutsEnabled = false;
-            this.TxtMovResp01.Size = new System.Drawing.Size(340, 22);
-            this.TxtMovResp01.TabIndex = 300;
-            // 
-            // label313
-            // 
-            this.label313.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label313.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label313.ForeColor = System.Drawing.Color.White;
-            this.label313.Location = new System.Drawing.Point(0, 72);
-            this.label313.Name = "label313";
-            this.label313.Size = new System.Drawing.Size(164, 21);
-            this.label313.TabIndex = 303;
-            this.label313.Text = "Tono muscular:";
-            this.label313.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label314
-            // 
-            this.label314.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label314.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label314.ForeColor = System.Drawing.Color.White;
-            this.label314.Location = new System.Drawing.Point(0, 93);
-            this.label314.Name = "label314";
-            this.label314.Size = new System.Drawing.Size(164, 21);
-            this.label314.TabIndex = 304;
-            this.label314.Text = "Total:";
-            this.label314.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtTonoMusc01
-            // 
-            this.TxtTonoMusc01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTonoMusc01.Location = new System.Drawing.Point(164, 71);
-            this.TxtTonoMusc01.Name = "TxtTonoMusc01";
-            this.TxtTonoMusc01.ShortcutsEnabled = false;
-            this.TxtTonoMusc01.Size = new System.Drawing.Size(340, 22);
-            this.TxtTonoMusc01.TabIndex = 305;
-            // 
-            // TxtTotal01
-            // 
-            this.TxtTotal01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTotal01.Location = new System.Drawing.Point(164, 92);
-            this.TxtTotal01.Name = "TxtTotal01";
-            this.TxtTotal01.ShortcutsEnabled = false;
-            this.TxtTotal01.Size = new System.Drawing.Size(87, 22);
-            this.TxtTotal01.TabIndex = 306;
-            // 
-            // label338
-            // 
-            this.label338.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label338.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label338.ForeColor = System.Drawing.Color.White;
-            this.label338.Location = new System.Drawing.Point(251, 8);
-            this.label338.Name = "label338";
-            this.label338.Size = new System.Drawing.Size(164, 22);
-            this.label338.TabIndex = 307;
-            this.label338.Text = "Frecuencia cardiaca fetal:";
-            this.label338.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label339
-            // 
-            this.label339.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label339.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label339.ForeColor = System.Drawing.Color.White;
-            this.label339.Location = new System.Drawing.Point(504, 8);
-            this.label339.Name = "label339";
-            this.label339.Size = new System.Drawing.Size(85, 22);
-            this.label339.TabIndex = 310;
-            this.label339.Text = "Puntaje ILA:";
-            this.label339.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtPuntaILA
-            // 
-            this.TxtPuntaILA.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPuntaILA.Location = new System.Drawing.Point(589, 9);
-            this.TxtPuntaILA.MaxLength = 8;
-            this.TxtPuntaILA.Name = "TxtPuntaILA";
-            this.TxtPuntaILA.ShortcutsEnabled = false;
-            this.TxtPuntaILA.Size = new System.Drawing.Size(46, 22);
-            this.TxtPuntaILA.TabIndex = 311;
-            // 
-            // label340
-            // 
-            this.label340.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label340.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label340.ForeColor = System.Drawing.Color.White;
-            this.label340.Location = new System.Drawing.Point(504, 28);
-            this.label340.Name = "label340";
-            this.label340.Size = new System.Drawing.Size(85, 22);
-            this.label340.TabIndex = 312;
-            this.label340.Text = "Puntaje MF:";
-            this.label340.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtPuntaMovFet
-            // 
-            this.TxtPuntaMovFet.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPuntaMovFet.Location = new System.Drawing.Point(589, 29);
-            this.TxtPuntaMovFet.MaxLength = 8;
-            this.TxtPuntaMovFet.Name = "TxtPuntaMovFet";
-            this.TxtPuntaMovFet.ShortcutsEnabled = false;
-            this.TxtPuntaMovFet.Size = new System.Drawing.Size(46, 22);
-            this.TxtPuntaMovFet.TabIndex = 313;
-            // 
-            // label341
-            // 
-            this.label341.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label341.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label341.ForeColor = System.Drawing.Color.White;
-            this.label341.Location = new System.Drawing.Point(504, 49);
-            this.label341.Name = "label341";
-            this.label341.Size = new System.Drawing.Size(85, 22);
-            this.label341.TabIndex = 314;
-            this.label341.Text = "Puntaje MR:";
-            this.label341.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtPuntaMovRes
-            // 
-            this.TxtPuntaMovRes.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPuntaMovRes.Location = new System.Drawing.Point(589, 50);
-            this.TxtPuntaMovRes.MaxLength = 8;
-            this.TxtPuntaMovRes.Name = "TxtPuntaMovRes";
-            this.TxtPuntaMovRes.ShortcutsEnabled = false;
-            this.TxtPuntaMovRes.Size = new System.Drawing.Size(46, 22);
-            this.TxtPuntaMovRes.TabIndex = 315;
-            // 
-            // label342
-            // 
-            this.label342.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.label342.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label342.ForeColor = System.Drawing.Color.White;
-            this.label342.Location = new System.Drawing.Point(504, 70);
-            this.label342.Name = "label342";
-            this.label342.Size = new System.Drawing.Size(85, 22);
-            this.label342.TabIndex = 316;
-            this.label342.Text = "Puntaje TM:";
-            this.label342.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtPuntaTonMusc
-            // 
-            this.TxtPuntaTonMusc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPuntaTonMusc.Location = new System.Drawing.Point(589, 71);
-            this.TxtPuntaTonMusc.MaxLength = 8;
-            this.TxtPuntaTonMusc.Name = "TxtPuntaTonMusc";
-            this.TxtPuntaTonMusc.ShortcutsEnabled = false;
-            this.TxtPuntaTonMusc.Size = new System.Drawing.Size(46, 22);
-            this.TxtPuntaTonMusc.TabIndex = 317;
-            // 
-            // label201
-            // 
-            this.label201.BackColor = System.Drawing.Color.White;
-            this.label201.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label201.ForeColor = System.Drawing.Color.Black;
-            this.label201.Location = new System.Drawing.Point(211, 7);
-            this.label201.Name = "label201";
-            this.label201.Size = new System.Drawing.Size(39, 22);
-            this.label201.TabIndex = 365;
-            this.label201.Text = "l.p.m";
-            this.label201.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // FCF01
-            // 
-            this.FCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCF01.Location = new System.Drawing.Point(164, 8);
-            this.FCF01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.FCF01.Name = "FCF01";
-            this.FCF01.Size = new System.Drawing.Size(44, 22);
-            this.FCF01.TabIndex = 282;
-            // 
-            // label202
-            // 
-            this.label202.BackColor = System.Drawing.Color.White;
-            this.label202.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label202.ForeColor = System.Drawing.Color.Black;
-            this.label202.Location = new System.Drawing.Point(462, 7);
-            this.label202.Name = "label202";
-            this.label202.Size = new System.Drawing.Size(39, 22);
-            this.label202.TabIndex = 366;
-            this.label202.Text = "m.m";
-            this.label202.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TxtILA01
-            // 
-            this.TxtILA01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtILA01.Location = new System.Drawing.Point(415, 8);
-            this.TxtILA01.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtILA01.Name = "TxtILA01";
-            this.TxtILA01.Size = new System.Drawing.Size(44, 22);
-            this.TxtILA01.TabIndex = 283;
-            // 
-            // tabControl8
-            // 
-            this.tabControl8.Controls.Add(this.tabPage28);
-            this.tabControl8.Controls.Add(this.tabPage29);
-            this.tabControl8.Controls.Add(this.tabPage30);
-            this.tabControl8.Controls.Add(this.tabPage31);
-            this.tabControl8.Controls.Add(this.tabPage32);
-            this.tabControl8.Location = new System.Drawing.Point(12, 68);
-            this.tabControl8.Name = "tabControl8";
-            this.tabControl8.SelectedIndex = 0;
-            this.tabControl8.Size = new System.Drawing.Size(749, 148);
-            this.tabControl8.TabIndex = 325;
-            this.tabControl8.SelectedIndexChanged += new System.EventHandler(this.tabControl8_SelectedIndexChanged);
-            // 
-            // TxtILA03
-            // 
-            this.TxtILA03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtILA03.Location = new System.Drawing.Point(289, 8);
-            this.TxtILA03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtILA03.Name = "TxtILA03";
-            this.TxtILA03.Size = new System.Drawing.Size(44, 22);
-            this.TxtILA03.TabIndex = 385;
-            // 
-            // FCF03
-            // 
-            this.FCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCF03.Location = new System.Drawing.Point(167, 9);
-            this.FCF03.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.FCF03.Name = "FCF03";
-            this.FCF03.Size = new System.Drawing.Size(44, 22);
-            this.FCF03.TabIndex = 384;
-            // 
-            // TxtILA04
-            // 
-            this.TxtILA04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtILA04.Location = new System.Drawing.Point(289, 9);
-            this.TxtILA04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtILA04.Name = "TxtILA04";
-            this.TxtILA04.Size = new System.Drawing.Size(44, 22);
-            this.TxtILA04.TabIndex = 385;
-            // 
-            // FCF04
-            // 
-            this.FCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCF04.Location = new System.Drawing.Point(167, 10);
-            this.FCF04.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.FCF04.Name = "FCF04";
-            this.FCF04.Size = new System.Drawing.Size(44, 22);
-            this.FCF04.TabIndex = 384;
-            // 
-            // TxtILA05
-            // 
-            this.TxtILA05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtILA05.Location = new System.Drawing.Point(289, 9);
-            this.TxtILA05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtILA05.Name = "TxtILA05";
-            this.TxtILA05.Size = new System.Drawing.Size(44, 22);
-            this.TxtILA05.TabIndex = 385;
-            // 
-            // FCF05
-            // 
-            this.FCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCF05.Location = new System.Drawing.Point(167, 9);
-            this.FCF05.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.FCF05.Name = "FCF05";
-            this.FCF05.Size = new System.Drawing.Size(44, 22);
-            this.FCF05.TabIndex = 384;
-            // 
-            // TxtDiameLongi13
-            // 
-            this.TxtDiameLongi13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDiameLongi13.Location = new System.Drawing.Point(150, 57);
-            this.TxtDiameLongi13.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtDiameLongi13.Name = "TxtDiameLongi13";
-            this.TxtDiameLongi13.Size = new System.Drawing.Size(95, 22);
-            this.TxtDiameLongi13.TabIndex = 385;
-            // 
-            // TxtEspeCervix13
-            // 
-            this.TxtEspeCervix13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEspeCervix13.Location = new System.Drawing.Point(440, 57);
-            this.TxtEspeCervix13.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.TxtEspeCervix13.Name = "TxtEspeCervix13";
-            this.TxtEspeCervix13.Size = new System.Drawing.Size(95, 22);
-            this.TxtEspeCervix13.TabIndex = 386;
-            // 
             // FrmAtencionEcografiasObstreticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10834,9 +10834,32 @@ namespace OBECOGRAFIA.Forms
             this.tabControl9.ResumeLayout(false);
             this.tabPage33.ResumeLayout(false);
             this.tabPage33.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEspeCervix13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi13)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            this.tabControl8.ResumeLayout(false);
+            this.tabPage28.ResumeLayout(false);
+            this.tabPage28.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF01)).EndInit();
+            this.tabPage29.ResumeLayout(false);
+            this.tabPage29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF02)).EndInit();
+            this.tabPage30.ResumeLayout(false);
+            this.tabPage30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF03)).EndInit();
+            this.tabPage31.ResumeLayout(false);
+            this.tabPage31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF04)).EndInit();
+            this.tabPage32.ResumeLayout(false);
+            this.tabPage32.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtILA05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FCF05)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.groupBox13.ResumeLayout(false);
@@ -10844,6 +10867,16 @@ namespace OBECOGRAFIA.Forms
             this.tabControl7.ResumeLayout(false);
             this.tabPage27.ResumeLayout(false);
             this.tabPage27.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtResiPostVejiga08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVoluPromVejiga08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho08)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho08)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.GroupHepaAbor.ResumeLayout(false);
             this.GroupHepaAbor.PerformLayout();
@@ -10856,6 +10889,14 @@ namespace OBECOGRAFIA.Forms
             this.tabControl5.ResumeLayout(false);
             this.tabPage25.ResumeLayout(false);
             this.tabPage25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho06)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho06)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.groupAbdoHepa.ResumeLayout(false);
             this.groupAbdoHepa.PerformLayout();
@@ -10867,16 +10908,49 @@ namespace OBECOGRAFIA.Forms
             this.GroupTemAbor.PerformLayout();
             this.Data.ResumeLayout(false);
             this.tabPage19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona01)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes01)).EndInit();
             this.tabPage20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes02)).EndInit();
             this.tabPage21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona03)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes03)).EndInit();
             this.tabPage22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes04)).EndInit();
             this.tabPage23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona05)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes05)).EndInit();
             this.Transvaginal.ResumeLayout(false);
             this.groupEcoCombina01.ResumeLayout(false);
             this.groupEcoCombina01.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariIzqui02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtEndome02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariIzquie02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameTras02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariDere02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameAntePos02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariDere02)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi02)).EndInit();
             this.Obstetrica.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -10886,6 +10960,7 @@ namespace OBECOGRAFIA.Forms
             this.TabControl.ResumeLayout(false);
             this.FETO1.ResumeLayout(false);
             this.FETO1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF01)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC01)).EndInit();
@@ -10893,6 +10968,7 @@ namespace OBECOGRAFIA.Forms
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP01)).EndInit();
             this.FETO2.ResumeLayout(false);
             this.FETO2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF02)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC02)).EndInit();
@@ -10900,6 +10976,7 @@ namespace OBECOGRAFIA.Forms
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP02)).EndInit();
             this.FETO3.ResumeLayout(false);
             this.FETO3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF03)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC03)).EndInit();
@@ -10907,6 +10984,7 @@ namespace OBECOGRAFIA.Forms
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP03)).EndInit();
             this.FETO4.ResumeLayout(false);
             this.FETO4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF04)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC04)).EndInit();
@@ -10914,6 +10992,7 @@ namespace OBECOGRAFIA.Forms
             ((System.ComponentModel.ISupportInitialize)(this.TxtBDP04)).EndInit();
             this.FETO5.ResumeLayout(false);
             this.FETO5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtPeso05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtLF05)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAC05)).EndInit();
@@ -10927,85 +11006,6 @@ namespace OBECOGRAFIA.Forms
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCFFeto05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariDere02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariDere02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPorOvariIzqui02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameTras02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameAntePos02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtOvariIzquie02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEndome02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVesiVitelina05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtLCN05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtFCF05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtBotonEmbriona05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSacoGes05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie06)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinDerecho08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinDerecho08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinDerecho08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinDerecho08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamRinIzquie08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamAntRinIzquie08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamTraRinIzquie08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiamEpRinIzquie08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVoluPromVejiga08)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtResiPostVejiga08)).EndInit();
-            this.tabPage32.ResumeLayout(false);
-            this.tabPage32.PerformLayout();
-            this.tabPage31.ResumeLayout(false);
-            this.tabPage31.PerformLayout();
-            this.tabPage30.ResumeLayout(false);
-            this.tabPage30.PerformLayout();
-            this.tabPage29.ResumeLayout(false);
-            this.tabPage29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF02)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA02)).EndInit();
-            this.tabPage28.ResumeLayout(false);
-            this.tabPage28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF01)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA01)).EndInit();
-            this.tabControl8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF03)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF04)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtILA05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FCF05)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDiameLongi13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtEspeCervix13)).EndInit();
             this.ResumeLayout(false);
 
         }
