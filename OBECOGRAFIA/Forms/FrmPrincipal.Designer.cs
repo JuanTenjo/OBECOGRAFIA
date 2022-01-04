@@ -175,7 +175,7 @@ namespace OBECOGRAFIA.Forms
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OBECOGRAFIAS 1.0.1 (12/08/2021) *** SIIGHOS PLUS ***";
+            this.Text = "OBECOGRAFIAS 1.0.3 (10/12/2021) *** SIIGHOS PLUS ***";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);

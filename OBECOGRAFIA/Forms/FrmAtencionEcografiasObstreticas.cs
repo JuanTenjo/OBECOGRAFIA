@@ -2373,7 +2373,7 @@ namespace OBECOGRAFIA.Forms
                 //SqlCitas += " WHERE [Datos de citas programadas].FechaCita = CONVERT(DATETIME, '" + Convert.ToDateTime(Date).ToString("yyyy-MM-dd") + "', 102) ORDER BY [Datos de citas programadas].ConsecutivoCita";
 
 
-                string SqlCitas = " SELECT TOP(200) [Datos de citas programadas].ColorCita, [Datos de los colores en citas].CodigoVBcolor, [Datos de los colores en citas].Color, " +
+                string SqlCitas = " SELECT [Datos de citas programadas].ColorCita, [Datos de los colores en citas].CodigoVBcolor, [Datos de los colores en citas].Color, " +
                 "[Datos de los colores en citas].NombreColor," +
                 "[Datos de citas programadas].ConsecutivoCita, [Datos de citas programadas].HoraAsignacion, " +
                 "[Datos del Paciente].[Nombre1] + ' ' + [Datos del Paciente].[Nombre2] + ' ' + [Datos del Paciente].[Apellido1] + ' ' + [Datos del Paciente].[Apellido2] AS Nombre," +
@@ -2381,7 +2381,7 @@ namespace OBECOGRAFIA.Forms
                 " FROM ([DACITASXPSQL].[dbo].[Datos de los colores en citas] INNER JOIN ([DACITASXPSQL].[dbo].[Datos de citas programadas] LEFT JOIN [ACDATOXPSQL].[dbo].[Datos del Paciente] " +
                 " ON [Datos de citas programadas].HistoriaCita = [Datos del Paciente].HistorPaci) ON [Datos de los colores en citas].CodColor = [Datos de citas programadas].ColorCita) " +
                 " LEFT JOIN [DACITASXPSQL].[dbo].[Datos de los programas citas] ON[Datos de citas programadas].Programa = [Datos de los programas citas].CodigoProg " +
-                " WHERE [Datos de citas programadas].FechaCita = CONVERT(DATETIME, '" + Convert.ToDateTime(Date).ToString("yyyy-MM-dd") + "', 102) " +
+                " WHERE [Datos de citas programadas].FechaCita = CONVERT(DATETIME, '" + Convert.ToDateTime(Date).ToString("yyyy-MM-dd") + "', 102) AND [Datos de citas programadas].CodiMedico =  '"+ Utils.CodigoMedico +"'   " +
                 //" WHERE [Datos de citas programadas].FechaCita > '2020-08-01'" +
                 "ORDER BY [Datos de citas programadas].ConsecutivoCita";
 
@@ -4107,6 +4107,841 @@ namespace OBECOGRAFIA.Forms
         #endregion
 
         #region Botones
+
+        private void BtnArchivar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string T, H, M, FunConEco, CodConseD, UsaRegis, NomInfor, Para01, ColCit, SqlRegEco;
+                int NFetos, NFtol, InfoMues;
+                double NCEco;
+                var res = DialogResult.No;
+                Utils.Titulo01 = "Control para GRABAR datos";
+
+
+                if (string.IsNullOrWhiteSpace(TxtNumHistoEco.Text))
+                {
+                    Utils.Informa = "Lo siento pero usted aún no ha digitado el" + "\r";
+                    Utils.Informa += "número de la historia clinica del usuario al" + "\r";
+                    Utils.Informa += "cual quiere registrar los datos de una ecografía." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(TxtNomUsaSin.Text))
+                {
+                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
+                    Utils.Informa += "no corresponde a un nombre de usuario válido," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                //Revisamos si el sexo del usuario
+
+                if (string.IsNullOrWhiteSpace(TxtSexoSinAten.Text))
+                {
+                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
+                    Utils.Informa += "no tiene definido el sexo, por lo tanto no se" + "\r";
+                    Utils.Informa += "pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboEspecialidad1.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
+                    Utils.Informa += "nombre de la especialidad del profesional" + "\r";
+                    Utils.Informa += "que realiza la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboCodiMedi.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
+                    Utils.Informa += "del profesional que realiza la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboCodiAuxRegis.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
+                    Utils.Informa += "del auxiliar que registra la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboTipoEcoReal.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
+                    Utils.Informa += "tipo de ecografía a registrar, por lo tanto" + "\r";
+                    Utils.Informa += "no se puede continuar con ell proceso." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                Utils.SqlDatos = "SELECT CodEcoIps, NomEcogra, CodFacEco, SexApli FROM [DACONEXTSQL].[dbo].[Datos tipos de ecografias] WHERE RealizIPS = 'True' AND CodEcoIps = '" + CboTipoEcoReal.SelectedValue.ToString() + "'";
+
+                SqlDataReader reader = Conexion.SQLDataReader(Utils.SqlDatos);
+
+                if (reader.HasRows)
+                {
+                    reader.Read();
+
+                    if (reader["SexApli"].ToString() == "A")
+                    {
+                        //NO se valida el sexo, porque es de ambos
+                    }
+                    else
+                    {
+                        if (reader["SexApli"].ToString() != TxtSexoSinAten.Text)
+                        {
+                            Utils.Informa = "Lo siento pero usted no puede registrar los datos" + "\r";
+                            Utils.Informa += "de la ecografía " + CboTipoEcoReal.Text + "\r";
+                            Utils.Informa += "al usuario " + TxtNomUsaSin.Text + "\r";
+                            Utils.Informa += "ya que el sexo no es pertinente." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    }
+                }
+
+                if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
+
+                T = CboTipoEcoReal.SelectedValue.ToString();
+                H = TxtNumHistoEco.Text;
+                M = CboCodiMedi.SelectedValue.ToString();
+                UsaRegis = lblCodigoUser.Text;
+
+                //Revisamos cual el tipo de ecografía que se quiere archivar y si realmente se tiene un número asignado
+
+                switch (T)
+                {
+                    case "01": //Ecografía obstetrica
+                        FunConEco = TxtEcoNumForm.Text;
+                        NomInfor = "Informe ecografia obstetrica";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        break;
+                    case "02": //ecografia pelvica transvaginal
+                        FunConEco = TxtEcoNumForm02.Text;
+                        NomInfor = "Informe ecografia pelvica transvaginal";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "03": //ecografia obstetrica temprana
+                        FunConEco = TxtEcoNumForm03.Text;
+                        NomInfor = "Informe ecografia obstetrica temprana";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        break;
+                    case "04": //Aborto retenido
+                        FunConEco = TxtEcoNumForm03.Text;
+                        NomInfor = "Informe ecografia obstetrica aborto";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        break;
+                    case "05": //ecografia abdominal
+                        FunConEco = TxtEcoNumForm05.Text;
+                        NomInfor = "Informe ecografia abdominal";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "06": //ecografia renal bilateral
+                        FunConEco = TxtEcoNumForm06.Text;
+                        NomInfor = "Informe ecografia renal bilateral";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "07": //ecografia hepatobiliar
+                        FunConEco = TxtEcoNumForm07.Text;
+                        NomInfor = "Informe ecografia hepatobiliar";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "08": //ecografia renal y vias urinarias
+                        FunConEco = TxtEcoNumForm08.Text;
+                        NomInfor = "Informe ecografia renal y vias urinarias ";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "09": //ecografia abdomen superior
+                        FunConEco = TxtEcoNumForm07.Text;
+                        NomInfor = "Informe ecografia abdomen superior";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "10": //ecografia obstetrica transvaginal
+                        FunConEco = TxtEcoNumForm02.Text;
+                        NomInfor = "Informe ecografia obstetrica transvaginal";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "11": //ecografia perfil biofisico
+                        FunConEco = TxtEcoNumForm11.Text;
+                        NomInfor = "Informe ecografia perfil biofisico";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        break;
+                    case "12": //ecografia pelvica transabdominal
+                        FunConEco = TxtEcoNumForm02.Text;
+                        NomInfor = "Informe ecografia pelvica transabdominal";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "13": //ecografia cervicometria
+                        FunConEco = TxtEcoNumForm13.Text;
+                        NomInfor = "Informe ecografia cervicometria";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "14": //ecografia transrectal
+                        FunConEco = TxtEcoNumForm14.Text;
+                        NomInfor = "Informe ecografia transrectal";
+                        Para01 = "[DACONEXTSQL].[dbo].[atos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "15": //ecografia tejidos blandos
+                        FunConEco = TxtEcoNumForm15.Text;
+                        NomInfor = "Informe ecografia general";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+                    case "16": //cografia ecodoppler testicular
+                        FunConEco = TxtEcoNumForm15.Text;
+                        NomInfor = "Informe ecografia general";
+                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        break;
+
+                    default:
+                        Utils.Informa = "Lo siento pero el tipo de ecografía no" + "\r";
+                        Utils.Informa += "se encuentra definido en el código de" + "\r";
+                        Utils.Informa += "programación de estes sistema, por lo" + "\r";
+                        Utils.Informa += "tanto no se puede realizar el archivo" + "\r";
+                        Utils.Informa += "en la basee de datos." + "\r";
+                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                        break;
+                }
+
+                //Buscamos el numero de ecografia
+
+                SqlRegEco = "SELECT * ";
+                SqlRegEco = SqlRegEco + "FROM [DACONEXTSQL].[dbo].[Datos registros de ecografias] ";
+                SqlRegEco = SqlRegEco + "Where NumEcogra = '" + FunConEco + "' ";
+
+
+                SqlDataReader TabRegEco;
+
+                using (SqlConnection connection = new SqlConnection(Conexion.conexionSQL))
+                {
+                    SqlCommand command = new SqlCommand(SqlRegEco, connection);
+                    command.Connection.Open();
+                    TabRegEco = command.ExecuteReader();
+
+                    if (TabRegEco.HasRows == false)
+                    {
+                        Utils.Informa = "Lo siento pero los datos de la ecografía ha" + "\r";
+                        Utils.Informa += "cerrar, aún no han sido registrados en este" + "\r";
+                        Utils.Informa += "sistema, por favor ejecute primero el proceso" + "\r";
+                        Utils.Informa += "de grabar y luego el de archivar." + "\r";
+                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                        return;
+                    }
+                    else
+                    {
+                        TabRegEco.Read();
+
+                        //Revisamos si el número de historia es igual a la contenida en la eco grabada
+
+
+                        if (TabRegEco["NumHisEco"].ToString() != H)
+                        {
+                            Utils.Informa = "Lo siento pero el informe de la ecografía No. " + FunConEco + "\r";
+                            Utils.Informa += "no se puede archivar, porque el número de historia" + "\r";
+                            Utils.Informa += "registrado previamente, es diferente al número" + "\r";
+                            Utils.Informa += "de historia digitado por usted." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        else
+                        {
+                            //Revisamos si se encuentra anulada
+                            if (Convert.ToBoolean(TabRegEco["AnulEco"]) == true)
+                            {
+                                Utils.Informa = "Lo siento pero el informe de la ecografía No. " + FunConEco + "\r";
+                                Utils.Informa += "no se puede archivar, porque la misma se encuentra" + "\r";
+                                Utils.Informa += "anulada en este sistema." + "\r";
+                                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                return;
+                            }
+                            else
+                            {
+                                //Preguntamos
+
+                                Utils.Informa = "¿Usted desea ARCHIVAR la ecografía No" + FunConEco + "\r";
+                                Utils.Informa += CboTipoEcoReal.Text + " al usuario(a) " + "\r";
+                                Utils.Informa += TxtNomUsaSin.Text + "\r";
+                                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                                if (res == DialogResult.Yes)
+                                {
+                                    Utils.SqlDatos = "UPDATE [DACONEXTSQL].[dbo].[Datos registros de ecografias] SET ArchivEco = 'True', CodArchi = '" + UsaRegis + "', FecArchi = CONVERT(DATETIME,'" + DateTime.Now.ToString("yyyy-MM-dd") + "',102) " +
+                                    "WHERE NumEcogra = '" + FunConEco + "'";
+
+                                    bool estaAct = Conexion.SQLUpdate(Utils.SqlDatos);
+
+                                    //Defina que la eco se esta realizando, cambie de color cita programada
+
+
+                                    Utils.SqlDatos = "SELECT [Datos de citas programadas].ConsecutivoCita FROM  [DACITASXPSQL].[dbo].[Datos de citas programadas] INNER JOIN  [DACONEXTSQL].[dbo].[Datos registros de ecografias] ON NoFactura = NumFactu " +
+                                    " WHERE [Datos de citas programadas].HistoriaCita = '" + TxtNumHistoEco.Text + "'";
+
+                                    SqlDataReader tabConseCita = Conexion.SQLDataReader(Utils.SqlDatos);
+
+                                    if (tabConseCita.HasRows)
+                                    {
+                                        tabConseCita.Read();
+                                        NCEco = Convert.ToDouble(tabConseCita["ConsecutivoCita"].ToString());
+                                        ColCit = "001"; //Finalizada la atención, Color verde
+
+                                        ActualizarCita(H, NCEco, ColCit);
+                                    }
+
+                                    tabConseCita.Close();
+
+                                    if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
+
+
+
+                                }
+
+                                Utils.Informa = "Los datos de la ecografía han sido " + FunConEco + "\r";
+                                Utils.Informa += "archivado satisfactoriamente." + "\r";
+                                Utils.Informa += "¿Desea mostrar el informe generado.?" + "\r";
+                                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+                                if (res == DialogResult.Yes)
+                                {
+                                    InfoMues = 1;
+                                }
+                                else
+                                {
+                                    InfoMues = 0;
+                                }
+
+                            }
+
+                        }// if (TabRegEco["NumHisEco"].ToString() != H
+                    }
+                }
+                TabRegEco.Close();
+
+                MosEcosSinArchivar();
+
+                if (InfoMues == 1)
+                {
+                    Utils.infNombreInforme = NomInfor;
+                    Utils.NumECCo = FunConEco;
+                    Report.FrmReporteEcografias frm = new Report.FrmReporteEcografias();
+                    frm.ShowDialog();
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Utils.Titulo01 = "Control de errores de ejecución";
+                Utils.Informa = "Lo siento pero se ha presentado un error al" + "\r";
+                Utils.Informa += "hacer click sobre el botón Archivar" + "\r";
+                Utils.Informa += "Error: " + ex.Message + " - " + ex.StackTrace;
+                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+        private void BtnCopias_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string T = "", UsAten = "", HisAten = "", FunConEco = "", NomInfor = "", Para01 = "";
+                var res = DialogResult.No;
+                Utils.Titulo01 = "Control para generar copias de informess";
+
+
+                if (string.IsNullOrWhiteSpace(TxtNumHistoEco.Text))
+                {
+                    Utils.Informa = "Lo siento pero usted aún no ha digitado el" + "\r";
+                    Utils.Informa += "número de la historia clinica del usuario al" + "\r";
+                    Utils.Informa += "cual quiere registrar los datos de una ecografía." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (string.IsNullOrWhiteSpace(TxtNomUsaSin.Text))
+                {
+                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
+                    Utils.Informa += "no corresponde a un nombre de usuario válido," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+                UsAten = TxtNomUsaSin.Text;
+
+                //Revisamos si el sexo del usuario
+
+                if (string.IsNullOrWhiteSpace(TxtSexoSinAten.Text))
+                {
+                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
+                    Utils.Informa += "no tiene definido el sexo, por lo tanto no se" + "\r";
+                    Utils.Informa += "pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboEspecialidad1.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
+                    Utils.Informa += "nombre de la especialidad del profesional" + "\r";
+                    Utils.Informa += "que realiza la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboCodiMedi.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
+                    Utils.Informa += "del profesional que realiza la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboCodiAuxRegis.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
+                    Utils.Informa += "del auxiliar que registra la toma de la ecografía," + "\r";
+                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (CboTipoEcoReal.SelectedIndex == -1)
+                {
+                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
+                    Utils.Informa += "tipo de ecografía a registrar, por lo tanto" + "\r";
+                    Utils.Informa += "no se puede continuar con ell proceso." + "\r";
+                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                T = CboTipoEcoReal.SelectedValue.ToString();
+
+
+                switch (T)
+                {
+                    case "01": //Ecografía obstetrica
+                        FunConEco = TxtEcoNumForm.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia obstetrica";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "02": //ecografia pelvica transvaginal
+                        FunConEco = TxtEcoNumForm02.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA PELVICA No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            //Se llama a este informe ya que son lo mismo
+                            NomInfor = "Informe ecografia obstetrica transvaginal";
+
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "03": //ecografia obstetrica temprana
+
+                        FunConEco = TxtEcoNumForm03.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA TEMPRANA No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            //Le paso el informe de obstetrica aborto ya que son el mismo
+
+                            NomInfor = "Informe ecografia obstetrica aborto";
+
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "04": //Aborto retenido
+
+                        FunConEco = TxtEcoNumForm03.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA DE ABORTO No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia obstetrica aborto";
+
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "05": //ecografia abdominal
+                        FunConEco = TxtEcoNumForm05.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA ABDOMINAL No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia abdominal";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "06": //ecografia renal bilateral
+                        FunConEco = TxtEcoNumForm06.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA RENAL BILATERAL No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia renal bilateral";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "07": //ecografia hepatobiliar
+
+                        FunConEco = TxtEcoNumForm05.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA HEPATOBILIAR No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            //NomInfor = "Informe ecografia hepatobiliar"; Se llama al informe  ecografia abdomen superior ya que son el mismo y no veo la necesario
+
+                            NomInfor = "Informe ecografia abdominal";
+
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "08": //ecografia renal y vias urinarias
+                        FunConEco = TxtEcoNumForm08.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA RENAL BILATERAL Y VIAS URINARIAS No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia renal y vias urinarias";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "09": //ecografia abdomen superior
+                        FunConEco = TxtEcoNumForm07.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA ABDOMEN SUPERIOR No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+
+                            NomInfor = "Informe ecografia abdomen superior";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "10": //ecografia obstetrica transvaginal
+                        FunConEco = TxtEcoNumForm02.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA TRANSVAGINAL No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia obstetrica transvaginal";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "11": //ecografia perfil biofisico
+                        FunConEco = TxtEcoNumForm11.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA DE PERFIL BIOFISICO  No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia perfil biofisico";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "12": //ecografia pelvica transabdominal
+                        FunConEco = TxtEcoNumForm02.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA PELVICA TRANSABDOMINAL No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            //Se llama a este informe ya que son lo mismo
+                            NomInfor = "Informe ecografia obstetrica transvaginal";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "13": //ecografia cervicometria
+                        FunConEco = TxtEcoNumForm13.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA CERVICOMETRIA No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia cervicometria";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+                    case "14": //ecografia transrectal
+                        FunConEco = TxtEcoNumForm14.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA TRANSRECTAL No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia transrectal";
+                            Para01 = "[DACONEXTSQL].[dbo].[atos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "15": //ecografia tejidos blandos
+                        FunConEco = TxtEcoNumForm15.Text;
+
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA DE TEJIDOS BLANDOS No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia general";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                        break;
+                    case "16": //cografia ecodoppler testicular
+                        FunConEco = TxtEcoNumForm15.Text;
+
+                        if (FunConEco != "0" || FunConEco != null)
+                        {
+                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
+                            Utils.Informa += "de la ECOGRAFÍA Y ECODOPPLER TESTICULAR No. " + FunConEco + "\r";
+                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
+                            Utils.Informa += UsAten + ".?" + "\r";
+                            NomInfor = "Informe ecografia general";
+                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
+                        }
+                        else
+                        {
+                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
+                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
+                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
+                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        break;
+
+                    default:
+                        Utils.Informa = "Lo siento pero el tipo de ecografía no" + "\r";
+                        Utils.Informa += "se encuentra definido en el código de" + "\r";
+                        Utils.Informa += "programación de estes sistema, por lo" + "\r";
+                        Utils.Informa += "tanto no se puede realizar el archivo" + "\r";
+                        Utils.Informa += "en la basee de datos." + "\r";
+                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                        break;
+                }
+
+                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (res == DialogResult.Yes)
+                {
+                    Utils.infNombreInforme = NomInfor;
+                    Utils.NumECCo = FunConEco;
+                    Report.FrmReporteEcografias frm = new Report.FrmReporteEcografias();
+                    frm.ShowDialog();
+                }
+
+
+
+            }
+            catch (Exception ex)
+            {
+                Utils.Titulo01 = "Control de errores de ejecución";
+                Utils.Informa = "Lo siento pero se ha presentado un error al" + "\r";
+                Utils.Informa += "hacer click sobre el botón Copias" + "\r";
+                Utils.Informa += "Error: " + ex.Message + " - " + ex.StackTrace;
+                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -4514,6 +5349,7 @@ namespace OBECOGRAFIA.Forms
                                                                 parameters = null;
                                                                 parameters = new List<SqlParameter>
                                                                 {
+
                                                                 new SqlParameter("@NumEcoFeto", SqlDbType.VarChar){ Value = FunConEco},
                                                                 new SqlParameter("@FetoNum", SqlDbType.Int){ Value = NFtol},
                                                                 new SqlParameter("@Presentacion", SqlDbType.VarChar){ Value = CboPresenta01.Text},
@@ -6206,839 +7042,6 @@ namespace OBECOGRAFIA.Forms
             }
         }
 
-        private void BtnArchivar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string T, H, M, FunConEco, CodConseD, UsaRegis, NomInfor, Para01, ColCit, SqlRegEco;
-                int NFetos, NFtol, InfoMues;
-                double NCEco;
-                var res = DialogResult.No; 
-                Utils.Titulo01 = "Control para GRABAR datos";
-
-
-                if (string.IsNullOrWhiteSpace(TxtNumHistoEco.Text))
-                {
-                    Utils.Informa = "Lo siento pero usted aún no ha digitado el" + "\r";
-                    Utils.Informa += "número de la historia clinica del usuario al" + "\r";
-                    Utils.Informa += "cual quiere registrar los datos de una ecografía." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(TxtNomUsaSin.Text))
-                {
-                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
-                    Utils.Informa += "no corresponde a un nombre de usuario válido," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                //Revisamos si el sexo del usuario
-
-                if (string.IsNullOrWhiteSpace(TxtSexoSinAten.Text))
-                {
-                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
-                    Utils.Informa += "no tiene definido el sexo, por lo tanto no se" + "\r";
-                    Utils.Informa += "pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboEspecialidad1.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
-                    Utils.Informa += "nombre de la especialidad del profesional" + "\r";
-                    Utils.Informa += "que realiza la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboCodiMedi.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
-                    Utils.Informa += "del profesional que realiza la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboCodiAuxRegis.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
-                    Utils.Informa += "del auxiliar que registra la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboTipoEcoReal.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
-                    Utils.Informa += "tipo de ecografía a registrar, por lo tanto" + "\r";
-                    Utils.Informa += "no se puede continuar con ell proceso." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                Utils.SqlDatos = "SELECT CodEcoIps, NomEcogra, CodFacEco, SexApli FROM [DACONEXTSQL].[dbo].[Datos tipos de ecografias] WHERE RealizIPS = 'True' AND CodEcoIps = '" + CboTipoEcoReal.SelectedValue.ToString() + "'";
-
-                SqlDataReader reader = Conexion.SQLDataReader(Utils.SqlDatos);
-
-                if (reader.HasRows)
-                {
-                    reader.Read();
-
-                    if (reader["SexApli"].ToString() == "A")
-                    {
-                        //NO se valida el sexo, porque es de ambos
-                    }
-                    else
-                    {
-                        if (reader["SexApli"].ToString() != TxtSexoSinAten.Text)
-                        {
-                            Utils.Informa = "Lo siento pero usted no puede registrar los datos" + "\r";
-                            Utils.Informa += "de la ecografía " + CboTipoEcoReal.Text + "\r";
-                            Utils.Informa += "al usuario " + TxtNomUsaSin.Text + "\r";
-                            Utils.Informa += "ya que el sexo no es pertinente." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                    }
-                }
-
-                if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
-
-                T = CboTipoEcoReal.SelectedValue.ToString();
-                H = TxtNumHistoEco.Text;
-                M = CboCodiMedi.SelectedValue.ToString();
-                UsaRegis = lblCodigoUser.Text;
-
-                //Revisamos cual el tipo de ecografía que se quiere archivar y si realmente se tiene un número asignado
-
-                switch (T)
-                {
-                    case "01": //Ecografía obstetrica
-                        FunConEco = TxtEcoNumForm.Text;
-                        NomInfor = "Informe ecografia obstetrica";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                    break;
-                    case "02": //ecografia pelvica transvaginal
-                        FunConEco = TxtEcoNumForm02.Text;
-                        NomInfor = "Informe ecografia pelvica transvaginal";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "03": //ecografia obstetrica temprana
-                        FunConEco = TxtEcoNumForm03.Text;
-                        NomInfor = "Informe ecografia obstetrica temprana";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                        break;
-                    case "04": //Aborto retenido
-                        FunConEco = TxtEcoNumForm03.Text;
-                        NomInfor = "Informe ecografia obstetrica aborto";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                        break;
-                    case "05": //ecografia abdominal
-                        FunConEco = TxtEcoNumForm05.Text;
-                        NomInfor = "Informe ecografia abdominal";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "06": //ecografia renal bilateral
-                        FunConEco = TxtEcoNumForm06.Text;
-                        NomInfor = "Informe ecografia renal bilateral";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "07": //ecografia hepatobiliar
-                        FunConEco = TxtEcoNumForm07.Text;
-                        NomInfor = "Informe ecografia hepatobiliar";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "08": //ecografia renal y vias urinarias
-                        FunConEco = TxtEcoNumForm08.Text;
-                        NomInfor = "Informe ecografia renal y vias urinarias ";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "09": //ecografia abdomen superior
-                        FunConEco = TxtEcoNumForm07.Text;
-                        NomInfor = "Informe ecografia abdomen superior";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "10": //ecografia obstetrica transvaginal
-                        FunConEco = TxtEcoNumForm02.Text;
-                        NomInfor = "Informe ecografia obstetrica transvaginal";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "11": //ecografia perfil biofisico
-                        FunConEco = TxtEcoNumForm11.Text;
-                        NomInfor = "Informe ecografia perfil biofisico";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                        break;
-                    case "12": //ecografia pelvica transabdominal
-                        FunConEco = TxtEcoNumForm02.Text;
-                        NomInfor = "Informe ecografia pelvica transabdominal";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "13": //ecografia cervicometria
-                        FunConEco = TxtEcoNumForm13.Text;
-                        NomInfor = "Informe ecografia cervicometria";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "14": //ecografia transrectal
-                        FunConEco = TxtEcoNumForm14.Text;
-                        NomInfor = "Informe ecografia transrectal";
-                        Para01 = "[DACONEXTSQL].[dbo].[atos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "15": //ecografia tejidos blandos
-                        FunConEco = TxtEcoNumForm15.Text;
-                        NomInfor = "Informe ecografia general";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-                    case "16": //cografia ecodoppler testicular
-                        FunConEco = TxtEcoNumForm15.Text;
-                        NomInfor = "Informe ecografia general";
-                        Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        break;
-
-                    default:
-                        Utils.Informa = "Lo siento pero el tipo de ecografía no" + "\r";
-                        Utils.Informa += "se encuentra definido en el código de" + "\r";
-                        Utils.Informa += "programación de estes sistema, por lo" + "\r";
-                        Utils.Informa += "tanto no se puede realizar el archivo" + "\r";
-                        Utils.Informa += "en la basee de datos." + "\r";
-                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                        break;
-                }
-
-                //Buscamos el numero de ecografia
-
-                SqlRegEco = "SELECT * ";
-                SqlRegEco = SqlRegEco + "FROM [DACONEXTSQL].[dbo].[Datos registros de ecografias] ";
-                SqlRegEco = SqlRegEco + "Where NumEcogra = '" + FunConEco + "' ";
-
-
-                SqlDataReader TabRegEco;
-
-                using (SqlConnection connection = new SqlConnection(Conexion.conexionSQL))
-                {
-                    SqlCommand command = new SqlCommand(SqlRegEco, connection);
-                    command.Connection.Open();
-                    TabRegEco = command.ExecuteReader();
-
-                    if (TabRegEco.HasRows == false)
-                    {
-                        Utils.Informa = "Lo siento pero los datos de la ecografía ha" + "\r";
-                        Utils.Informa += "cerrar, aún no han sido registrados en este" + "\r";
-                        Utils.Informa += "sistema, por favor ejecute primero el proceso" + "\r";
-                        Utils.Informa += "de grabar y luego el de archivar." + "\r";
-                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        
-                        return;
-                    }
-                    else
-                    {
-                        TabRegEco.Read();
-
-                        //Revisamos si el número de historia es igual a la contenida en la eco grabada
-
-
-                        if(TabRegEco["NumHisEco"].ToString() != H)
-                        {
-                            Utils.Informa = "Lo siento pero el informe de la ecografía No. " + FunConEco + "\r";
-                            Utils.Informa += "no se puede archivar, porque el número de historia" + "\r";
-                            Utils.Informa += "registrado previamente, es diferente al número" + "\r";
-                            Utils.Informa += "de historia digitado por usted." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        else
-                        {
-                            //Revisamos si se encuentra anulada
-                            if(Convert.ToBoolean(TabRegEco["AnulEco"]) == true)
-                            {
-                                Utils.Informa = "Lo siento pero el informe de la ecografía No. " + FunConEco + "\r";
-                                Utils.Informa += "no se puede archivar, porque la misma se encuentra" + "\r";
-                                Utils.Informa += "anulada en este sistema." + "\r";
-                                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                return;
-                            }
-                            else
-                            {
-                                //Preguntamos
-
-                                Utils.Informa = "¿Usted desea ARCHIVAR la ecografía No" + FunConEco + "\r";
-                                Utils.Informa += CboTipoEcoReal.Text + " al usuario(a) " + "\r";
-                                Utils.Informa += TxtNomUsaSin.Text + "\r";
-                                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                                if(res == DialogResult.Yes)
-                                {
-                                    Utils.SqlDatos = "UPDATE [DACONEXTSQL].[dbo].[Datos registros de ecografias] SET ArchivEco = 'True', CodArchi = '" + UsaRegis + "', FecArchi = CONVERT(DATETIME,'" + DateTime.Now.ToString("yyyy-MM-dd") + "',102) " +
-                                    "WHERE NumEcogra = '" + FunConEco + "'";
-
-                                    bool estaAct = Conexion.SQLUpdate(Utils.SqlDatos);
-
-                                    //Defina que la eco se esta realizando, cambie de color cita programada
-
-
-                                    Utils.SqlDatos = "SELECT [Datos de citas programadas].ConsecutivoCita FROM  [DACITASXPSQL].[dbo].[Datos de citas programadas] INNER JOIN  [DACONEXTSQL].[dbo].[Datos registros de ecografias] ON NoFactura = NumFactu " +
-                                    " WHERE [Datos de citas programadas].HistoriaCita = '"+ TxtNumHistoEco.Text + "'";
-
-                                    SqlDataReader tabConseCita = Conexion.SQLDataReader(Utils.SqlDatos);
-
-                                    if (tabConseCita.HasRows)
-                                    {
-                                        tabConseCita.Read();
-                                        NCEco = Convert.ToDouble(tabConseCita["ConsecutivoCita"].ToString());
-                                        ColCit = "001"; //Finalizada la atención, Color verde
-
-                                        ActualizarCita(H, NCEco, ColCit);
-                                    }
-
-                                    tabConseCita.Close();
-
-                                    if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
-
-                                    
-
-                                }
-
-                                Utils.Informa = "Los datos de la ecografía han sido " + FunConEco + "\r";
-                                Utils.Informa += "archivado satisfactoriamente." + "\r";
-                                Utils.Informa += "¿Desea mostrar el informe generado.?" + "\r";
-                                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-
-                                if(res == DialogResult.Yes)
-                                {
-                                    InfoMues = 1;
-                                }
-                                else
-                                {
-                                    InfoMues = 0;
-                                }
-
-                            }
-
-                        }// if (TabRegEco["NumHisEco"].ToString() != H
-                    }
-                }
-                TabRegEco.Close();
-
-                MosEcosSinArchivar();
-
-                if(InfoMues == 1)
-                {
-                    Utils.infNombreInforme = NomInfor;
-                    Utils.NumECCo = FunConEco;
-                    Report.FrmReporteEcografias frm = new Report.FrmReporteEcografias();
-                    frm.ShowDialog();
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Utils.Titulo01 = "Control de errores de ejecución";
-                Utils.Informa = "Lo siento pero se ha presentado un error al" + "\r";
-                Utils.Informa += "hacer click sobre el botón Archivar" + "\r";
-                Utils.Informa += "Error: " + ex.Message + " - " + ex.StackTrace;
-                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
-
-        private void BtnCopias_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string T = "", UsAten = "", HisAten = "", FunConEco = "", NomInfor = "", Para01 = "";
-                var res = DialogResult.No;
-                Utils.Titulo01 = "Control para generar copias de informess";
-
-
-                if (string.IsNullOrWhiteSpace(TxtNumHistoEco.Text))
-                {
-                    Utils.Informa = "Lo siento pero usted aún no ha digitado el" + "\r";
-                    Utils.Informa += "número de la historia clinica del usuario al" + "\r";
-                    Utils.Informa += "cual quiere registrar los datos de una ecografía." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (string.IsNullOrWhiteSpace(TxtNomUsaSin.Text))
-                {
-                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
-                    Utils.Informa += "no corresponde a un nombre de usuario válido," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-
-                UsAten = TxtNomUsaSin.Text;
-
-                //Revisamos si el sexo del usuario
-
-                if (string.IsNullOrWhiteSpace(TxtSexoSinAten.Text))
-                {
-                    Utils.Informa = "Lo siento pero el número de historia digitado" + "\r";
-                    Utils.Informa += "no tiene definido el sexo, por lo tanto no se" + "\r";
-                    Utils.Informa += "pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboEspecialidad1.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
-                    Utils.Informa += "nombre de la especialidad del profesional" + "\r";
-                    Utils.Informa += "que realiza la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboCodiMedi.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
-                    Utils.Informa += "del profesional que realiza la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboCodiAuxRegis.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el nombre" + "\r";
-                    Utils.Informa += "del auxiliar que registra la toma de la ecografía," + "\r";
-                    Utils.Informa += "por lo tanto no se pueden registrar los datos." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                if (CboTipoEcoReal.SelectedIndex == -1)
-                {
-                    Utils.Informa = "Lo siento pero usted no ha seleccionado el" + "\r";
-                    Utils.Informa += "tipo de ecografía a registrar, por lo tanto" + "\r";
-                    Utils.Informa += "no se puede continuar con ell proceso." + "\r";
-                    MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                T = CboTipoEcoReal.SelectedValue.ToString();
-
-
-                switch (T)
-                {
-                    case "01": //Ecografía obstetrica
-                        FunConEco = TxtEcoNumForm.Text;
-
-                        if(FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            NomInfor = "Informe ecografia obstetrica";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-                    case "02": //ecografia pelvica transvaginal
-                        FunConEco = TxtEcoNumForm02.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA PELVICA No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            //Se llama a este informe ya que son lo mismo
-                            NomInfor = "Informe ecografia obstetrica transvaginal";
-
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                          
-                        break;
-                    case "03": //ecografia obstetrica temprana
-
-                        FunConEco = TxtEcoNumForm03.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA TEMPRANA No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            //Le paso el informe de obstetrica aborto ya que son el mismo
-
-                            NomInfor = "Informe ecografia obstetrica aborto";
-
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                         
-                        break;
-                    case "04": //Aborto retenido
-
-                        FunConEco = TxtEcoNumForm03.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA DE ABORTO No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada a la usuaria de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            NomInfor = "Informe ecografia obstetrica aborto";
-
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                          
-                        break;
-                    case "05": //ecografia abdominal
-                        FunConEco = TxtEcoNumForm05.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA ABDOMINAL No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            NomInfor = "Informe ecografia abdominal";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "06": //ecografia renal bilateral
-                        FunConEco = TxtEcoNumForm06.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA RENAL BILATERAL No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                        
-                            NomInfor = "Informe ecografia renal bilateral";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-                    case "07": //ecografia hepatobiliar
-
-                        FunConEco = TxtEcoNumForm05.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA HEPATOBILIAR No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            //NomInfor = "Informe ecografia hepatobiliar"; Se llama al informe  ecografia abdomen superior ya que son el mismo y no veo la necesario
-
-                            NomInfor = "Informe ecografia abdominal";
-
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "08": //ecografia renal y vias urinarias
-                        FunConEco = TxtEcoNumForm08.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA RENAL BILATERAL Y VIAS URINARIAS No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            NomInfor = "Informe ecografia renal y vias urinarias";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "09": //ecografia abdomen superior
-                        FunConEco = TxtEcoNumForm07.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA ABDOMEN SUPERIOR No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-
-                            NomInfor = "Informe ecografia abdomen superior";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "10": //ecografia obstetrica transvaginal
-                        FunConEco = TxtEcoNumForm02.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA OBSTETRICA TRANSVAGINAL No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia obstetrica transvaginal";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-                    case "11": //ecografia perfil biofisico
-                        FunConEco = TxtEcoNumForm11.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA DE PERFIL BIOFISICO  No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia perfil biofisico";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos biometria de los fetos].[NumEcoFeto] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-                    case "12": //ecografia pelvica transabdominal
-                        FunConEco = TxtEcoNumForm02.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA PELVICA TRANSABDOMINAL No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            //Se llama a este informe ya que son lo mismo
-                            NomInfor = "Informe ecografia obstetrica transvaginal";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "13": //ecografia cervicometria
-                        FunConEco = TxtEcoNumForm13.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA CERVICOMETRIA No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia cervicometria";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-                    case "14": //ecografia transrectal
-                        FunConEco = TxtEcoNumForm14.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA TRANSRECTAL No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia transrectal";
-                            Para01 = "[DACONEXTSQL].[dbo].[atos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "15": //ecografia tejidos blandos
-                        FunConEco = TxtEcoNumForm15.Text;
-
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA DE TEJIDOS BLANDOS No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia general";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-                        break;
-                    case "16": //cografia ecodoppler testicular
-                        FunConEco = TxtEcoNumForm15.Text;
-
-                        if (FunConEco != "0" || FunConEco != null)
-                        {
-                            Utils.Informa = "¿Usted desea generar una copia del informe" + "\r";
-                            Utils.Informa += "de la ECOGRAFÍA Y ECODOPPLER TESTICULAR No. " + FunConEco + "\r";
-                            Utils.Informa += "realizada al usuario (a) de nombre" + "\r";
-                            Utils.Informa += UsAten + ".?" + "\r";
-                            NomInfor = "Informe ecografia general";
-                            Para01 = "[DACONEXTSQL].[dbo].[Datos registros de ecografias].[NumEcogra] = '" + FunConEco + "'";
-                        }
-                        else
-                        {
-                            Utils.Informa = "Lo siento pero usted no ha generado o seleccionado" + "\r";
-                            Utils.Informa += "un número de ecografía válido, el cual le permita " + "\r";
-                            Utils.Informa += "a este sistema generar la copia del informe." + "\r";
-                            MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            return;
-                        }
-
-                        break;
-
-                    default:
-                        Utils.Informa = "Lo siento pero el tipo de ecografía no" + "\r";
-                        Utils.Informa += "se encuentra definido en el código de" + "\r";
-                        Utils.Informa += "programación de estes sistema, por lo" + "\r";
-                        Utils.Informa += "tanto no se puede realizar el archivo" + "\r";
-                        Utils.Informa += "en la basee de datos." + "\r";
-                        MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                        break;
-                }
-
-                res = MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-                if(res == DialogResult.Yes)
-                {
-                    Utils.infNombreInforme = NomInfor;
-                    Utils.NumECCo = FunConEco;
-                    Report.FrmReporteEcografias frm = new Report.FrmReporteEcografias();
-                    frm.ShowDialog();
-                }
-
-
-
-            }
-            catch (Exception ex)
-            {
-                Utils.Titulo01 = "Control de errores de ejecución";
-                Utils.Informa = "Lo siento pero se ha presentado un error al" + "\r";
-                Utils.Informa += "hacer click sobre el botón Copias" + "\r";
-                Utils.Informa += "Error: " + ex.Message + " - " + ex.StackTrace;
-                MessageBox.Show(Utils.Informa, Utils.Titulo01, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
    
     }

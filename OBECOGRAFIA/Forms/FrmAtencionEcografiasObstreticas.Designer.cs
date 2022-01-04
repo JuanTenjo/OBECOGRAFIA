@@ -2020,7 +2020,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtEspeCervix13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtEspeCervix13.Location = new System.Drawing.Point(440, 57);
             this.TxtEspeCervix13.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2033,7 +2033,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiameLongi13.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiameLongi13.Location = new System.Drawing.Point(150, 57);
             this.TxtDiameLongi13.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2415,7 +2415,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtILA01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtILA01.Location = new System.Drawing.Point(415, 8);
             this.TxtILA01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2440,7 +2440,7 @@ namespace OBECOGRAFIA.Forms
             this.FCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCF01.Location = new System.Drawing.Point(164, 8);
             this.FCF01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2686,7 +2686,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtILA02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtILA02.Location = new System.Drawing.Point(288, 9);
             this.TxtILA02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2699,7 +2699,7 @@ namespace OBECOGRAFIA.Forms
             this.FCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCF02.Location = new System.Drawing.Point(165, 8);
             this.FCF02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2868,7 +2868,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtILA03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtILA03.Location = new System.Drawing.Point(289, 8);
             this.TxtILA03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -2881,7 +2881,7 @@ namespace OBECOGRAFIA.Forms
             this.FCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCF03.Location = new System.Drawing.Point(167, 9);
             this.FCF03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3050,7 +3050,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtILA04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtILA04.Location = new System.Drawing.Point(289, 9);
             this.TxtILA04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3063,7 +3063,7 @@ namespace OBECOGRAFIA.Forms
             this.FCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCF04.Location = new System.Drawing.Point(167, 10);
             this.FCF04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3232,7 +3232,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtILA05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtILA05.Location = new System.Drawing.Point(289, 9);
             this.TxtILA05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3245,7 +3245,7 @@ namespace OBECOGRAFIA.Forms
             this.FCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCF05.Location = new System.Drawing.Point(167, 9);
             this.FCF05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3734,7 +3734,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtResiPostVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtResiPostVejiga08.Location = new System.Drawing.Point(374, 255);
             this.TxtResiPostVejiga08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3759,7 +3759,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVoluPromVejiga08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVoluPromVejiga08.Location = new System.Drawing.Point(141, 254);
             this.TxtVoluPromVejiga08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3784,7 +3784,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamEpRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamEpRinIzquie08.Location = new System.Drawing.Point(686, 149);
             this.TxtDiamEpRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3809,7 +3809,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamTraRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamTraRinIzquie08.Location = new System.Drawing.Point(573, 149);
             this.TxtDiamTraRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3834,7 +3834,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamAntRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamAntRinIzquie08.Location = new System.Drawing.Point(366, 149);
             this.TxtDiamAntRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3859,7 +3859,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamRinIzquie08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamRinIzquie08.Location = new System.Drawing.Point(116, 149);
             this.TxtDiamRinIzquie08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3884,7 +3884,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamEpRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamEpRinDerecho08.Location = new System.Drawing.Point(686, 52);
             this.TxtDiamEpRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3909,7 +3909,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamTraRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamTraRinDerecho08.Location = new System.Drawing.Point(573, 52);
             this.TxtDiamTraRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3934,7 +3934,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamAntRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamAntRinDerecho08.Location = new System.Drawing.Point(366, 52);
             this.TxtDiamAntRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -3959,7 +3959,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamRinDerecho08.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamRinDerecho08.Location = new System.Drawing.Point(116, 52);
             this.TxtDiamRinDerecho08.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4823,7 +4823,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamEpRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamEpRinIzquie06.Location = new System.Drawing.Point(686, 138);
             this.TxtDiamEpRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4836,7 +4836,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamRinDerecho06.Location = new System.Drawing.Point(115, 42);
             this.TxtDiamRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4849,7 +4849,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamTraRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamTraRinIzquie06.Location = new System.Drawing.Point(573, 138);
             this.TxtDiamTraRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4874,7 +4874,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamAntRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamAntRinIzquie06.Location = new System.Drawing.Point(366, 139);
             this.TxtDiamAntRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4899,7 +4899,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamRinIzquie06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamRinIzquie06.Location = new System.Drawing.Point(116, 138);
             this.TxtDiamRinIzquie06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4924,7 +4924,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamEpRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamEpRinDerecho06.Location = new System.Drawing.Point(686, 41);
             this.TxtDiamEpRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4949,7 +4949,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamTraRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamTraRinDerecho06.Location = new System.Drawing.Point(573, 41);
             this.TxtDiamTraRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -4974,7 +4974,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiamAntRinDerecho06.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiamAntRinDerecho06.Location = new System.Drawing.Point(366, 42);
             this.TxtDiamAntRinDerecho06.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -5833,7 +5833,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVesiVitelina01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVesiVitelina01.Location = new System.Drawing.Point(416, 31);
             this.TxtVesiVitelina01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -5846,7 +5846,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLCN01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLCN01.Location = new System.Drawing.Point(171, 29);
             this.TxtLCN01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -5859,7 +5859,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtFCF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFCF01.Location = new System.Drawing.Point(416, 9);
             this.TxtFCF01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -5884,7 +5884,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBotonEmbriona01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBotonEmbriona01.Location = new System.Drawing.Point(171, 51);
             this.TxtBotonEmbriona01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -5897,7 +5897,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtSacoGes01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSacoGes01.Location = new System.Drawing.Point(171, 8);
             this.TxtSacoGes01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6044,7 +6044,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVesiVitelina02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVesiVitelina02.Location = new System.Drawing.Point(417, 31);
             this.TxtVesiVitelina02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6057,7 +6057,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLCN02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLCN02.Location = new System.Drawing.Point(172, 29);
             this.TxtLCN02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6070,7 +6070,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtFCF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFCF02.Location = new System.Drawing.Point(417, 9);
             this.TxtFCF02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6083,7 +6083,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBotonEmbriona02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBotonEmbriona02.Location = new System.Drawing.Point(172, 51);
             this.TxtBotonEmbriona02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6096,7 +6096,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtSacoGes02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSacoGes02.Location = new System.Drawing.Point(172, 8);
             this.TxtSacoGes02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6254,7 +6254,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVesiVitelina03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVesiVitelina03.Location = new System.Drawing.Point(417, 31);
             this.TxtVesiVitelina03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6267,7 +6267,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLCN03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLCN03.Location = new System.Drawing.Point(172, 29);
             this.TxtLCN03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6280,7 +6280,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtFCF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFCF03.Location = new System.Drawing.Point(417, 9);
             this.TxtFCF03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6293,7 +6293,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBotonEmbriona03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBotonEmbriona03.Location = new System.Drawing.Point(172, 51);
             this.TxtBotonEmbriona03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6306,7 +6306,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtSacoGes03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSacoGes03.Location = new System.Drawing.Point(172, 8);
             this.TxtSacoGes03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6464,7 +6464,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVesiVitelina04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVesiVitelina04.Location = new System.Drawing.Point(417, 31);
             this.TxtVesiVitelina04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6477,7 +6477,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLCN04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLCN04.Location = new System.Drawing.Point(172, 29);
             this.TxtLCN04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6490,7 +6490,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtFCF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFCF04.Location = new System.Drawing.Point(417, 9);
             this.TxtFCF04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6503,7 +6503,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBotonEmbriona04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBotonEmbriona04.Location = new System.Drawing.Point(172, 51);
             this.TxtBotonEmbriona04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6516,7 +6516,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtSacoGes04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSacoGes04.Location = new System.Drawing.Point(172, 8);
             this.TxtSacoGes04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6674,7 +6674,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtVesiVitelina05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtVesiVitelina05.Location = new System.Drawing.Point(416, 31);
             this.TxtVesiVitelina05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6687,7 +6687,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLCN05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLCN05.Location = new System.Drawing.Point(171, 29);
             this.TxtLCN05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6700,7 +6700,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtFCF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtFCF05.Location = new System.Drawing.Point(416, 9);
             this.TxtFCF05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6713,7 +6713,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBotonEmbriona05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBotonEmbriona05.Location = new System.Drawing.Point(171, 51);
             this.TxtBotonEmbriona05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -6726,7 +6726,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtSacoGes05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSacoGes05.Location = new System.Drawing.Point(171, 8);
             this.TxtSacoGes05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7306,7 +7306,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPorOvariIzqui02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPorOvariIzqui02.Location = new System.Drawing.Point(649, 92);
             this.TxtPorOvariIzqui02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7319,7 +7319,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtEndome02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtEndome02.Location = new System.Drawing.Point(649, 70);
             this.TxtEndome02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7332,7 +7332,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtOvariIzquie02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtOvariIzquie02.Location = new System.Drawing.Point(514, 92);
             this.TxtOvariIzquie02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7357,7 +7357,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiameTras02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiameTras02.Location = new System.Drawing.Point(649, 34);
             this.TxtDiameTras02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7370,7 +7370,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPorOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPorOvariDere02.Location = new System.Drawing.Point(282, 92);
             this.TxtPorOvariDere02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7383,7 +7383,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiameAntePos02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiameAntePos02.Location = new System.Drawing.Point(408, 34);
             this.TxtDiameAntePos02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7396,7 +7396,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtOvariDere02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtOvariDere02.Location = new System.Drawing.Point(150, 92);
             this.TxtOvariDere02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -7421,7 +7421,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtDiameLongi02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDiameLongi02.Location = new System.Drawing.Point(150, 34);
             this.TxtDiameLongi02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8314,7 +8314,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPeso01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPeso01.Location = new System.Drawing.Point(678, 115);
             this.TxtPeso01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8327,7 +8327,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLF01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLF01.Location = new System.Drawing.Point(678, 94);
             this.TxtLF01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8340,7 +8340,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtAC01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAC01.Location = new System.Drawing.Point(678, 72);
             this.TxtAC01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8353,7 +8353,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtHC01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHC01.Location = new System.Drawing.Point(678, 52);
             this.TxtHC01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8366,7 +8366,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBDP01.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBDP01.Location = new System.Drawing.Point(678, 32);
             this.TxtBDP01.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8746,7 +8746,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPeso02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPeso02.Location = new System.Drawing.Point(678, 116);
             this.TxtPeso02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8759,7 +8759,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLF02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLF02.Location = new System.Drawing.Point(678, 95);
             this.TxtLF02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8772,7 +8772,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtAC02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAC02.Location = new System.Drawing.Point(678, 73);
             this.TxtAC02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8785,7 +8785,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtHC02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHC02.Location = new System.Drawing.Point(678, 53);
             this.TxtHC02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -8798,7 +8798,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBDP02.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBDP02.Location = new System.Drawing.Point(678, 33);
             this.TxtBDP02.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9175,7 +9175,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPeso03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPeso03.Location = new System.Drawing.Point(679, 116);
             this.TxtPeso03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9188,7 +9188,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLF03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLF03.Location = new System.Drawing.Point(679, 95);
             this.TxtLF03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9201,7 +9201,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtAC03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAC03.Location = new System.Drawing.Point(679, 73);
             this.TxtAC03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9214,7 +9214,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtHC03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHC03.Location = new System.Drawing.Point(679, 53);
             this.TxtHC03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9227,7 +9227,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBDP03.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBDP03.Location = new System.Drawing.Point(679, 33);
             this.TxtBDP03.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9604,7 +9604,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPeso04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPeso04.Location = new System.Drawing.Point(679, 116);
             this.TxtPeso04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9617,7 +9617,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLF04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLF04.Location = new System.Drawing.Point(679, 95);
             this.TxtLF04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9630,7 +9630,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtAC04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAC04.Location = new System.Drawing.Point(679, 73);
             this.TxtAC04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9643,7 +9643,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtHC04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHC04.Location = new System.Drawing.Point(679, 53);
             this.TxtHC04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -9656,7 +9656,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBDP04.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBDP04.Location = new System.Drawing.Point(679, 33);
             this.TxtBDP04.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10033,7 +10033,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtPeso05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPeso05.Location = new System.Drawing.Point(679, 117);
             this.TxtPeso05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10046,7 +10046,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtLF05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtLF05.Location = new System.Drawing.Point(679, 96);
             this.TxtLF05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10059,7 +10059,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtAC05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtAC05.Location = new System.Drawing.Point(679, 74);
             this.TxtAC05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10072,7 +10072,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtHC05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtHC05.Location = new System.Drawing.Point(679, 54);
             this.TxtHC05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10085,7 +10085,7 @@ namespace OBECOGRAFIA.Forms
             this.TxtBDP05.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtBDP05.Location = new System.Drawing.Point(679, 34);
             this.TxtBDP05.Maximum = new decimal(new int[] {
-            1000,
+            9999,
             0,
             0,
             0});
@@ -10795,6 +10795,7 @@ namespace OBECOGRAFIA.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1138, 694);
             this.ControlBox = false;

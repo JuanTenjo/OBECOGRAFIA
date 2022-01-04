@@ -162,14 +162,14 @@ namespace OBECOGRAFIA.Report
             //*************************************************************************** Esta es para un deporte de anteciones ************************************************
 
             Utils.SqlDatos = "SELECT [Datos registros de ecografias].NumEcogra, [Datos del Paciente].HistorPaci, [Datos del Paciente].TipoIden, [Datos del Paciente].NumIden, " +
-            " [Datos registros de ecografias].FecRealECO, Trim([Apellido1] + ' ' + [Apellido2] + ' ' + [Nombre1] + ' ' + [Nombre2]) AS NombreCompleto, " +
-            " Trim([Apellido1Medico] +' ' + [Apellido2Medico] + ' ' + [NomMedico]) AS MediC, [Datos registros de ecografias].ArchivEco, [Datos registros de ecografias].CodMedECO " +
+            " [Datos registros de ecografias].FecRealECO, RTrim([Apellido1] + ' ' + [Apellido2] + ' ' + [Nombre1] + ' ' + [Nombre2]) AS NombreCompleto, " +
+            " RTrim([Apellido1Medico] +' ' + [Apellido2Medico] + ' ' + [NomMedico]) AS MediC, [Datos registros de ecografias].ArchivEco, [Datos registros de ecografias].CodMedECO " +
             " FROM ([DACONEXTSQL].[dbo].[Datos registros de ecografias] INNER JOIN[ACDATOXPSQL].[dbo].[Datos del Paciente] ON[Datos registros de ecografias].NumHisEco = [Datos del Paciente].HistorPaci) " +
             " INNER JOIN [GEOGRAXPSQL].[dbo].[Datos de los medicos] ON [Datos registros de ecografias].CodMedECO = [Datos de los medicos].CodiMedico " +
             "  WHERE [Datos registros de ecografias].FecRealECO >= CONVERT(DATETIME, '"+ Utils.FecIncial +"', 102) " +
             " And [Datos registros de ecografias].FecRealECO <= CONVERT(DATETIME, '" + Utils.FecFinal + "', 102) AND " +
             "  [Datos registros de ecografias].CodMedECO = '" + Utils.CodMedicoReport + "' And [Datos registros de ecografias].ArchivEco = "+ Utils.ArchiEcoReport +" " +
-            " ORDER BY [Datos registros de ecografias].NumEcogra, Trim([Apellido1] + ' ' + [Apellido2] + ' ' + [Nombre1] + ' ' + [Nombre2]);";
+            " ORDER BY [Datos registros de ecografias].NumEcogra, RTrim([Apellido1] + ' ' + [Apellido2] + ' ' + [Nombre1] + ' ' + [Nombre2]);";
 
 
             System.Data.DataSet InfoAten = Conexion.SQLDataSet(Utils.SqlDatos);
@@ -183,7 +183,7 @@ namespace OBECOGRAFIA.Report
             this.reportViewer1.LocalReport.EnableExternalImages = true;
 
             // ReportParameter edad = new ReportParameter("edad", FunEd);
-
+                
             //Array que contendrá los parámetros
             ReportParameter[] parameters = new ReportParameter[1];
 

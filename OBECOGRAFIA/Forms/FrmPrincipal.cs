@@ -51,18 +51,61 @@ namespace OBECOGRAFIA.Forms
 
                     Utils.codUsuario = dr["CodigUsar"].ToString();
                     Utils.nomUsuario = dr["NombreUsar"].ToString();
-                    Utils.nivelPermiso = dr["NivelPermiso"].ToString();
+                 
                     Utils.codUnicoEmpresa = dr["CodRegEn"].ToString(); // CodEnti
                     Utils.CodAplicacion = dr["CodApli"].ToString();
-                    Utils.CodEspecialidad = dr["CodEspecialidad"].ToString();
-                    Utils.CodigoMedico = dr["CodigoMedico"].ToString();
+
 
 
                     this.lblFecha.Text = DateTime.Now.ToString("dddd dd 'de' MMMM 'de' yyyy") + "   -";
                     this.lblCodUsuario.Text = Utils.codUsuario;
                     this.lblNomUsuario.Text = Utils.nomUsuario;
 
-                    Utils.SqlDatos = @"SELECT CodiMinSalud, NitCCEmpresa,CatEmpresa, NomEmpresa,LogoEmpresa, TipoDocEmp, TelPrin " +
+
+
+                    Utils.SqlDatos = "SELECT [NivelPermiso], [IdentificUsa]" +
+                    "FROM [DATUSIIGXPSQL].[dbo].[Datos usuarios de los aplicativos] " +
+                    "WHERE CodigoUsa = '" + Utils.codUsuario + "'";
+
+                    string docuMedi = "";
+
+                    SqlDataReader TabUser = Conexion.SQLDataReader(Utils.SqlDatos);
+
+                    if (TabUser.HasRows)
+                    {
+                        TabUser.Read();
+                        Utils.nivelPermiso = TabUser["NivelPermiso"].ToString();
+                        docuMedi = TabUser["IdentificUsa"].ToString();
+                    }
+
+                    if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
+
+
+
+                    //Buscamos los datoa de los medicos
+
+                    Utils.SqlDatos = "SELECT [CodiMedico], [CodEspecial]" +
+                    "FROM [GEOGRAXPSQL].[dbo].[Datos de los medicos] " +
+                    "WHERE NumDocum = '" + docuMedi + "'";
+
+
+                    SqlDataReader TabMedi = Conexion.SQLDataReader(Utils.SqlDatos);
+
+                    if (TabMedi.HasRows)
+                    {
+                        TabMedi.Read();
+
+                        Utils.CodEspecialidad = TabMedi["CodEspecial"].ToString();
+                        Utils.CodigoMedico = TabMedi["CodiMedico"].ToString();
+
+                    }
+
+                    if (Conexion.sqlConnection.State == ConnectionState.Open) Conexion.sqlConnection.Close();
+
+
+
+
+                    Utils.SqlDatos = "SELECT CodiMinSalud, NitCCEmpresa,CatEmpresa, NomEmpresa,LogoEmpresa, TipoDocEmp, TelPrin " +
                                    "FROM [BDADMINSIG].[dbo].[Datos informacion de la empresa] " +
                                    "WHERE CodUnico = @codUnicoEmpresa";
 
@@ -84,6 +127,7 @@ namespace OBECOGRAFIA.Forms
                         Utils.TelEmpresa = Sqldr["TelPrin"].ToString();
                         Utils.LogoEmpresa = (byte[])Sqldr["LogoEmpresa"];
                     }
+
 
 
                     Sqldr.Close();

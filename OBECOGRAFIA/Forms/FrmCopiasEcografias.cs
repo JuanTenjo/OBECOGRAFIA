@@ -226,9 +226,9 @@ namespace OBECOGRAFIA.Forms
                     case "3":
 
                         SqlDatos = "SELECT [Datos de los medicos].CodiMedico, ";
-                        SqlDatos = SqlDatos + "Trim([Datos de los medicos].Apellido1Medico + ' ' + [Datos de los medicos].Apellido2Medico + ' ' + [Datos de los medicos].NomMedico) AS NombreMED ";
+                        SqlDatos = SqlDatos + "RTrim([Datos de los medicos].Apellido1Medico + ' ' + [Datos de los medicos].Apellido2Medico + ' ' + [Datos de los medicos].NomMedico) AS NombreMED ";
                         SqlDatos = SqlDatos + "FROM [GEOGRAXPSQL].[dbo].[Datos de los medicos] ";
-                        SqlDatos = SqlDatos + "ORDER BY Trim([Datos de los medicos].Apellido1Medico + ' ' + [Datos de los medicos].Apellido2Medico + ' ' + [Datos de los medicos].NomMedico);";
+                        SqlDatos = SqlDatos + "ORDER BY RTrim([Datos de los medicos].Apellido1Medico + ' ' + [Datos de los medicos].Apellido2Medico + ' ' + [Datos de los medicos].NomMedico);";
 
                         DataSet dataSet = Conexion.SQLDataSet(SqlDatos);
 

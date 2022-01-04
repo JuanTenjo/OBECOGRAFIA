@@ -1,5 +1,7 @@
 ALTER TABLE [DACITASXPSQL].[dbo].[Datos de los colores en citas] ADD NombreColor nvarchar(20)
 
+GO
+
 UPDATE [DACITASXPSQL].[dbo].[Datos de los colores en citas] SET NombreColor = 'Green' WHERE CodColor = '001'
 UPDATE [DACITASXPSQL].[dbo].[Datos de los colores en citas] SET NombreColor = 'Blue' WHERE CodColor = '002'
 UPDATE [DACITASXPSQL].[dbo].[Datos de los colores en citas] SET NombreColor = 'Coral' WHERE CodColor = '003'

@@ -350,8 +350,8 @@ SELECT NumEcoFeto, FetoNum, Presentacion, Situacion, Posicion, MovCardiacos, Mov
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        DACONEXTSQL.dbo.[Datos registros de ecografias].NumEcogra, [Datos del Paciente].HistorPaci, [Datos del Paciente].TipoIden, [Datos del Paciente].NumIden, DACONEXTSQL.dbo.[Datos registros de ecografias].FecRealECO, 
-                         Trim([Datos del Paciente].Apellido1 + ' ' + [Datos del Paciente].Apellido2 + ' ' + [Datos del Paciente].Nombre1 + ' ' + [Datos del Paciente].Nombre2) AS NombreCompleto, 
-                         Trim(GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido1Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido2Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].NomMedico) AS MediC, 
+                         RTrim([Datos del Paciente].Apellido1 + ' ' + [Datos del Paciente].Apellido2 + ' ' + [Datos del Paciente].Nombre1 + ' ' + [Datos del Paciente].Nombre2) AS NombreCompleto, 
+                         RTrim(GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido1Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].Apellido2Medico + ' ' + GEOGRAXPSQL.dbo.[Datos de los medicos].NomMedico) AS MediC, 
                          DACONEXTSQL.dbo.[Datos registros de ecografias].ArchivEco, DACONEXTSQL.dbo.[Datos registros de ecografias].CodMedECO
 FROM            DACONEXTSQL.dbo.[Datos registros de ecografias] INNER JOIN
                          [Datos del Paciente] ON DACONEXTSQL.dbo.[Datos registros de ecografias].NumHisEco = [Datos del Paciente].HistorPaci INNER JOIN

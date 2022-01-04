@@ -29,12 +29,6 @@ namespace OBECOGRAFIA.Class
         #endregion
 
 
-        public static string AS(string texto)
-        {
-            return texto;
-        }
-
-
         public static string ValidarHoraNula(string Hora, bool Opcion = true)
         {
             string ValidarHora = null;

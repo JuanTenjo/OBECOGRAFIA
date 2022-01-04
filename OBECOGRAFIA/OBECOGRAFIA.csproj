@@ -7,7 +7,7 @@
     <ProjectGuid>{3A9D7B51-2EBC-4467-A216-BC4447F3E8F8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>OBECOGRAFIA</RootNamespace>
-    <AssemblyName>OBECOGRAFIA</AssemblyName>
+    <AssemblyName>OBECOSQL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

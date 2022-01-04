@@ -9,17 +9,12 @@ C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA
 C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.exe
 C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.pdb
 C:\Users\tenjo\OneDrive\Escritorio\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmAtencionEcografiasObstreticas.resources
-C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe.config
-C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe
-C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.pdb
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csprojAssemblyReference.cache
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmAtencionEcografiasObstreticas.resources
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmPrincipal.resources
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Properties.Resources.resources
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.GenerateResource.cache
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CoreCompileInputs.cache
-C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.exe
-C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.pdb
 C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\Resources\Archivar.png
 C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\Resources\Archivar.png
 C:\OBECOGRAFIA - copia\OBECOGRAFIA\bin\Debug\OBECOGRAFIA.exe.config
@@ -99,3 +94,8 @@ C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\RdlCompile.compiled
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.csproj.CopyComplete
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmReporteEcografias.resources
 C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOGRAFIA.Forms.FrmCopiasEcografias.resources
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOSQL.exe.config
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOSQL.exe
+C:\OBECOGRAFIA\OBECOGRAFIA\bin\Debug\OBECOSQL.pdb
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOSQL.exe
+C:\OBECOGRAFIA\OBECOGRAFIA\obj\Debug\OBECOSQL.pdb
